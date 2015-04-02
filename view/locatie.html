@@ -1,0 +1,45 @@
+<div class="locatie" ng-controller="FranchisesCtrl">
+
+	<section class="section header">
+
+		<div class="sectionheader">
+			<div class="sectionline big"></div>
+			<div class="sectionline small"></div>
+				<h2 class="sectionposth">{{franchises[ID-1].name}}</h2>
+			<div class="sectionline big right"></div>
+			<div class="sectionline small right"></div>
+		</div>
+	</section>
+
+	<section class="LocatiesSection">
+		<div class="col span_1_of_2 cleanslider">
+
+			<carousel interval="myInterval" class="carousel locatiecar">
+				<slide ng-repeat="item in franchises" active="slide.active">
+					<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}">
+				</slide>
+			</carousel>
+
+			<div>
+				<ul id="gallery" >
+					lightbox
+					<li ng-repeat="image in images">
+						<a ng-click="openLightboxModal($index)">
+						<img ng-src="{{image.thumbUrl}}" class="img-thumbnail" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="col span_1_of_2">
+			<div>
+				<h3>Bezoek {{ franchises[ID-1].name }}</h3>
+				<p>{{ franchises[ID-1].description }}</p>
+
+				<img src="https://maps.googleapis.com/maps/api/staticmap?center=51.142070,4.442977&zoom=14&size=700x300&maptype=roadmap&markers=51.142070,4.442977&key=AIzaSyBGPdCnpglb4ok6k8BaVuF0srvPR7Gg770" alt="location" id="map" width="600">
+			</div>
+		</div>
+
+</section>

@@ -4,7 +4,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	"ngScrollTo"
 	])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide) {
 
 $urlRouterProvider.otherwise("/");
 
@@ -24,14 +24,31 @@ $urlRouterProvider.otherwise("/");
 			controller: "FranchisesCtrl",
 			templateUrl: "view/locaties.html"
 		})
+			.state('locatie', {
+				url: "/locaties/:locationName",
+				controller: function($scope, $stateParams){
+					$scope.ID = parseInt($stateParams.locationName);
+				},
+				templateUrl: "view/locatie.html"
+			})
+
 		.state('jobs', {
 			url: "/jobs",
 			controller: "JobsCtrl",
 			templateUrl: "view/jobs.html"
 		})
+
 		.state('franchise', {
 			url: "/franchise",
 			controller: "FranchisesCtrl",
 			templateUrl: "view/franchise.html"
 		})
+			.state('franchise.kontich', {
+				url: "/kontich",
+				templateUrl: "view/franchise.kontich.html",
+			})
+			.state('franchise.duffel', {
+				url: "/duffel",
+				templateUrl: "view/franchise.duffel.html",
+			})
 });

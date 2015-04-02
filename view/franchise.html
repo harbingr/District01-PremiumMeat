@@ -1,3 +1,4 @@
+<!--https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/-->
 <div class="locatie">
 
 	<section class="section header">
@@ -38,19 +39,28 @@
 			<!--http://stackoverflow.com/questions/16872191/angularjs-ui-bootstrap-tabs-that-support-routing-->
 			<div class="col span_1_of_4">
 				<tabset vertical="true" type="pills">
-
-					<tab ng-repeat="item in franchises" heading="{{item.name}}" ></tab>
-
+					<tab ng-repeat="item in franchises" heading="{{item.name}}"></tab>
+						<a ui-sref=".kontich">kontich</a>
+						<a ui-sref=".duffel">duffel</a>
 				</tabset>
-				<img src="{{franchises.images[0].list}}" alt="{{item.images[0].list}}">
-				<p>{{franchises.images[0].list}}</p>
-			</div>
 <!--
-			<div class="col span_3_of_4 fleft" ng-repeat="item in franchises">
-				<p>{{item.description}}</p>
-				<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}">
-			</div>
+				<tabset vertical="true" type="pills">
+					<tab select="setSelectedTab(item)"
+						active="item.active"
+						disabled="item.disabled"
+						ng-repeat="item in franchises"
+						heading="{{item.name}}">
+					</tab>
+				</tabset>
 -->
+			</div>
+
+			<div class="col span_3_of_4" ui-view>
+
+			</div>
+
+			<img src="{{franchises[0].images[0].list}}" alt="{{franchises[0].images[0].list}}">
+			<p>{{franchises[0].description}}</p>
 
 		</div>
 

@@ -1,5 +1,3 @@
-
-
 <div class="menu">
 
 	<section class="section header">
@@ -12,17 +10,20 @@
 		</div>
 	</section>
 
-	<section class="LocatiesSection">
+	<section class="LocatiesSection" ng-controller="FranchisesCtrl">
 
 		<div class="col span_1_of_4 list loc" ng-repeat="item in franchises" >
 			<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}" class="LocatiesImg">
 			<div class="LocatiesInfo">
 				<h4>{{item.name}}</h4>
 				<p>{{item.description}}</p>
-				<a href="locatie.html" class="detail">Bekijk detail >></a>
+				<a ui-sref="locatie({locationName: item.id})" class="detail">Bekijk detail >></a>
 			</div>
+
 		</div>
 
 	</section>
+
+	<div ui-view></div>
 
 </div>
