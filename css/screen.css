@@ -436,6 +436,16 @@ footer #bottom img.socialimg.hover {
   background-color: #ca4123;
   opacity: 0.7;
 }
+@media only screen and (max-width: 800px) {
+  .carousel .carousel-caption h4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .carousel .carousel-caption {
+    display: none;
+  }
+}
 
 .promo {
   background-color: #5a8738;
