@@ -1,5 +1,4 @@
-//angular.module("PremiumMeat", ["ngScrollTo"]);
-//angular.module('PremiumMeat', ['ui.bootstrap']);
+
 var servicepath = "http://franchise.district01.be/api/";
 
 var PremiumMeat = angular.module('PremiumMeat')

@@ -96,7 +96,7 @@ h4{
 	}
 
 #top{@include wrap(80%, 5px, 0px);}
-	#top img,p{display: inline; font-size: 12px;}
+	#top img,p{display: inline !important; font-size: 12px;}
 
 button.burger{
 	display: none;
@@ -394,7 +394,7 @@ footer{
 	}
 
 #quote{ height: 100px;
-	p{display: block; text-align: center;}
+	p{display: block !important; text-align: center;}
 	a{color: $green; text-decoration:  none; margin: 0px;}
 	a:hover{text-decoration: underline;}
 }

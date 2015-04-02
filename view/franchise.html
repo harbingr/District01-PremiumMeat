@@ -1,0 +1,59 @@
+<div class="locatie">
+
+	<section class="section header">
+
+		<div class="sectionheader">
+			<div class="sectionline big"></div>
+			<div class="sectionline small"></div>
+				<h2 class="sectionposth">franchise</h2>
+			<div class="sectionline big right"></div>
+			<div class="sectionline small right"></div>
+		</div>
+	</section>
+
+	<section class="FranchiseSection">
+
+		<div class="col span_1_of_3 light">
+				<div class="dark">
+					<h2>Franchise beginnen?</h2>
+				</div>
+				<div>
+					<h3>Een mooie toekomst lacht u toe!</h3>
+				</div>
+				<div>
+					<h3>Waarom zou je?</h3>
+				</div>
+				<ul id="franchiselist">
+					<li>lorem ipsum</li><!-- style= "list-style-image: url('images/arrow.png')" -->
+					<li>dolor sit amet</li>
+					<li>consectetur</li>
+					<li>adipiscing elit</li>
+				</ul>
+				<div class="dark">
+					<h3 id="franchisecontact">Neem contact op!</h3>
+				</div>
+		</div>
+
+		<div class="col span_2_of_3">
+			<!--http://stackoverflow.com/questions/16872191/angularjs-ui-bootstrap-tabs-that-support-routing-->
+			<div class="col span_1_of_4">
+				<tabset vertical="true" type="pills">
+
+					<tab ng-repeat="item in franchises" heading="{{item.name}}" ></tab>
+
+				</tabset>
+				<img src="{{franchises.images[0].list}}" alt="{{item.images[0].list}}">
+				<p>{{franchises.images[0].list}}</p>
+			</div>
+<!--
+			<div class="col span_3_of_4 fleft" ng-repeat="item in franchises">
+				<p>{{item.description}}</p>
+				<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}">
+			</div>
+-->
+
+		</div>
+
+	</section>
+
+</div>

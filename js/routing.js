@@ -1,23 +1,37 @@
-var myapp = angular.module('PremiumMeat', ["ui.router"]);
-PremiumMeat.config(function($stateProvider, $urlRouterProvider) {
+var PremiumMeat = angular.module('PremiumMeat', [
+	"ui.router",
+	"ui.bootstrap",
+	"ngScrollTo"
+	])
 
-  $urlRouterProvider.otherwise("/");
+.config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider
-    .state('home', {
-      url: "/index",
-      templateUrl: "index.html"
-    })
-    .state('menu', {
-      url: "/menu",
-      templateUrl: "menu.html"
-    })
-    .state('locaties', {
-      url: "/locaties",
-      templateUrl: "locaties.html"
-    })
-    .state('jobs', {
-      url: "/jobs",
-      templateUrl: "jobs.html"
-    })
+$urlRouterProvider.otherwise("/");
+
+	$stateProvider
+		.state('home', {
+			url: "/",
+			controller: "HomeCtrl",
+			templateUrl: "view/home.html"
+		})
+		.state('menu', {
+			url: "/menu",
+			controller: "MenuCtrl",
+			templateUrl: "view/menu.html"
+		})
+		.state('locaties', {
+			url: "/locaties",
+			controller: "FranchisesCtrl",
+			templateUrl: "view/locaties.html"
+		})
+		.state('jobs', {
+			url: "/jobs",
+			controller: "JobsCtrl",
+			templateUrl: "view/jobs.html"
+		})
+		.state('franchise', {
+			url: "/franchise",
+			controller: "FranchisesCtrl",
+			templateUrl: "view/franchise.html"
+		})
 });

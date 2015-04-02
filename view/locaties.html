@@ -1,0 +1,28 @@
+
+
+<div class="menu">
+
+	<section class="section header">
+		<div class="sectionheader">
+			<div class="sectionline big"></div>
+			<div class="sectionline small"></div>
+				<h2 class="sectionposth">Locaties</h2>
+			<div class="sectionline big right"></div>
+			<div class="sectionline small right"></div>
+		</div>
+	</section>
+
+	<section class="LocatiesSection">
+
+		<div class="col span_1_of_4 list loc" ng-repeat="item in franchises" >
+			<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}" class="LocatiesImg">
+			<div class="LocatiesInfo">
+				<h4>{{item.name}}</h4>
+				<p>{{item.description}}</p>
+				<a href="locatie.html" class="detail">Bekijk detail >></a>
+			</div>
+		</div>
+
+	</section>
+
+</div>

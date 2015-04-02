@@ -144,7 +144,7 @@ h4 {
 }
 
 #top img, p {
-  display: inline;
+  display: inline !important;
   font-size: 12px;
 }
 
@@ -503,7 +503,7 @@ footer #bottom img.socialimg.hover {
   height: 100px;
 }
 #quote p {
-  display: block;
+  display: block !important;
   text-align: center;
 }
 #quote a {

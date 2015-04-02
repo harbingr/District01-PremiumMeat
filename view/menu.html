@@ -1,0 +1,27 @@
+
+<div class="menu">
+
+	<section class="section header">
+
+		<div class="sectionheader">
+			<div class="sectionline big"></div>
+			<div class="sectionline small"></div>
+				<h2 class="sectionposth">Menu</h2>
+			<div class="sectionline big right"></div>
+			<div class="sectionline small right"></div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="col span_1_of_4 list" ng-repeat="item in menu">
+			<img src="{{item.images[0].list}}" alt="{{item.name}}">
+			<div class="ingredienten">
+				<h1>{{item.name}}</h1>
+				<p>{{item.ingredients}}</p>
+			</div>
+		</div>
+
+	</section>
+
+</div>

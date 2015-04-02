@@ -1,0 +1,37 @@
+<div class="locatie">
+
+	<section class="section header">
+
+		<div class="sectionheader">
+			<div class="sectionline big"></div>
+			<div class="sectionline small"></div>
+				<h2 class="sectionposth">jobs</h2>
+			<div class="sectionline big right"></div>
+			<div class="sectionline small right"></div>
+		</div>
+	</section>
+
+	<section>
+		<div class="col span_1_of_3">
+			<img src="images/logo.png" alt="logo" class="LocatiesImg">
+		</div>
+
+<!-- ACCORDION -->
+		<div class="col span_2_of_3">
+			<div ng-repeat="item in jobs">
+				<accordion close-others="oneAtATime">
+					<accordion-group><!--is-open="status.open"-->
+						<accordion-heading><h2 class="accordionhead">
+							"{{item.title}} "<!--<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>-->
+							</h2>
+						</accordion-heading>
+						{{item.description}}
+					</accordion-group>
+			  </accordion>
+		</div>
+
+	</div>
+
+	</section>
+
+</div>

@@ -32,8 +32,8 @@
 	<script src="js/enquire/enquire.js"></script>
 	<script src="js/angular-enquire-breakpoints/src/breakpoints.js"></script>
 
-	<script src="js/collapse.js"></script>
-	<script src="js/menu.js"></script>
+	<script src="js/controllers/collapse.js"></script>
+	<script src="js/controllers/menu.js"></script>
 
 	<!--<script src="js/enquire.js"></script>-->
 	<!--<script>enquire.register(enquireQuery, enquireQueryHandler, true);</script>-->
@@ -44,8 +44,8 @@
 
 <div ng-include=" 'includes/header.html ' "></div>
 
-<main>
-
+<main ui-view>
+<!--
 <div class="menu">
 
 	<section class="section header">
@@ -72,7 +72,7 @@
 	</section>
 
 </div>
-
+-->
 </main>
 
 <div ng-include=" 'includes/footer.html' "></div>
