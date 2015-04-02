@@ -1,0 +1,25 @@
+
+	<div id="top">
+		<img src="images/mail.png" alt="mail icon" width="20"> <p>contact@district01.be</p>
+		<img src="images/phone.png" alt="phone icon" width="18"> <p>03/98.43.78.32</p>
+	</div>
+
+	<header>
+		<div class="wrap">
+			<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+
+			<div ng-controller="CollapseCtrl">
+				<button class="btn btn-default burger" ng-click="isCollapsed = !isCollapsed">Burger</button>
+				<div collapse="isCollapsed">
+						<nav class="wrap section group">
+							<ul>
+								<li class="after col span_1_of_6"><a ui-sref="menu">menu</a></li>
+								<li class="after col span_1_of_6"><a ui-sref="locaties">locaties</a></li>
+								<li class="before floatright col span_1_of_6 "><a ui-sref="franchise">franchise</a></li>
+								<li class="before floatright col span_1_of_6 "><a ui-sref="jobs">jobs</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+		</div>
+	</header>

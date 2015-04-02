@@ -1,0 +1,690 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'OswaldRegular';
+  src: url("Fonts/Oswald-Regular.otf");
+}
+@font-face {
+  font-family: 'OswaldBold';
+  src: url("Fonts/Oswald-Bold.otf");
+}
+@font-face {
+  font-family: 'OswaldLight';
+  src: url("Fonts/Oswald-Light.otf");
+}
+body {
+  font-family: 'OswaldRegular';
+  color: #352f2b;
+}
+
+header {
+  clear: both;
+  width: 100%;
+  height: 150px;
+  background-color: #f2f3ec;
+}
+
+section {
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: 'OswaldBold';
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-family: 'OswaldBold';
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-family: 'OswaldBold';
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-family: 'OswaldBold';
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 480px) {
+  .wrap {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+#top {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#top img, p {
+  display: inline;
+  font-size: 12px;
+}
+
+button.burger {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  button.burger {
+    display: block;
+    float: right;
+    margin-top: 50px;
+  }
+}
+
+header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+header img {
+  width: 25%;
+  margin-left: 30%;
+  position: absolute;
+  top: -1%;
+  max-width: 300px;
+}
+@media only screen and (max-width: 1200px) {
+  header img {
+    top: 1%;
+    margin-left: 29%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header img {
+    top: 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header img {
+    top: 3%;
+    margin-left: 28%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  header img {
+    top: 5%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header img {
+    top: 3%;
+    width: 200px;
+  }
+}
+
+nav {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+nav ul {
+  padding-top: 50px;
+}
+@media only screen and (max-width: 480px) {
+  nav ul {
+    padding-top: 60px;
+  }
+}
+nav ul li {
+  display: inline;
+}
+@media only screen and (max-width: 480px) {
+  nav ul li {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #352f2b;
+    color: #f2f3ec;
+  }
+  nav ul li:nth-child(even) {
+    background-color: #f2f3ec;
+    color: #352f2b;
+  }
+}
+nav ul li a {
+  display: inline;
+}
+@media only screen and (max-width: 480px) {
+  nav ul li a {
+    font-size: 25px;
+    margin-top: 25px;
+    color: #f2f3ec;
+  }
+  nav ul li a:nth-child(even) {
+    background-color: red;
+    color: #352f2b;
+  }
+}
+nav ul li.floatright {
+  float: right;
+}
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0px 10% 0px 10%;
+  color: #352f2b;
+}
+nav ul a:hover {
+  text-decoration: underline;
+}
+nav ul li.after:after {
+  content: "/";
+  color: #ca4123;
+  margin: 0 25%;
+}
+@media only screen and (max-width: 768px) {
+  nav ul li.after:after {
+    display: none;
+  }
+}
+nav ul li.before:before {
+  content: "/";
+  color: #ca4123;
+  margin: 0 25%;
+}
+@media only screen and (max-width: 768px) {
+  nav ul li.before:before {
+    display: none;
+  }
+}
+
+main {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+section {
+  overflow: hidden;
+}
+
+.sectionheader {
+  height: 100px;
+  margin-top: 55px;
+  position: relative;
+}
+.sectionheader .sectionposth {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 33%;
+}
+.sectionheader .sectionline {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 33%;
+}
+.sectionheader .sectionline.right {
+  left: auto;
+  right: 0;
+}
+.sectionheader .sectionline.big {
+  border-bottom: 3px solid #352f2b;
+}
+.sectionheader .sectionline.small {
+  top: 53px;
+  border-bottom: 1px solid #352f2b;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 15px;
+  height: 200px;
+  background-color: #352f2b;
+  color: #f2f3ec;
+  margin-top: 50px;
+}
+footer img {
+  float: left;
+  width: 20%;
+}
+footer nav {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+footer ul {
+  margin-top: 20px;
+}
+footer ul li {
+  display: inline;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #f2f3ec;
+  margin: 25px;
+}
+footer div#footmenu {
+  height: 130px;
+}
+footer p {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  margin-left: 75px;
+}
+@media only screen and (max-width: 1200px) {
+  footer p {
+    letter-spacing: 4px;
+    word-spacing: 4px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  footer p {
+    letter-spacing: 3px;
+    word-spacing: 3px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer p {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  footer p {
+    display: none;
+  }
+}
+footer .up {
+  float: right;
+}
+footer #bottom {
+  height: 50px;
+  background-color: #f2f3ec;
+  clear: both;
+  width: 100%;
+}
+footer #bottom ul {
+  padding: 10px 0px 10px 0px;
+}
+footer #bottom img.socialimg {
+  float: left;
+  width: 25px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+footer #bottom img.socialimg.hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.carousel {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
+.carousel img {
+  width: 100%;
+  top: 50px;
+  left: 0px;
+  min-height: 400px;
+}
+.carousel .carousel-control {
+  display: none;
+}
+.carousel .carousel-caption {
+  letter-spacing: 5px;
+  width: 50%;
+  height: 45%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  background-color: #ca4123;
+  opacity: 0.7;
+}
+
+.promo {
+  background-color: #5a8738;
+  color: #f2f3ec;
+  height: 140px;
+  position: relative;
+}
+.promo h2 {
+  line-height: 140%;
+  margin: -20px 10px;
+}
+.promo p {
+  color: #f2f3ec;
+  font-family: 'OswaldLight';
+  font-size: 14px;
+  display: block;
+}
+.promo .promoinfo {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+.promo span.prijs {
+  font-family: 'OswaldRegular';
+  letter-spacing: 4px;
+  color: #ca4123;
+  font-size: 25px;
+  margin-left: 10px;
+  line-height: 150%;
+}
+
+#blogposts {
+  clear: both;
+  width: 100%;
+  background-color: #f2f3ec;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 1px solid rgba(53, 47, 43, 0.1);
+  border-bottom: 1px solid rgba(53, 47, 43, 0.1);
+}
+
+.blog p {
+  color: #352f2b;
+  font-size: 14px;
+  font-family: 'OswaldLight';
+}
+.blog a {
+  color: #5a8738;
+  margin: 25px 0px 25px 0px;
+}
+.blog .imgblog {
+  width: 100%;
+}
+.blog .readmore {
+  display: block;
+  text-decoration: none;
+  margin-top: 15px !important;
+}
+.blog .readmore:hover {
+  text-decoration: underline;
+}
+
+#quote {
+  height: 100px;
+}
+#quote p {
+  display: block;
+  text-align: center;
+}
+#quote a {
+  color: #5a8738;
+  text-decoration: none;
+  margin: 0px;
+}
+#quote a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.menu div.col.list {
+  overflow: hidden;
+  position: relative;
+}
+.menu div.col.list:nth-child(4n + 1) {
+  margin-left: 0px;
+}
+@media only screen and (max-width: 960px) {
+  .menu div.col.list:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .menu div.col.list:nth-child(2n + 1) {
+    margin-left: 0px;
+  }
+}
+
+.ingredienten {
+  width: 100%;
+  opacity: 0.0;
+  position: absolute;
+  bottom: 40%;
+}
+.ingredienten p {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  padding-bottom: 10px;
+}
+
+div.col.list:hover .ingredienten {
+  opacity: 1;
+  display: block;
+}
+
+div.col.list:hover img {
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 960px) {
+  div.col {
+    width: 30% !important;
+    position: relative;
+  }
+
+  .ingredienten {
+    opacity: 1;
+    background-color: #f2f3ec;
+    position: relative;
+    top: 0px;
+  }
+
+  div.col:hover img {
+    opacity: 1;
+  }
+
+  p {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  div.col {
+    width: 48% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  div.col {
+    width: 100% !important;
+  }
+
+  img {
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.LocatiesSection .col {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .LocatiesSection .col div.col {
+    width: 20% !important;
+    position: relative;
+  }
+  .LocatiesSection .col div.col p {
+    text-align: left;
+  }
+}
+.LocatiesSection .LocatiesImg {
+  max-height: 200px;
+}
+.LocatiesSection a.detail {
+  color: #5a8738;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.LocatiesSection a.detail:hover {
+  text-decoration: underline;
+}
+.LocatiesSection .cleanslider {
+  margin-top: 0px;
+}
+.LocatiesSection:hover {
+  opacity: 1;
+}
+
+.locatie {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+#map {
+  margin-top: 50px;
+}
+
+.accordionhead {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0px;
+}
+
+.FranchiseSection {
+  margin-top: 0px;
+}
+.FranchiseSection div {
+  margin: 20px 0px 15px 0px;
+}
+.FranchiseSection h2, .FranchiseSection h3, .FranchiseSection ul {
+  margin-left: 15px;
+  font-family: 'OswaldRegular';
+  list-style-image: url("images/arrow.png");
+  list-style-position: inside;
+}
+.FranchiseSection ul#franchiselist {
+  list-style-image: url("images/arrow.png");
+}
+.FranchiseSection ul#franchiselist li {
+  list-style-image: url("images/arrow.png");
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.light {
+  background-color: #f2f3ec;
+  color: #352f2b;
+}
+
+.dark {
+  background-color: #352f2b;
+  color: #f2f3ec;
+}
+
+#franchisecontact {
+  text-align: center;
+  font-size: 20px;
+}
