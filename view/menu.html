@@ -13,12 +13,12 @@
 
 	</section>
 
-	<section>
+	<section ng-model="menu">
 		<div class="col span_1_of_4 list" ng-repeat="item in menu">
 			<img src="{{item.images[0].list}}" alt="{{item.name}}">
 			<div class="ingredienten">
-				<h1>{{item.name}}</h1>
-				<p>{{item.ingredients}}</p>
+				<h1  >{{item.name}}</h1>
+				<p >{{ item.ingredients.join(' - ') }}</p>
 			</div>
 		</div>
 
