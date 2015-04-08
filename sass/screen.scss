@@ -96,7 +96,13 @@ h4{
 	}
 
 #top{@include wrap(80%, 5px, 0px);}
-	#top img,p{display: inline !important; font-size: 12px;}
+	#top img,p{display: inline !important; font-size: 12px;
+	}
+	#top img{
+		@media only screen and (max-width: 480px) {
+			display: none !important;
+		}
+	}
 
 button.burger{
 	display: none;
@@ -125,7 +131,8 @@ header{@include wrap(100%, 0px, 25px);}
 		@media only screen and (max-width: 640px) {
 			top: 5%;}
 		@media only screen and (max-width: 480px) {
-			top:3%; width: 200px;}
+			top:3%; width: 50px !important;
+			display: none;}
 	}
 
 // MENU LIST ITEMS
@@ -286,6 +293,9 @@ footer{
 			&.hover{filter: grayscale(0%);}
 		}
 	}
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
 }
 //HOMEPAGE
 .carousel{
@@ -330,29 +340,38 @@ footer{
 	color: $light;
 	height: 140px;
 	position: relative;
-	@media only screen and (max-width: 1024px) {
-			}
-		@media only screen and (max-width: 992px) {
-			}
-		@media only screen and (max-width: 768px) {
-			}
+	h2{
+		line-height: 140%;
+		margin: -20px 10px;
 		@media only screen and (max-width: 640px) {
-			}
-		@media only screen and (max-width: 480px) {
-			}
-	h2{line-height: 140%; margin: -20px 10px;}
+			margin-top: 0px;
+			line-height: 100%; margin: 5px;
+			font-size: 25px;
+		}
+	}
 	p{
 		color: $light;
 		font-family: 'OswaldLight';
 		font-size: 14px;
 		display: block;
+		@media only screen and (max-width: 835px) {
+			display: none !important;
+		}
 	}
+
+	@media only screen and (max-width: 640px) {
+			/*width: 48% !important;*/}
+	@media only screen and (max-width: 480px) {
+			/*width: 100% !important;*/}
 
 	.promoinfo{
 		position: absolute;
 		bottom: 15px;
 		text-align: center;
 		width: 100%;
+		margin-bottom: 0px;
+		@media only screen and (max-width: 900px) {
+			bottom: 5px;}
 		}
 
 	span.prijs{
@@ -362,6 +381,10 @@ footer{
 		font-size: 25px;
 		margin-left: 10px;
 		line-height: 150%;
+		@media only screen and (max-width: 900px) {
+			font-size: 20px;
+			line-height: 100%;
+		}
 	}
 
 }
@@ -378,6 +401,9 @@ footer{
 }
 
 	.blog{
+		@media only screen and (max-width: 768px) {
+			width: 100%;
+		}
 		p{
 			color: $dark;
 			font-size: 14px;
@@ -497,17 +523,30 @@ footer{
 	&:hover{opacity: 1;}
 }
 
+.wrap{@include wrap(80%, 25px, 150px);}
+
 //LOCATIE
 .locatie{@include wrap(80%, 25px, 150px);}
 #map{margin-top: 50px;}
 
 //JOBS
+.jobs{
+	div.col{
+		@media only screen and (max-width: 960px){
+			div.col {width: 100% !important;}
+		}
+	}
+}
 .accordionhead{
 	font-size: 24px;
 	text-align: center;
 	letter-spacing: 2px;
 	margin: 0px;
+	@media only screen and (max-width: 630px){
+		font-size: 18px;
+	}
 }
+.JobsImg{width: 100%;}
 
 //FRANCHISE
 .FranchiseSection{margin-top: 0px;

@@ -148,6 +148,12 @@ h4 {
   font-size: 12px;
 }
 
+@media only screen and (max-width: 480px) {
+  #top img {
+    display: none !important;
+  }
+}
+
 button.burger {
   display: none;
 }
@@ -199,7 +205,8 @@ header img {
 @media only screen and (max-width: 480px) {
   header img {
     top: 3%;
-    width: 200px;
+    width: 50px !important;
+    display: none;
   }
 }
 
@@ -409,6 +416,11 @@ footer #bottom img.socialimg.hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
 }
+@media only screen and (max-width: 480px) {
+  footer {
+    display: none;
+  }
+}
 
 .carousel {
   margin-top: 50px;
@@ -457,17 +469,46 @@ footer #bottom img.socialimg.hover {
   line-height: 140%;
   margin: -20px 10px;
 }
+@media only screen and (max-width: 640px) {
+  .promo h2 {
+    margin-top: 0px;
+    line-height: 100%;
+    margin: 5px;
+    font-size: 25px;
+  }
+}
 .promo p {
   color: #f2f3ec;
   font-family: 'OswaldLight';
   font-size: 14px;
   display: block;
 }
+@media only screen and (max-width: 835px) {
+  .promo p {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .promo {
+    /*width: 48% !important;*/
+  }
+}
+@media only screen and (max-width: 480px) {
+  .promo {
+    /*width: 100% !important;*/
+  }
+}
 .promo .promoinfo {
   position: absolute;
   bottom: 15px;
   text-align: center;
   width: 100%;
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 900px) {
+  .promo .promoinfo {
+    bottom: 5px;
+  }
 }
 .promo span.prijs {
   font-family: 'OswaldRegular';
@@ -476,6 +517,12 @@ footer #bottom img.socialimg.hover {
   font-size: 25px;
   margin-left: 10px;
   line-height: 150%;
+}
+@media only screen and (max-width: 900px) {
+  .promo span.prijs {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
 #blogposts {
@@ -488,6 +535,11 @@ footer #bottom img.socialimg.hover {
   border-bottom: 1px solid rgba(53, 47, 43, 0.1);
 }
 
+@media only screen and (max-width: 768px) {
+  .blog {
+    width: 100%;
+  }
+}
 .blog p {
   color: #352f2b;
   font-size: 14px;
@@ -643,6 +695,14 @@ div.col.list:hover img {
   opacity: 1;
 }
 
+.wrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
 .locatie {
   width: 80%;
   margin-left: auto;
@@ -655,11 +715,26 @@ div.col.list:hover img {
   margin-top: 50px;
 }
 
+@media only screen and (max-width: 960px) {
+  .jobs div.col div.col {
+    width: 100% !important;
+  }
+}
+
 .accordionhead {
   font-size: 24px;
   text-align: center;
   letter-spacing: 2px;
   margin: 0px;
+}
+@media only screen and (max-width: 630px) {
+  .accordionhead {
+    font-size: 18px;
+  }
+}
+
+.JobsImg {
+  width: 100%;
 }
 
 .FranchiseSection {
