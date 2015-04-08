@@ -5,13 +5,14 @@
 	</div>
 
 	<header>
-		<div class="wrap">
+		<div class="menuwrap">
+
 			<a ui-sref="home"><img src="images/logo.png" alt="logo"></a>
 
-			<div ><!--ng-controller="CollapseCtrl" -->
+			<div><!--ng-controller="CollapseCtrl" -->
 				<button class="btn btn-default burger" ng-click="isCollapsed = !isCollapsed">Burger</button>
 				<div collapse="isCollapsed">
-						<nav class="wrap section group">
+						<nav class="section group nav">
 							<ul>
 								<li class="after col span_1_of_6"><a ui-sref="menu">menu</a></li>
 								<li class="after col span_1_of_6"><a ui-sref="locaties">locaties</a></li>

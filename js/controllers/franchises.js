@@ -7,7 +7,6 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 	$scope.franchises = [];
 	$http.get(servicepath + 'franchises/nl.json').then(function(res){
 		$scope.franchises = res.data;
-
 		//console.log($scope.franchises[0].name);
 		//console.log($scope.franchises[0].description);
 	});

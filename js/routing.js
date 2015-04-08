@@ -1,13 +1,14 @@
 var PremiumMeat = angular.module('PremiumMeat', [
 	"ui.router",
 	"ui.bootstrap",
+	//"angular-touch",
+	//"bootstrapLightbox",
 	"ngScrollTo"
 	])
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide) {
 
 $urlRouterProvider.otherwise("/");
-
 	$stateProvider
 		.state('home', {
 			url: "/",
@@ -67,4 +68,5 @@ $urlRouterProvider.otherwise("/");
 				url: "/boechout",
 				templateUrl: "view/franchise.luik.html",
 			})
+			//https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/
 });

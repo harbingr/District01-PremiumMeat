@@ -1,3 +1,4 @@
+
 <div class="locatie" ng-controller="FranchisesCtrl">
 
 	<section class="section header">
@@ -21,6 +22,12 @@
 			</carousel>
 
 			<div>
+<!--
+				<button ng-lightbox='{"trigger": "manual", "element": "lightbox"}'>Let there be light</button>
+				<div class="lightbox" id="lightbox">
+					<h1>and He saw it was good</h1>
+				</div>
+-->
 				<ul id="gallery" >
 					<li ng-repeat="image in images">
 						<a ng-click="openLightboxModal($index)">
