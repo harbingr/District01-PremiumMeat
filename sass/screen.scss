@@ -566,6 +566,24 @@ footer{
 			background-position: 0px 0px;
 		}
 	}
+	.franchiseselect{
+		.franchiseselectlist{
+			width: 100%;
+			//background-color: $light;
+			border-right: 2px solid $dark;
+		}
+		a{
+			display: block;
+			font-size: 26px;
+			color: $dark;
+			margin: 0px 15px 53px 15px;
+		}
+	}
+	.franchisecontent{
+		h1{padding-top: 0px;}
+		h3{margin-left: 25px;}
+		img{margin-left: 25px;	}
+	}
 
 }
 	.light{background-color: $light; color: $dark;}

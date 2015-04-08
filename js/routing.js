@@ -47,8 +47,24 @@ $urlRouterProvider.otherwise("/");
 				url: "/kontich",
 				templateUrl: "view/franchise.kontich.html",
 			})
-			.state('franchise.duffel', {
-				url: "/duffel",
-				templateUrl: "view/franchise.duffel.html",
+			.state('franchise.brussel', {
+				url: "/brussel",
+				templateUrl: "view/franchise.brussel.html",
+			})
+			.state('franchise.gent', {
+				url: "/gent",
+				templateUrl: "view/franchise.gent.html",
+			})
+			.state('franchise.boechout', {
+				url: "/boechout",
+				templateUrl: "view/franchise.boechout.html",
+			})
+			.state('franchise.brugge', {
+				url: "/brugge",
+				templateUrl: "view/franchise.brugge.html",
+			})
+			.state('franchise.luik', {
+				url: "/boechout",
+				templateUrl: "view/franchise.luik.html",
 			})
 });

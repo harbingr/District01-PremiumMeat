@@ -37,12 +37,15 @@
 
 		<div class="col span_2_of_3">
 			<!--http://stackoverflow.com/questions/16872191/angularjs-ui-bootstrap-tabs-that-support-routing-->
-			<div class="col span_1_of_4">
-				<tabset vertical="true" type="pills">
-					<tab ng-repeat="item in franchises" heading="{{item.name}}"></tab>
-						<a ui-sref=".kontich">kontich</a>
-						<a ui-sref=".duffel">duffel</a>
-				</tabset>
+			<div class="col span_1_of_4 franchiseselect" >
+				<ul class="franchiseselectlist">
+					<a ui-sref=".kontich">Kontich</a>
+					<a ui-sref=".brussel">Brussel</a>
+					<a ui-sref=".gent">Gent</a>
+					<a ui-sref=".boechout">Boechout</a>
+					<a ui-sref=".brugge">Brugge</a>
+					<a ui-sref=".luik">Luik</a>
+				</ul>
 <!--
 				<tabset vertical="true" type="pills">
 					<tab select="setSelectedTab(item)"
@@ -55,12 +58,9 @@
 -->
 			</div>
 
-			<div class="col span_3_of_4" ui-view>
+			<div class="col span_3_of_4 franchisecontent" ui-view>
 
 			</div>
-
-			<img src="{{franchises[0].images[0].list}}" alt="{{franchises[0].images[0].list}}">
-			<p>{{franchises[0].description}}</p>
 
 		</div>
 
