@@ -352,6 +352,20 @@ footer {
   color: #f2f3ec;
   margin-top: 50px;
 }
+footer .footwrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .bottomwrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 footer img {
   float: left;
   width: 20%;
@@ -376,6 +390,16 @@ footer ul li a {
   text-decoration: none;
   color: #f2f3ec;
   margin: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  footer ul li a {
+    margin: 15px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  footer ul li a {
+    margin: 5px;
+  }
 }
 footer div#footmenu {
   height: 130px;
@@ -662,6 +686,10 @@ div.col.list:hover .ingredienten {
 
 div.col.list:hover img {
   opacity: 0.4;
+}
+
+div.col.list.loc:hover img {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 960px) {

@@ -250,6 +250,9 @@ footer{
 	color: $light;
 	margin-top: 50px;
 
+	.footwrap{@include wrap(80%, 20px, 20px);}
+	.bottomwrap{@include wrap(80%, 20px, 20px);}
+
 	img{float: left; width: 20%;}
 
 	nav{
@@ -265,9 +268,16 @@ footer{
 				text-decoration:  none;
 				color: $light;
 				margin:  25px;
+				@media only screen and (max-width: 1024px) {
+					margin: 15px;
+				}
+				@media only screen and (max-width: 850px) {
+					margin: 5px;
+				}
 			}
 		}
 	}
+
 	div#footmenu{height: 130px;}
 	p{
 		letter-spacing: 5px;
@@ -455,17 +465,15 @@ footer{
 //EETMENU
 .menu{
 	@include wrap(80%, 25px, 25px);
-	@mixin child($rows) {
-		&:nth-child(#{$rows}n + 1){
-			margin-left: 0px;
-		}
+	@mixin rowmargin($rows) {
+		&:nth-child(#{$rows}n + 1){margin-left: 0px;}
 	}
 	div.col.list{
 		overflow: hidden;
 		position: relative;
-		@include child(4);
-		@media only screen and (max-width: 960px){@include child(3);}
-		@media only screen and (max-width: 640px){@include child(2);}
+		@include rowmargin(4);
+		@media only screen and (max-width: 960px){@include rowmargin(3);}
+		@media only screen and (max-width: 640px){@include rowmargin(2);}
 	}
 }
 		.ingredienten{
@@ -489,6 +497,10 @@ footer{
 		div.col.list:hover img{
 			opacity: 0.4;
 		}
+		div.col.list.loc:hover img{
+			opacity: 1;
+		}
+
 
 	@media only screen and (max-width: 960px) {
 		div.col{width: 30% !important; position: relative;}
