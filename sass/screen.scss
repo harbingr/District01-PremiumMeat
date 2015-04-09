@@ -44,8 +44,8 @@
 //CSS
 //REUSED ELEMENTS
 body {
-   font-family: 'OswaldRegular';
-   color: $dark;
+	font-family: 'OswaldRegular';
+	color: $dark;
 }
 
 header{
@@ -87,14 +87,7 @@ h4{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-.locatie{
-	@include wrap(80%, 10px, 5px);
-		@media only screen and (max-width: 480px) {
-			@include wrap(100%, 15px, 5px);
-		}
-	}
-
+//TOP CONTACT MINI MENU
 #top{@include wrap(80%, 5px, 0px);}
 	#top img,p{display: inline !important; font-size: 12px;
 	}
@@ -103,16 +96,6 @@ h4{
 			display: none !important;
 		}
 	}
-
-button.burger{
-	display: none;
-	@media only screen and (max-width: 480px) {
-				display: block;
-				float: right;
-				margin-top: 50px;
-			}
-}
-
 //NAVIGATIEMENU
 //MENU IMG
 header{
@@ -124,8 +107,15 @@ header{
 			@include wrap(100%, 0px, 0px);
 		}
 	}
-}
-	header img{
+	button.burger{
+		display: none;
+		@media only screen and (max-width: 480px) {
+			display: block;
+			float: right;
+			margin-top: 50px;
+		}
+	}
+	img{
 		width: 25%;
 		margin-left: 30%;
 		position: absolute;
@@ -142,6 +132,7 @@ header{
 		@media only screen and (max-width: 480px) {
 			top: 3%; display: none;}
 	}
+}
 
 // MENU LIST ITEMS
 	nav{
@@ -503,7 +494,7 @@ footer{
 
 
 	@media only screen and (max-width: 960px) {
-		div.col{width: 30% !important; position: relative;}
+		div.col.list{width: 30% !important; position: relative;}
 		.ingredienten{
 			opacity: 1;
 			background-color: $light;
@@ -512,7 +503,6 @@ footer{
 		}
 		div.col:hover img{opacity: 1;}
 		p{
-			//font-size: 20px;
 			text-align: center;
 			display: block;
 			padding-bottom: 10px;
@@ -520,11 +510,11 @@ footer{
 	}
 
 	@media only screen and (max-width: 640px) {
-		div.col{ width: 48% !important; }
+		div.col.list{ width: 48% !important; }
 	}
 
 	@media only screen and (max-width: 480px) {
-		div.col{ width: 100% !important; }
+		div.col.list{ width: 100% !important; }
 		img{
 			min-width: 480px;
 			margin-left: auto;
@@ -557,26 +547,41 @@ footer{
 }
 
 //LOCATIE
-.locatie{@include wrap(80%, 25px, 150px);}
+.locatie{
+	@include wrap(80%, 10px, 5px);
+		@media only screen and (max-width: 480px) {
+			@include wrap(100%, 15px, 5px);
+		}
+	}
 #map{margin-top: 50px;}
 
 //JOBS
 	.jobs{@include wrap(80%, 25px, 150px);
-		div.col{
+		div.col.joblogo{
+			margin-top: 5%;
 			@media only screen and (max-width: 960px){
-				div.col {width: 100% !important;
+				width: 32% !important;
+				margin-top: 10%;
+			}
+			@media only screen and (max-width: 640px){
+				display: none;
+			}
+		}
+		div.col.nocollapse{
+			@media only screen and (max-width: 960px){
+				width: 66.13% !important;
+			}
+			@media only screen and (max-width: 640px){
+				width: 100% !important;
 			}
 		}
 	}
-}
+
 .accordionhead{
 	font-size: 24px;
 	text-align: center;
 	letter-spacing: 2px;
 	margin: 0px;
-	@media only screen and (max-width: 630px){
-		font-size: 18px;
-	}
 }
 .JobsImg{width: 100%;}
 
@@ -599,9 +604,11 @@ footer{
 		}
 	}
 	.franchiseselect{
+		@media only screen and (max-width: 960px){
+				width:23.8% !important;
+			}
 		.franchiseselectlist{
 			width: 100%;
-			//background-color: $light;
 			border-right: 2px solid $dark;
 		}
 		a{
@@ -615,8 +622,10 @@ footer{
 		h1{padding-top: 0px;}
 		h3{margin-left: 25px;}
 		img{margin-left: 25px;	}
+		@media only screen and (max-width: 960px){
+				width:74.6% !important;
+			}
 	}
-
 }
 	.light{background-color: $light; color: $dark;}
 	.dark{background-color: $dark; color: $light;}

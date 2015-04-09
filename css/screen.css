@@ -121,23 +121,6 @@ h4 {
   padding-bottom: 10px;
 }
 
-.locatie {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-@media only screen and (max-width: 480px) {
-  .locatie {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-}
-
 #top {
   width: 80%;
   margin-left: auto;
@@ -154,17 +137,6 @@ h4 {
 @media only screen and (max-width: 480px) {
   #top img {
     display: none !important;
-  }
-}
-
-button.burger {
-  display: none;
-}
-@media only screen and (max-width: 480px) {
-  button.burger {
-    display: block;
-    float: right;
-    margin-top: 50px;
   }
 }
 
@@ -192,7 +164,16 @@ header .menuwrap {
     margin-bottom: 0px;
   }
 }
-
+header button.burger {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  header button.burger {
+    display: block;
+    float: right;
+    margin-top: 50px;
+  }
+}
 header img {
   width: 25%;
   margin-left: 30%;
@@ -693,7 +674,7 @@ div.col.list.loc:hover img {
 }
 
 @media only screen and (max-width: 960px) {
-  div.col {
+  div.col.list {
     width: 30% !important;
     position: relative;
   }
@@ -716,12 +697,12 @@ div.col.list.loc:hover img {
   }
 }
 @media only screen and (max-width: 640px) {
-  div.col {
+  div.col.list {
     width: 48% !important;
   }
 }
 @media only screen and (max-width: 480px) {
-  div.col {
+  div.col.list {
     width: 100% !important;
   }
 
@@ -775,8 +756,17 @@ div.col.list.loc:hover img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 150px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 480px) {
+  .locatie {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
 }
 
 #map {
@@ -790,8 +780,27 @@ div.col.list.loc:hover img {
   margin-top: 25px;
   margin-bottom: 150px;
 }
+.jobs div.col.joblogo {
+  margin-top: 5%;
+}
 @media only screen and (max-width: 960px) {
-  .jobs div.col div.col {
+  .jobs div.col.joblogo {
+    width: 32% !important;
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .jobs div.col.joblogo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .jobs div.col.nocollapse {
+    width: 66.13% !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .jobs div.col.nocollapse {
     width: 100% !important;
   }
 }
@@ -801,11 +810,6 @@ div.col.list.loc:hover img {
   text-align: center;
   letter-spacing: 2px;
   margin: 0px;
-}
-@media only screen and (max-width: 630px) {
-  .accordionhead {
-    font-size: 18px;
-  }
 }
 
 .JobsImg {
@@ -833,6 +837,11 @@ div.col.list.loc:hover img {
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
+@media only screen and (max-width: 960px) {
+  .FranchiseSection .franchiseselect {
+    width: 23.8% !important;
+  }
+}
 .FranchiseSection .franchiseselect .franchiseselectlist {
   width: 100%;
   border-right: 2px solid #352f2b;
@@ -851,6 +860,11 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .franchisecontent img {
   margin-left: 25px;
+}
+@media only screen and (max-width: 960px) {
+  .FranchiseSection .franchisecontent {
+    width: 74.6% !important;
+  }
 }
 
 .light {
