@@ -809,6 +809,15 @@ div.col.list.loc:hover img {
     width: 100% !important;
   }
 }
+.jobs .jobknop {
+  background-color: #352f2b;
+  color: #f2f3ec;
+  height: 35px;
+  width: 250px;
+  border-radius: 0px;
+  float: right;
+  margin-top: 40px;
+}
 
 .accordionhead {
   font-size: 24px;
