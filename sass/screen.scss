@@ -647,3 +647,23 @@ footer{
 	.dark{background-color: $dark; color: $light;}
 
 	#franchisecontact{text-align: center; font-size: 20px;}
+
+//CONTACT
+.contact{
+	@include wrap(80%, 25px, 50px);
+	select{
+		width: 100%;
+	}
+	button{
+		width: 250px;
+		background-color: $dark;
+		border-radius: 0px;
+		font-size: 18px;
+	}
+}
+.contactgeg{
+	h2,h4,h6{margin-bottom: 15px;}
+	h6{margin-top: 20px;}
+	h2{text-align: left;}
+	p{font-size: 20px;}
+}

@@ -886,3 +886,33 @@ div.col.list.loc:hover img {
   text-align: center;
   font-size: 20px;
 }
+
+.contact {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.contact select {
+  width: 100%;
+}
+.contact button {
+  width: 250px;
+  background-color: #352f2b;
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+.contactgeg h2, .contactgeg h4, .contactgeg h6 {
+  margin-bottom: 15px;
+}
+.contactgeg h6 {
+  margin-top: 20px;
+}
+.contactgeg h2 {
+  text-align: left;
+}
+.contactgeg p {
+  font-size: 20px;
+}
