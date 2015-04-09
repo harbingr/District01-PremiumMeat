@@ -149,7 +149,7 @@ header {
   z-index: 2 !important;
 }
 header .menuwrap {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -176,29 +176,25 @@ header button.burger {
 }
 header img {
   width: 25%;
-  margin-left: 30%;
+  margin-left: 25%;
   position: absolute;
   top: -1%;
   max-width: 300px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   header img {
-    top: 1%;
-  }
-}
-@media only screen and (max-width: 992px) {
-  header img {
-    top: 2%;
+    top: 0%;
   }
 }
 @media only screen and (max-width: 768px) {
   header img {
-    top: 3%;
+    margin-left: 23%;
+    top: 1%;
   }
 }
 @media only screen and (max-width: 640px) {
   header img {
-    top: 5%;
+    top: 2%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -455,7 +451,6 @@ footer #bottom img.socialimg.hover {
   width: 100%;
   top: 50px;
   left: 0px;
-  min-height: 400px;
 }
 .carousel .carousel-control {
   display: none;
@@ -735,10 +730,13 @@ div.col.list.loc:hover img {
   text-decoration: none;
 }
 .LocatiesSection a.detail:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .LocatiesSection .cleanslider {
   margin-top: 0px;
+}
+.LocatiesSection .cleanslider img {
+  width: 100%;
 }
 .LocatiesSection:hover {
   opacity: 1;
@@ -771,6 +769,13 @@ div.col.list.loc:hover img {
 
 #map {
   margin-top: 50px;
+}
+
+#locatieimgsq ul li img {
+  display: inline;
+  float: left;
+  margin: 15px 5px 0px 0px;
+  width: 15%;
 }
 
 .jobs {

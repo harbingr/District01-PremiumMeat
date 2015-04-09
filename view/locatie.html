@@ -15,11 +15,19 @@
 	<section class="LocatiesSection">
 		<div class="col span_1_of_2 cleanslider">
 
-			<carousel interval="myInterval" class="carousel locatiecar">
-				<slide ng-repeat="item in franchises" active="slide.active">
-					<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}">
-				</slide>
-			</carousel>
+			<!--<carousel interval="myInterval" class="carousel locatiecar">
+				<slide ng-repeat="slide in slides" active="slide.active">-->
+					<img src="{{franchises[0].images[0].list}}" alt="{{franchises[0].images[0].list}}">
+				<!--</slide>
+			</carousel>-->
+
+			<div id="locatieimgsq">
+				<ul ng-repeat="item in franchises">
+					<li>
+						<img ng-src="{{item.images[0].list}}" alt="{{item.images[0].list}}">
+					</li>
+				</ul>
+			</div>
 
 			<div>
 <!--

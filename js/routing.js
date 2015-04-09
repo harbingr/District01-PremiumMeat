@@ -69,4 +69,9 @@ $urlRouterProvider.otherwise("/");
 				templateUrl: "view/franchise.luik.html",
 			})
 			//https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/
+		.state('contact', {
+			url: "/contact",
+			//controller: "ContactCtrl",
+			templateUrl: "view/contact.html"
+		})
 });

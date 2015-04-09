@@ -102,7 +102,7 @@ header{
 	@include wrap(100%, 0px, 25px);
 	z-index: 2 !important;
 	.menuwrap{
-		@include wrap(80%, 0px, 25px);
+		@include wrap(70%, 0px, 25px);
 		@media only screen and (max-width: 480px) {
 			@include wrap(100%, 0px, 0px);
 		}
@@ -117,18 +117,16 @@ header{
 	}
 	img{
 		width: 25%;
-		margin-left: 30%;
+		margin-left: 25%;
 		position: absolute;
 		top: -1%;
 		max-width: 300px;
-		@media only screen and (max-width: 1200px) {
-			top: 1%;}
-		@media only screen and (max-width: 992px) {
-			top: 2%;}
+		@media only screen and (max-width: 1024px) {
+			top: 0%;}
 		@media only screen and (max-width: 768px) {
-			top: 3%;}
+			margin-left: 23%; top: 1%;}
 		@media only screen and (max-width: 640px) {
-			top: 5%;}
+			top: 2%;}
 		@media only screen and (max-width: 480px) {
 			top: 3%; display: none;}
 	}
@@ -319,7 +317,6 @@ footer{
 		width: 100%;
 		top: 50px;
 		left: 0px;
-		min-height: 400px;
 		//max-height: 401px;
 	}
 	.carousel-control{display: none;}
@@ -537,9 +534,16 @@ footer{
 		display: block;
 		margin-top: 15px;
 		text-decoration: none;
-		&:hover{text-decoration: underline;}
+		&:hover{
+			text-decoration: underline !important;
+		}
 	}
-	.cleanslider{margin-top: 0px;}
+	.cleanslider{
+		margin-top: 0px;
+			img{
+				width: 100%;
+			}
+		}
 	&:hover{opacity: 1;}
 }
 
@@ -554,6 +558,18 @@ footer{
 		}
 	}
 #map{margin-top: 50px;}
+#locatieimgsq{
+	ul{
+		li{
+			img{
+				display: inline;
+				float: left;
+				margin: 15px 5px 0px 0px;
+				width: 15%;
+			}
+		}
+	}
+}
 
 //JOBS
 	.jobs{@include wrap(80%, 25px, 150px);
