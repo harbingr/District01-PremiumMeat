@@ -9,6 +9,7 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 		$scope.franchises = res.data;
 		//console.log($scope.franchises[0].name);
 		//console.log($scope.franchises[0].description);
+		//console.log($scope.franchises[0].location[0].long);
 	});
 
 });

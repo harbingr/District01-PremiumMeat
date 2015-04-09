@@ -43,8 +43,11 @@
 			<div>
 				<h3>Bezoek {{ franchises[ID-1].name }}</h3>
 				<p>{{ franchises[ID-1].description }}</p>
-
-				<img src="https://maps.googleapis.com/maps/api/staticmap?center=51.142070,4.442977&zoom=14&size=700x300&maptype=roadmap&markers=51.142070,4.442977&key=AIzaSyBGPdCnpglb4ok6k8BaVuF0srvPR7Gg770" alt="location" id="map" width="600">
+				<img ng-src="https://maps.googleapis.com/maps/api/staticmap?center=
+				{{franchises[ID-1].location[0].lat}},{{ franchises[ID-1].location[0].long}}
+				&zoom=11&size=700x300&maptype=roadmap&markers=
+				{{franchises[ID-1].location[0].lat}},{{ franchises[ID-1].location[0].long}}
+				&key=AIzaSyBGPdCnpglb4ok6k8BaVuF0srvPR7Gg770" alt="location" id="map" width="600">
 			</div>
 		</div>
 
