@@ -1,0 +1,61 @@
+{
+  "name": "angular-google-analytics",
+  "description": "Angular Google Analytics - Easy tracking for your AngularJS application",
+  "version": "0.0.5",
+  "homepage": "http://github.com/revolunet/angular-google-analytics",
+  "author": {
+    "name": "Julien Bouquillon",
+    "email": "julien@revolunet.com"
+  },
+  "main": "./src/angular-google-analytics.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/revolunet/angular-google-analytics.git"
+  },
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://revolunet.mit-license.org"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "~ 0.8.0",
+    "grunt": ">= 0.4.0",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-release": "~0.3.3",
+    "grunt-conventional-changelog": "0.0.12"
+  },
+  "scripts": {
+    "test": "karma start test/karma.conf.js --single-run --browsers Chrome",
+    "test-server": "karma start test/karma.conf.js --browsers Chrome"
+  },
+  "bugs": {
+    "url": "https://github.com/revolunet/angular-google-analytics/issues"
+  },
+  "_id": "angular-google-analytics@0.0.5",
+  "_shasum": "cf48cac81b12335a3be133cbc62a9166edf54d79",
+  "_from": "angular-google-analytics@",
+  "_npmVersion": "1.4.7",
+  "_npmUser": {
+    "name": "revolunet",
+    "email": "julien@revolunet.com"
+  },
+  "maintainers": [
+    {
+      "name": "revolunet",
+      "email": "julien@revolunet.com"
+    }
+  ],
+  "dist": {
+    "shasum": "cf48cac81b12335a3be133cbc62a9166edf54d79",
+    "tarball": "http://registry.npmjs.org/angular-google-analytics/-/angular-google-analytics-0.0.5.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-google-analytics/-/angular-google-analytics-0.0.5.tgz"
+}
