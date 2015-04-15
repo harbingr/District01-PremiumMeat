@@ -444,7 +444,33 @@ footer #bottom img.socialimg.hover {
 }
 
 .carouselwrap {
-  height: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1300px) {
+  .carouselwrap {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .carouselwrap {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .carouselwrap {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carouselwrap {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .carouselwrap {
+    height: 200px;
+  }
 }
 
 .carousel {
@@ -473,7 +499,29 @@ footer #bottom img.socialimg.hover {
   background-color: #ca4123;
   opacity: 0.7;
 }
-.carousel .carousel-caption ol.carousel-indicators {
+@media only screen and (max-width: 1024px) {
+  .carousel .carousel-caption h1 {
+    font-size: 24px;
+    padding-top: 5px;
+  }
+  .carousel .carousel-caption h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .carousel .carousel-caption h1 {
+    font-size: 20px;
+  }
+  .carousel .carousel-caption h4 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carousel .carousel-caption {
+    height: 30%;
+  }
+}
+.carousel .carousel-caption .carousel-indicators {
   display: none;
 }
 @media only screen and (max-width: 800px) {

@@ -306,7 +306,18 @@ footer{
 	}
 }
 //HOMEPAGE
-.carouselwrap{height: 400px;}
+.carouselwrap{height: 450px; overflow: hidden;
+	@media only screen and (max-width: 1300px) {
+			height: 400px;}
+	@media only screen and (max-width: 1024px) {
+			height: 350px;}
+	@media only screen and (max-width: 860px) {
+			height: 300px;}
+	@media only screen and (max-width: 768px) {
+			height: 250px;}
+	@media only screen and (max-width: 640px) {
+			height: 200px;}
+}
 .carousel{
 	margin-top: 50px;
 	position: relative;
@@ -331,7 +342,18 @@ footer{
 		left: 50%;
 		background-color: $red;
 		opacity: 0.7;
-	ol.carousel-indicators{display: none;}
+		@media only screen and (max-width: 1024px) {
+				h1{font-size: 24px; padding-top: 5px;}
+				h4{font-size: 18px;}
+			}
+		@media only screen and (max-width: 960px) {
+				h1{font-size: 20px;}
+				h4{font-size: 16px;}
+			}
+		@media only screen and (max-width: 800px) {
+				height: 30%;}
+
+	.carousel-indicators{display: none;}
 
 		 h4{
 			@media only screen and (max-width: 800px) {
@@ -343,7 +365,6 @@ footer{
 			}
 
 	}
-	.carousel-indicators{}
 }
 //PROMOS
 .promo{
