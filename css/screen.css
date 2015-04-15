@@ -1028,19 +1028,28 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .franchisecontent h3 {
   margin-left: 25px;
-  width: 400px;
+  width: 500px;
 }
 .FranchiseSection .franchisecontent img {
   margin-left: 25px;
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .FranchiseSection .franchisecontent h3 {
+    width: 400px;
+  }
 }
 @media only screen and (max-width: 960px) {
   .FranchiseSection .franchisecontent {
     width: 74.6% !important;
   }
+  .FranchiseSection .franchisecontent h3 {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 630px) {
   .FranchiseSection .franchisecontent h3 {
-    width: 300px;
+    width: 200px;
   }
 }
 @media only screen and (max-width: 480px) {

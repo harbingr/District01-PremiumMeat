@@ -4,8 +4,8 @@ var servicepath = "http://franchise.district01.be/api/";
 angular.module('PremiumMeat').controller('CarouselCtrl', function ($scope, $http) {
 	$scope.myInterval = 5000;
 	$scope.slides = [];
+	console.log('gogogo');
   	$http.get('services/homepage-slider.json').then(function(res){
-
 		for (var i = 0; i < res.data.slides.length; i++) {
 			var slide = {
 				image: res.data.slides[i].images[0].slider,
