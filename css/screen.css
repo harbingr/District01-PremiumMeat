@@ -895,6 +895,9 @@ div.col.list.loc:hover img {
   text-align: center;
   font-size: 20px;
 }
+#franchisecontact a {
+  color: #f2f3ec;
+}
 
 .contact {
   width: 80%;
@@ -906,11 +909,17 @@ div.col.list.loc:hover img {
 .contact select {
   width: 100%;
 }
-.contact button {
+.contact .formsubmit {
   width: 250px;
-  background-color: #352f2b;
-  border-radius: 0px;
   font-size: 18px;
+  background-color: #352f2b;
+  border-color: #352f2b;
+  border-radius: 4px;
+}
+.contact .formsubmit :hover {
+  text-decoration: underline;
+  background-color: #f2f3ec;
+  color: #352f2b;
 }
 
 .contactgeg h2, .contactgeg h4, .contactgeg h6 {

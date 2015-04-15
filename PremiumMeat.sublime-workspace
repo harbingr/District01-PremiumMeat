@@ -4,20 +4,64 @@
 		"selected_items":
 		[
 			[
-				"pos",
-				"pos-r	position: relative;"
+				"fon",
+				"font-size"
+			],
+			[
+				"bord",
+				"border-radius"
 			],
 			[
 				"mar",
-				"margin-bottom"
+				"margin-top"
 			],
 			[
-				"padd",
-				"padding"
+				"w",
+				"width"
 			],
 			[
 				"marg",
 				"margin-top"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"li",
+				"light"
+			],
+			[
+				"Loca",
+				"locationName"
+			],
+			[
+				"st",
+				"stateParams"
+			],
+			[
+				"loc",
+				"locationName"
+			],
+			[
+				"ac",
+				"activateTab"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
 			],
 			[
 				"back",
@@ -34,10 +78,6 @@
 			[
 				"fo",
 				"font-family"
-			],
-			[
-				"pad",
-				"padding"
 			],
 			[
 				"text",
@@ -68,10 +108,6 @@
 				"customers"
 			],
 			[
-				"fu",
-				"function"
-			],
-			[
 				"m",
 				"margin"
 			],
@@ -90,10 +126,6 @@
 			[
 				"g",
 				"geolong"
-			],
-			[
-				"li",
-				"lis-n	list-style: none;"
 			],
 			[
 				"backgr",
@@ -136,10 +168,6 @@
 				"panel2"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
 				"banner",
 				"bannertopper"
 			],
@@ -161,10 +189,6 @@
 			],
 			[
 				"wid",
-				"width"
-			],
-			[
-				"w",
 				"width"
 			],
 			[
@@ -490,48 +514,56 @@
 			[
 				"ar",
 				"artists"
-			],
-			[
-				"artist",
-				"artistname"
-			],
-			[
-				"P",
-				"post"
-			],
-			[
-				"pi",
-				"picture"
-			],
-			[
-				"inl",
-				"inline"
-			],
-			[
-				"pla",
-				"places"
-			],
-			[
-				"php",
-				"php"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "js/collapse.js",
+			"file": "view/home.html",
 			"settings":
 			{
-				"buffer_size": 833,
+				"buffer_size": 1530,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "services/jobs.json",
+			"file": "view/locatie.html",
 			"settings":
 			{
-				"buffer_size": 993,
+				"buffer_size": 1944,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/jobs.html",
+			"settings":
+			{
+				"buffer_size": 1101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/contact.html",
+			"settings":
+			{
+				"buffer_size": 2503,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/controllers/franchises.js",
+			"settings":
+			{
+				"buffer_size": 681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 12772,
 				"line_ending": "Unix"
 			}
 		}
@@ -568,6 +600,47 @@
 	},
 	"file_history":
 	[
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/home.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/contact.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/index.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/includes/header.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/jobs.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/franchises.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/contact.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/routing.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locatie.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/home.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/menu.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/menu.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locaties.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/includes/footer.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/PremiumMeat.sublime-project",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/carousel.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/home.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.boechout.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/angular/angular-lightbox.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/css/light.css",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/ng-lightbox.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.luik.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.brugge.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.gent.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.brussel.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.kontich.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.duffel.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/tabselect.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locaties.antwerp.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/franchise.kontich.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/jobs.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/sass/screen.scss",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/collapse.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/html/locaties.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/locaties.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/menu.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/angular/angular-ui-router.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/gulpfile.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/collapse.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/services/jobs.json",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat2015/development/js/accordion.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat2015/development/franchise.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat2015/development/jobs.html",
@@ -654,48 +727,7 @@
 		"/Applications/MAMP/htdocs/school/Herexamens/voting/voting.php",
 		"/Users/robbertsegers/Desktop/Harbinger/Website/jquery-parallax-1.1.3/index.html",
 		"/Users/robbertsegers/Desktop/Harbinger/Website/jquery-parallax-1.1.3/index.php",
-		"/Applications/MAMP/htdocs/school/Herexamens/voting.js",
-		"/Applications/MAMP/htdocs/school/Herexamens/voting/config.php",
-		"/Users/robbertsegers/Desktop/voting/up_vote.php",
-		"/Applications/MAMP/htdocs/school/Herexamens/style.css",
-		"/Applications/MAMP/htdocs/school/Herexamens/classes/DB.class.php",
-		"/Applications/MAMP/htdocs/school/Herexamens/classes/User.class.php",
-		"/Applications/MAMP/htdocs/school/Herexamens/logout.php",
-		"/Applications/MAMP/htdocs/school/PHP/Oefeningen/CMS/index.php",
-		"/Applications/MAMP/htdocs/school/PHP/Oefeningen/CMS/classes/User.class.php",
-		"/Applications/MAMP/htdocs/school/PHP/W4/login.php",
-		"/Users/robbertsegers/Desktop/Antwerp Heli site/page--front.tpl.php",
-		"/Applications/MAMP/htdocs/Project/test2.php",
-		"/Applications/MAMP/htdocs/Project/test.php",
-		"/Applications/MAMP/htdocs/Project/login.php",
-		"/Applications/MAMP/htdocs/Project/dag.php",
-		"/Applications/MAMP/htdocs/Project/leefgroep.php",
-		"/Applications/MAMP/htdocs/Project/custom.css",
-		"/Applications/MAMP/htdocs/school/php_project/reservatiemaken.php",
-		"/Applications/MAMP/htdocs/school/php_project/mijnreservaties.php",
-		"/Applications/MAMP/htdocs/school/php_project/classes/Reservatie.class.php",
-		"/Applications/MAMP/htdocs/school/php_project/reservatie.php",
-		"/Applications/MAMP/htdocs/school/PHP/W3/test.php",
-		"/Applications/MAMP/htdocs/school/PHP/API/apis.php",
-		"/Applications/MAMP/htdocs/Project/loggedin.php",
-		"/Applications/MAMP/htdocs/Project/signup.php",
-		"/Applications/MAMP/htdocs/Project/week.php",
-		"/Applications/MAMP/htdocs/school/php_project/mijnrestaurant.php",
-		"/Applications/MAMP/htdocs/school/php_project/classes/Feedback.class.php",
-		"/Applications/MAMP/htdocs/school/php_project/restaurantmaken.php",
-		"/Applications/MAMP/htdocs/school/php_project/feedbackmaken.php",
-		"/Applications/MAMP/htdocs/school/php_project/modal.html",
-		"/Applications/MAMP/htdocs/school/php_project/login.php",
-		"/Applications/MAMP/htdocs/school/php_project/includes/include.nav.php",
-		"/Applications/MAMP/htdocs/school/php_project/classes/User.class.php",
-		"/Applications/MAMP/htdocs/school/php_project/classes/DB.class.php",
-		"/Applications/MAMP/htdocs/school/php_project/register.php",
-		"/Applications/MAMP/htdocs/school/php_project/classes/Restaurant.class.php",
-		"/Applications/MAMP/htdocs/school/php_project/mijnreservaties.html",
-		"/Applications/MAMP/htdocs/school/php_project/restaurant.php",
-		"/Applications/MAMP/htdocs/school/php_project/index.php",
-		"/Applications/MAMP/htdocs/school/php_project/JQuery Calendar/jquery-ui-1.10.4.custom/index.html",
-		"/Applications/MAMP/htdocs/school/PHP/Oefeningen/Archive/classes/User.class.php"
+		"/Applications/MAMP/htdocs/school/Herexamens/voting.js"
 	],
 	"find":
 	{
@@ -714,6 +746,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"locatieimgsq",
+			"div.col",
+			"list",
+			"nav",
+			"wrap",
+			"menu",
+			"wrap",
+			"top",
+			"collapse",
+			"list",
 			"sect",
 			"<link rel=\"stylesheet\" href=\"css/screen.css\">",
 			"detail",
@@ -768,38 +810,28 @@
 	"groups":
 	[
 		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
 			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/collapse.js",
+					"file": "view/home.html",
 					"settings":
 					{
-						"buffer_size": 833,
+						"buffer_size": 1530,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								349,
+								349
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -810,28 +842,140 @@
 				},
 				{
 					"buffer": 1,
-					"file": "services/jobs.json",
+					"file": "view/locatie.html",
 					"settings":
 					{
-						"buffer_size": 993,
+						"buffer_size": 1944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								610,
-								610
+								452,
+								452
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 91.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "view/jobs.html",
+					"settings":
+					{
+						"buffer_size": 1101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 97.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "view/contact.html",
+					"settings":
+					{
+						"buffer_size": 2503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1481,
+								1481
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1012.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "js/controllers/franchises.js",
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								676,
+								676
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/screen.scss",
+					"settings":
+					{
+						"buffer_size": 12772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10078,
+								10089
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10037.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -862,19 +1006,12 @@
 				0,
 				2,
 				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.439373874171,
-			0.762346278399,
+			0.628086153315,
 			1.0
 		],
 		"rows":
@@ -896,7 +1033,7 @@
 		[
 			[
 				"",
-				"/Users/robbertsegers/Desktop/webtech/__JavascriptJqueryOplossingen/i love tencho/ilovetencho.html"
+				"PremiumMeat.sublime-project"
 			]
 		],
 		"width": 0.0
@@ -913,6 +1050,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 188.0,
+	"side_bar_width": 187.0,
 	"status_bar_visible": true
 }

@@ -655,7 +655,11 @@ footer{
 	.light{background-color: $light; color: $dark;}
 	.dark{background-color: $dark; color: $light;}
 
-	#franchisecontact{text-align: center; font-size: 20px;}
+	#franchisecontact{text-align: center; font-size: 20px;
+		a{
+			color: $light;
+		}
+	}
 
 //CONTACT
 .contact{
@@ -663,11 +667,17 @@ footer{
 	select{
 		width: 100%;
 	}
-	button{
+	.formsubmit{
 		width: 250px;
-		background-color: $dark;
-		border-radius: 0px;
 		font-size: 18px;
+		background-color: $dark;
+		border-color: $dark;
+		border-radius: 4px;
+		:hover{
+			text-decoration: underline;
+			background-color: $light;
+			color: $dark;
+		}
 	}
 }
 .contactgeg{

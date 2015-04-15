@@ -15,34 +15,12 @@
 	<section class="LocatiesSection">
 		<div class="col span_1_of_2 cleanslider">
 
-			<!--<carousel interval="myInterval" class="carousel locatiecar">
-				<slide ng-repeat="slide in slides" active="slide.active">-->
-					<img src="{{franchises[0].images[0].list}}" alt="{{franchises[0].images[0].list}}">
-				<!--</slide>
-			</carousel>-->
+			<img ng-src="{{selectedImg.src}}" alt="{{selectedImg.src}}">
 
 			<div id="locatieimgsq">
-				<ul ng-repeat="item in franchises">
+				<ul ng-repeat="thumb in franchises">
 					<li>
-						<img ng-src="{{item.images[0].list}}" alt="{{item.images[0].list}}">
-					</li>
-				</ul>
-			</div>
-
-<!--http://rabidgadfly.com/2013/03/super-easy-angular-image-gallery/-->
-
-			<div>
-<!--
-				<button ng-lightbox='{"trigger": "manual", "element": "lightbox"}'>Let there be light</button>
-				<div class="lightbox" id="lightbox">
-					<h1>and He saw it was good</h1>
-				</div>
--->
-				<ul id="gallery" >
-					<li ng-repeat="image in images">
-						<a ng-click="openLightboxModal($index)">
-						<img ng-src="{{image.thumbUrl}}" class="img-thumbnail" alt="">
-						</a>
+						<img ng-src="{{thumb.images[0].list}}" alt="{{thumb.images[0].list}}" ng-click="selectedImg.src = thumb.images[0].list">
 					</li>
 				</ul>
 			</div>

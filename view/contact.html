@@ -1,4 +1,7 @@
 <!--https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/-->
+
+<!--https://scotch.io/tutorials/angularjs-form-validation-->
+
 <div class="contact">
 
 	<section class="section header">
@@ -51,7 +54,7 @@
 
 			<div class="form-group">
 				<select ng-model="onderwerp" placeholder="selecteer uw onderwerp">
-					<option value="vraag">Vraag</option>
+					<option value="vraag" selected>Vraag</option>
 					<option value="sollicitatie">Sollicitatie</option>
 					<option value="feedback">Feedback</option>
 				</select>
@@ -61,7 +64,7 @@
 				<textarea name="bericht" class="form-control" ng-model="bericht" placeholder="Bericht" rows="5" cols="20"></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Formulier versturen</button>
+			<button type="submit" class="btn btn-primary formsubmit" ng-disabled="userForm.$invalid">Formulier versturen</button>
 			</form>
 
 		</div>

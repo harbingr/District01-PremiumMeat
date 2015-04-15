@@ -1,8 +1,6 @@
 var PremiumMeat = angular.module('PremiumMeat', [
 	"ui.router",
 	"ui.bootstrap",
-	//"angular-touch",
-	//"bootstrapLightbox",
 	"ngScrollTo"
 	])
 
