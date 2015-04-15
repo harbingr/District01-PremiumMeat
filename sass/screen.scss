@@ -105,6 +105,7 @@ header{
 		@include wrap(70%, 0px, 25px);
 		@media only screen and (max-width: 480px) {
 			@include wrap(100%, 0px, 0px);
+			nav{display: none;}
 		}
 	}
 	button.burger{
@@ -189,7 +190,7 @@ header{
 		}
 	}
 
-main{margin-top: 25px; margin-bottom: 50px;}
+main{margin-top: 25px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
 
 //HEADER LINES
@@ -305,6 +306,7 @@ footer{
 	}
 }
 //HOMEPAGE
+.carouselwrap{height: 400px;}
 .carousel{
 	margin-top: 50px;
 	position: relative;
@@ -329,7 +331,9 @@ footer{
 		left: 50%;
 		background-color: $red;
 		opacity: 0.7;
-		h4{
+	ol.carousel-indicators{display: none;}
+
+		 h4{
 			@media only screen and (max-width: 800px) {
 				display: none;
 			}
@@ -343,10 +347,14 @@ footer{
 }
 //PROMOS
 .promo{
-	background-color: $green;
-	color: $light;
+	background-color: $light;
+	color: $dark;
 	height: 140px;
 	position: relative;
+	.active{background-color: $green; color: $light;}
+	&:hover{background-color: $green; color: $light;
+		p{color: $light;}
+	}
 	h2{
 		line-height: 140%;
 		margin: -20px 10px;
@@ -357,9 +365,9 @@ footer{
 		}
 	}
 	p{
-		color: $light;
+		color: $dark;
 		font-family: 'OswaldLight';
-		font-size: 14px;
+		font-size: 15px;
 		display: block;
 		@media only screen and (max-width: 835px) {
 			display: none !important;
@@ -535,7 +543,7 @@ footer{
 		margin-top: 15px;
 		text-decoration: none;
 		&:hover{
-			text-decoration: underline !important;
+			color: $dark;
 		}
 	}
 	.cleanslider{
@@ -557,7 +565,7 @@ footer{
 			@include wrap(100%, 15px, 5px);
 		}
 	}
-#map{margin-top: 50px;}
+#map{margin-top: 50px; height: 355px;}
 #locatieimgsq{
 	ul{
 		li{
@@ -565,7 +573,10 @@ footer{
 				display: inline;
 				float: left;
 				margin: 15px 5px 0px 0px;
-				width: 15%;
+				width: 15.73%;
+				@media only screen and (max-width: 1355px){
+					width: 15.4%;
+				}
 			}
 		}
 	}
@@ -664,15 +675,16 @@ footer{
 //CONTACT
 .contact{
 	@include wrap(80%, 25px, 50px);
+	form{margin-left: 50px;}
 	select{
 		width: 100%;
+		font-family: inherit;
 	}
 	.formsubmit{
 		width: 250px;
 		font-size: 18px;
 		background-color: $dark;
 		border-color: $dark;
-		border-radius: 4px;
 		:hover{
 			text-decoration: underline;
 			background-color: $light;

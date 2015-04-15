@@ -163,6 +163,9 @@ header .menuwrap {
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  header .menuwrap nav {
+    display: none;
+  }
 }
 header button.burger {
   display: none;
@@ -274,6 +277,7 @@ nav ul li.before:before {
 main {
   margin-top: 25px;
   margin-bottom: 50px;
+  z-index: 0;
 }
 
 section {
@@ -439,6 +443,10 @@ footer #bottom img.socialimg.hover {
   }
 }
 
+.carouselwrap {
+  height: 400px;
+}
+
 .carousel {
   margin-top: 50px;
   position: relative;
@@ -465,6 +473,9 @@ footer #bottom img.socialimg.hover {
   background-color: #ca4123;
   opacity: 0.7;
 }
+.carousel .carousel-caption ol.carousel-indicators {
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   .carousel .carousel-caption h4 {
     display: none;
@@ -477,10 +488,21 @@ footer #bottom img.socialimg.hover {
 }
 
 .promo {
-  background-color: #5a8738;
-  color: #f2f3ec;
+  background-color: #f2f3ec;
+  color: #352f2b;
   height: 140px;
   position: relative;
+}
+.promo .active {
+  background-color: #5a8738;
+  color: #f2f3ec;
+}
+.promo:hover {
+  background-color: #5a8738;
+  color: #f2f3ec;
+}
+.promo:hover p {
+  color: #f2f3ec;
 }
 .promo h2 {
   line-height: 140%;
@@ -495,9 +517,9 @@ footer #bottom img.socialimg.hover {
   }
 }
 .promo p {
-  color: #f2f3ec;
+  color: #352f2b;
   font-family: 'OswaldLight';
-  font-size: 14px;
+  font-size: 15px;
   display: block;
 }
 @media only screen and (max-width: 835px) {
@@ -730,7 +752,7 @@ div.col.list.loc:hover img {
   text-decoration: none;
 }
 .LocatiesSection a.detail:hover {
-  text-decoration: underline !important;
+  color: #352f2b;
 }
 .LocatiesSection .cleanslider {
   margin-top: 0px;
@@ -769,13 +791,19 @@ div.col.list.loc:hover img {
 
 #map {
   margin-top: 50px;
+  height: 355px;
 }
 
 #locatieimgsq ul li img {
   display: inline;
   float: left;
   margin: 15px 5px 0px 0px;
-  width: 15%;
+  width: 15.73%;
+}
+@media only screen and (max-width: 1355px) {
+  #locatieimgsq ul li img {
+    width: 15.4%;
+  }
 }
 
 .jobs {
@@ -906,15 +934,18 @@ div.col.list.loc:hover img {
   margin-top: 25px;
   margin-bottom: 50px;
 }
+.contact form {
+  margin-left: 50px;
+}
 .contact select {
   width: 100%;
+  font-family: inherit;
 }
 .contact .formsubmit {
   width: 250px;
   font-size: 18px;
   background-color: #352f2b;
   border-color: #352f2b;
-  border-radius: 4px;
 }
 .contact .formsubmit :hover {
   text-decoration: underline;
