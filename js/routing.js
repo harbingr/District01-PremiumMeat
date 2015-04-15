@@ -1,12 +1,13 @@
 var PremiumMeat = angular.module('PremiumMeat', [
 	"ui.router",
 	"ui.bootstrap",
-	"ngScrollTo",
-	"angular-google-analytics"
+	"ngScrollTo"
+	//"angular-google-analytics"
 	])
 
-.config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide, AnalyticsProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide) {
 
+/*
 	//Google analytics tracking ID: UA-61932007-1
 	AnalyticsProvider.setAccount('UA-61932007-1');
 	// automatic route tracking (default=true)
@@ -28,7 +29,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	});
 	//Change the default page event name. This is useful for ui-router, which fires $stateChangeSuccess instead of $routeChangeSuccess
 	AnalyticsProvider.setPageEvent('$stateChangeSuccess');
-
+*/
 
 $urlRouterProvider.otherwise("/");
 	$stateProvider

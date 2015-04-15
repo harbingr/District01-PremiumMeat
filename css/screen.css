@@ -918,6 +918,42 @@ div.col.list.loc:hover img {
   list-style-image: url("images/arrow.png");
   list-style-position: inside;
 }
+.FranchiseSection .francontact h2 {
+  font-size: 26px;
+}
+.FranchiseSection .francontact h3 {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .FranchiseSection .francontact h3 {
+    font-size: 16px;
+  }
+  .FranchiseSection .francontact h2 {
+    font-size: 20px;
+  }
+}
+.FranchiseSection .francontact ul li {
+  font-size: 16px;
+  margin: 15px;
+}
+@media only screen and (max-width: 850px) {
+  .FranchiseSection .francontact {
+    width: 100% !important;
+  }
+  .FranchiseSection .francontact h2 {
+    font-size: 32px;
+  }
+  .FranchiseSection .francontact h3 {
+    font-size: 26px;
+  }
+  .FranchiseSection .francontact ul li {
+    font-size: 18px;
+    margin: 15px;
+  }
+  .FranchiseSection .francontact .dark a {
+    font-size: 24px;
+  }
+}
 .FranchiseSection ul#franchiselist {
   list-style-image: url("images/arrow.png");
 }
@@ -936,17 +972,63 @@ div.col.list.loc:hover img {
   width: 100%;
   border-right: 2px solid #352f2b;
 }
+@media only screen and (max-width: 850px) {
+  .FranchiseSection .franchiseselect .franchiseselectlist {
+    margin: 0px;
+    border: none;
+  }
+}
+.FranchiseSection .franchiseselect .franchiseselectlist i {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .FranchiseSection .franchiseselect .franchiseselectlist i {
+    display: block;
+  }
+}
 .FranchiseSection .franchiseselect a {
   display: block;
   font-size: 26px;
   color: #352f2b;
-  margin: 0px 15px 53px 15px;
+  margin: 0px 0px 5px 15px;
+  padding: 20px 20px 20px 15px;
+}
+.FranchiseSection .franchiseselect a:hover {
+  background-color: #352f2b !important;
+  color: #f2f3ec;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  .FranchiseSection .franchiseselect a {
+    font-size: 20px;
+    margin: 0px 0px 5px 15px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .FranchiseSection .franchiseselect a {
+    font-size: 20px;
+    margin: 0px;
+    padding: 20px 40px 20px 15px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .FranchiseSection .franchiseselect a {
+    text-align: center;
+    font-size: 30px;
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .FranchiseSection .franchiseselect a {
+    width: 440px;
+  }
 }
 .FranchiseSection .franchisecontent h1 {
   padding-top: 0px;
 }
 .FranchiseSection .franchisecontent h3 {
   margin-left: 25px;
+  width: 400px;
 }
 .FranchiseSection .franchisecontent img {
   margin-left: 25px;
@@ -954,6 +1036,16 @@ div.col.list.loc:hover img {
 @media only screen and (max-width: 960px) {
   .FranchiseSection .franchisecontent {
     width: 74.6% !important;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .FranchiseSection .franchisecontent h3 {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .FranchiseSection .franchisecontent {
+    display: none;
   }
 }
 

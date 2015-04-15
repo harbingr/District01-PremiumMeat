@@ -651,6 +651,23 @@ footer{
 		list-style-image: url('images/arrow.png');
 		list-style-position: inside;
 	}
+	.francontact{
+		h2{font-size: 26px;}
+		h3{font-size: 20px;}
+		@media only screen and (max-width: 1000px){
+			h3{font-size: 16px;}
+			h2{font-size: 20px;}
+		}
+
+		ul{li{font-size: 16px; margin: 15px;}}
+		@media only screen and (max-width: 850px){
+			width:100% !important;
+			h2{font-size: 32px;}
+			h3{font-size: 26px;}
+			ul{li{font-size: 18px; margin: 15px;}}
+			.dark{a{font-size: 24px;}}
+		}
+	}
 	ul#franchiselist{
 		list-style-image: url('images/arrow.png');
 		li{
@@ -667,30 +684,66 @@ footer{
 		.franchiseselectlist{
 			width: 100%;
 			border-right: 2px solid $dark;
+			@media only screen and (max-width: 850px){
+				margin: 0px;
+				border: none;
+			}
+			i{display: none;
+				@media only screen and (max-width: 480px){
+					display: block;
+				}
+			}
 		}
 		a{
 			display: block;
 			font-size: 26px;
 			color: $dark;
-			margin: 0px 15px 53px 15px;
+			margin: 0px 0px 5px 15px;
+			padding: 20px 20px 20px 15px;
+			&:hover{
+				background-color: $dark !important;
+				color: $light;
+				text-decoration: none;
+			}
+			@media only screen and (max-width: 1024px){
+				font-size: 20px;
+				margin: 0px 0px 5px 15px;
+			}
+			@media only screen and (max-width: 850px){
+				font-size: 20px;
+				margin: 0px;
+				padding: 20px 40px 20px 15px !important;
+			}
+			@media only screen and (max-width: 480px){
+				text-align: center;
+				font-size: 30px;
+				width: 480px;
+			}
+			@media only screen and (max-width: 440px){
+				width: 440px;}
 		}
 	}
 	.franchisecontent{
 		h1{padding-top: 0px;}
-		h3{margin-left: 25px;}
+		h3{margin-left: 25px; width: 400px;}
 		img{margin-left: 25px;	}
 		@media only screen and (max-width: 960px){
 				width:74.6% !important;
+			}
+		@media only screen and (max-width: 630px){
+				h3{width: 300px;}
+			}
+		@media only screen and (max-width: 480px){
+				display: none;
 			}
 	}
 }
 	.light{background-color: $light; color: $dark;}
 	.dark{background-color: $dark; color: $light;}
 
-	#franchisecontact{text-align: center; font-size: 20px;
-		a{
-			color: $light;
-		}
+	#franchisecontact{
+		text-align: center; font-size: 20px;
+		a{color: $light;}
 	}
 
 //CONTACT
