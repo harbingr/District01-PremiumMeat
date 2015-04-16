@@ -16,7 +16,7 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 
 		//console.log($scope.franchises[0].name);
 		//console.log($scope.franchises[0].description);
-		console.log($scope.franchises[0].images[0].list);
+		//console.log($scope.franchises[0].images[0].list);
 		//console.log($scope.franchises[0].location[0].long);
 		//console.log($scope.franchises[0].location[0].lat);
 	});
