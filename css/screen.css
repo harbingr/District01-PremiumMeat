@@ -541,8 +541,11 @@ footer #bottom img.socialimg.hover {
   height: 140px;
   position: relative;
 }
-.promo .active {
+.promo.active {
   background-color: #5a8738;
+  color: #f2f3ec;
+}
+.promo.active p {
   color: #f2f3ec;
 }
 .promo:hover {

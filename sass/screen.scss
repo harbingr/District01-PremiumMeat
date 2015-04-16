@@ -372,10 +372,10 @@ footer{
 	color: $dark;
 	height: 140px;
 	position: relative;
-	.active{background-color: $green; color: $light;}
+	&.active{background-color: $green; color: $light;
+		p{color: $light;}}
 	&:hover{background-color: $green; color: $light;
-		p{color: $light;}
-	}
+		p{color: $light;}}
 	h2{
 		line-height: 140%;
 		margin: -20px 10px;
