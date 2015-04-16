@@ -1,5 +1,3 @@
-<!--https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/-->
-
 <!--https://scotch.io/tutorials/angularjs-form-validation-->
 
 <div class="contact">
@@ -27,7 +25,7 @@
 
 				<img src="https://maps.googleapis.com/maps/api/staticmap?center=
 				51.135239,4.445006
-				&zoom=15&size=700x300&maptype=roadmap&markers=
+				&zoom=13&size=700x400&maptype=roadmap&markers=
 				51.135239,4.445006
 				&key=AIzaSyBGPdCnpglb4ok6k8BaVuF0srvPR7Gg770" alt="contactmap" width="320">
 		</div>
@@ -64,10 +62,13 @@
 				<textarea name="bericht" class="form-control" ng-model="bericht" placeholder="Bericht" rows="5" cols="20"></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-primary formsubmit" ng-disabled="userForm.$invalid">Formulier versturen</button>
+			<button type="submit" class="btn btn-primary formsubmit">Formulier versturen</button>
+			<!-- ng-disabled="userForm.$invalid" -->
 			</form>
 
 		</div>
+
+
 
 	</section>
 
