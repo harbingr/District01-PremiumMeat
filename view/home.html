@@ -1,13 +1,10 @@
 <section class="home">
 <!--CAROUSEL-->
-
-	<!-- set index / active of slides -->
-
 	<div class="carouselwrap">
 		<carousel interval="myInterval" class="carousel">
 			<slide ng-repeat="slide in slides track by $index" active="slide.active">
 				<img ng-src="{{slide.images[0].slider}}" alt="{{slide.images[0].slider}}" >
-				<div class="carousel-caption " class="">
+				<div class="carousel-caption" class="">
 					<h1>{{slide.title}}</h1>
 					<h4>{{slide.description}}</h4>
 				</div>

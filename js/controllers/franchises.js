@@ -3,11 +3,12 @@
 //https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/
 
 var servicepath = "http://franchise.district01.be/api/";
-angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $window, $http) {
+angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $window, $http, $stateParams) {
 
 	$scope.franchises = [];
 	$scope.selectedImg = {};
-	//$scope.selectedImg = 'lorempixel.com/output/city-q-c-400-300-1.jpg';
+
+	$scope.ID = parseInt($stateParams.locationName);
 
 	$http.get(servicepath + 'franchises/nl.json').then(function(res){
 		$scope.franchises = res.data;
