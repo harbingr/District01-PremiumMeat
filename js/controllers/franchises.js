@@ -7,6 +7,15 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 
 	$scope.franchises = [];
 	$scope.selectedImg = {};
+
+/*
+	$scope.ImgFallback = function ImgFallback(fallback){
+		if (fallback === "") {
+			fallback =
+		};
+	}
+*/
+
 	//$scope.selectedImg = 'lorempixel.com/output/city-q-c-400-300-1.jpg';
 
 	$http.get(servicepath + 'franchises/nl.json').then(function(res){

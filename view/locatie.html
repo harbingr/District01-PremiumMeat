@@ -20,7 +20,8 @@
 			<div id="locatieimgsq">
 				<ul ng-repeat="thumb in franchises">
 					<li class="thumbnails">
-						<img ng-src="{{thumb.images[0].list}}" alt="{{thumb.images[0].list}}" ng-click="selectedImg.src = thumb.images[0].list">
+						<img ng-src="{{thumb.images[0].list}}" alt="{{thumb.images[0].list}}" ng-click="selectedImg.src = thumb.images[0].list" >
+						<!-- ng-click="ImgFallback(selectedImg.src)" -->
 					</li>
 				</ul>
 			</div>
