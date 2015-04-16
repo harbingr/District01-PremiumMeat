@@ -1,5 +1,8 @@
 <section class="home">
 <!--CAROUSEL-->
+
+	<!-- set index / active of slides -->
+
 	<div class="carouselwrap">
 		<carousel interval="myInterval" class="carousel">
 			<slide ng-repeat="slide in slides track by $index" active="slide.active">
@@ -11,10 +14,10 @@
 			</slide>
 		</carousel>
 	</div>
+
 <!--PROMOS-->
 	<section>
-		<article  class="col span_1_of_3 promo" ng-repeat="item in promos">
-			<!--  -->
+		<article  class="col span_1_of_3 promo" ng-repeat="item in slides" ng-class="{active: item.active}" ng-click="changeActiveSlide($index)">
 			<h2>{{item.title}}</h2>
 			<p class="promoinfo">
 				<span>{{item.description}}</span>
