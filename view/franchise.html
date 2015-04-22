@@ -38,7 +38,6 @@
 		</div>
 
 		<div class="col span_2_of_3 nocollapse">
-			<!--http://stackoverflow.com/questions/16872191/angularjs-ui-bootstrap-tabs-that-support-routing-->
 			<div class="col span_1_of_4 franchiseselect" >
 				<ul class="franchiseselectlist" ng-init="selectedTab = 'kontich'">
 					<a ui-sref=".kontich" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'">Kontich
@@ -60,21 +59,12 @@
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
 				</ul>
-<!--
-				<tabset vertical="true" type="pills">
-					<tab select="setSelectedTab(item)"
-						active="item.active"
-						disabled="item.disabled"
-						ng-repeat="item in franchises"
-						heading="{{item.name}}">
-					</tab>
-				</tabset>
--->
+
 			</div>
 
 			<div>
 
-				<div class="col span_3_of_4 franchisecontent" ui-view ng-animate=" 'animate' ">
+				<div class="col span_3_of_4 franchisecontent" ui-view>
 
 				</div>
 

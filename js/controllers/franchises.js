@@ -11,7 +11,7 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 	$http.get(servicepath + 'franchises/nl.json').then(function(res){
 		$scope.franchises = res.data;
 
-		//$scope.selectedImg = $scope.franchises[0].images[0].list;
+		$scope.selectedImg = {};
 
 		//console.log($scope.franchises[0].name);
 		//console.log($scope.franchises[0].description);
@@ -20,9 +20,9 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 		//console.log($scope.franchises[0].location[0].lat);
 	});
 
-	$scope.checked = true;
-	$scope.pageslidetoggle = function pageslidetoggle(){
-		$scope.checked = !$scope.checked
+
+	$scope.franchisemobilewidth = function franchisemobilewidth(){
+		console.log("in fmw");
 	}
 
 

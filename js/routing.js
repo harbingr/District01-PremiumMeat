@@ -2,7 +2,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	"ui.router",
 	"ui.bootstrap",
 	"ngScrollTo",
-	"pageslide-directive"
+	"ngAnimate"
 	//"angular-google-analytics"
 	])
 

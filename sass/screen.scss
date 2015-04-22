@@ -706,6 +706,7 @@ footer{
 			color: $dark;
 			margin: 0px 0px 5px 15px;
 			padding: 20px 20px 20px 15px;
+			text-decoration: none;
 			&:hover{
 				background-color: $dark !important;
 				color: $light;
@@ -744,10 +745,26 @@ footer{
 				h3{width: 200px;}
 			}
 		@media only screen and (max-width: 480px){
-				display: none;
+				visibility: hidden;
 			}
+		.viewback{visibility: hidden;}
+
+		.animate-enter {
+			-webkit-transition: 1s linear all; /* Chrome */
+			transition: 1s linear all;
+			opacity: 0;
+		}
+
+		.animate-enter.animate-enter-active {
+			opacity: 1;
+		}
 	}
 }
+
+.franchiseslide{
+
+}
+
 	.light{background-color: $light; color: $dark;}
 	.dark{background-color: $dark; color: $light;}
 
@@ -756,15 +773,14 @@ footer{
 		a{color: $light;}
 	}
 
-
-	//ANIMATE
-	.animate-enter {
+	.franchisecontent[ui-view].ng-enter{
 		-webkit-transition: 1s linear all; /* Chrome */
 		transition: 1s linear all;
 		opacity: 0;
 	}
 
-	.animate-enter.animate-enter-active {
+
+	.franchisecontent[ui-view].ng-enter.ng-enter-active {
 		opacity: 1;
 	}
 

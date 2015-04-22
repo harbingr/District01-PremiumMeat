@@ -999,6 +999,7 @@ div.col.list.loc:hover img {
   color: #352f2b;
   margin: 0px 0px 5px 15px;
   padding: 20px 20px 20px 15px;
+  text-decoration: none;
 }
 .FranchiseSection .franchiseselect a:hover {
   background-color: #352f2b !important;
@@ -1061,8 +1062,19 @@ div.col.list.loc:hover img {
 }
 @media only screen and (max-width: 480px) {
   .FranchiseSection .franchisecontent {
-    display: none;
+    visibility: hidden;
   }
+}
+.FranchiseSection .franchisecontent .viewback {
+  visibility: hidden;
+}
+.FranchiseSection .franchisecontent .animate-enter {
+  /* Chrome */
+  transition: 1s linear all;
+  opacity: 0;
+}
+.FranchiseSection .franchisecontent .animate-enter.animate-enter-active {
+  opacity: 1;
 }
 
 .light {
@@ -1083,13 +1095,13 @@ div.col.list.loc:hover img {
   color: #f2f3ec;
 }
 
-.animate-enter {
+.franchisecontent[ui-view].ng-enter {
   /* Chrome */
   transition: 1s linear all;
   opacity: 0;
 }
 
-.animate-enter.animate-enter-active {
+.franchisecontent[ui-view].ng-enter.ng-enter-active {
   opacity: 1;
 }
 
