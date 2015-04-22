@@ -1,9 +1,10 @@
 angular.module("PremiumMeat").controller('contactController', function($scope) {
-		console.log("form val");
-		//alert('form val alert');
 	$scope.submitForm = function(isValid) {
+		$scope.hideForm = false;
 		if (isValid) {
-			alert('our form is amazing');
+			if ($scope.userForm.name.$valid == true) {
+				$scope.hideForm = true;
+			};
 		};
 	};
 });

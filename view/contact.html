@@ -34,15 +34,16 @@
 
 		<div class="col span_2_of_3 nocollapse" ng-controller="contactController">
 
-			<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+			<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate ng-hide="hideForm" >
+				<!-- ng-hide="userForm.name.$valid" -->
 
 			<div class="form-group">
-				<input type="text" name="name" class="form-control" ng-model="name" placeholder="Volledige naam" ng-minlength="2" ng-maxlength="15" required>
+				<input type="text" name="name" class="form-control" ng-model="name" placeholder="Volledige naam *" ng-minlength="2" ng-maxlength="15" required>
 				<p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Gelieve uw naam in te vullen</p>
 			</div>
 
 			<div class="form-group">
-				<input type="email" name="email" class="form-control" ng-model="email" placeholder="Email adres">
+				<input type="email" name="email" class="form-control" ng-model="email" placeholder="Email adres *" required>
 				<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Gelieve een geldig email aders in te vullen</p>
 			</div>
 
@@ -62,9 +63,11 @@
 				<textarea name="bericht" class="form-control" ng-model="bericht" placeholder="Bericht" rows="5" cols="20"></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-primary formsubmit">Formulier versturen</button>
+			<button type="submit" class="btn btn-primary formsubmit" ng-disabled="userForm.$invalid">Formulier versturen</button>
 			<!-- ng-disabled="userForm.$invalid" -->
 			</form>
+
+			<h4 ng-show="hideForm">Uw bericht werd verstuurd, we beantwoorden zo snel mogelijk uw vraag</h4>
 
 		</div>
 
