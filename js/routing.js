@@ -50,9 +50,7 @@ $urlRouterProvider.otherwise("/");
 		})
 			.state('locatie', {
 				url: "/locaties/:locationName",
-				controller: function($scope, $stateParams){
-					$scope.ID = parseInt($stateParams.locationName);
-				},
+				controller: "FranchisesCtrl",
 				templateUrl: "view/locatie.html"
 			})
 

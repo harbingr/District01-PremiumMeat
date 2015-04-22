@@ -5,20 +5,13 @@ var PremiumMeat = angular.module('PremiumMeat')
 
 	.controller('HomeCtrl', function ($scope, $http) {
 
-/*
-		$scope.activeslide = {};
-		$scope.changeActiveSlide =  function changeActiveSlide(i){
-			$scope.activeslide = i;
-			console.log($scope.activeslide);
-		};
-*/
 		$scope.changeActiveSlide = function(i) {
-		    angular.forEach($scope.slides, function(slide) {
-		        slide.active = false; //Desactive all slides
-		        if(slide.id === i+1) {
-		            slide.active = true; //Active the clicked slide
-		        }
-		    });
+			angular.forEach($scope.slides, function(slide) {
+				slide.active = false; //Desactive all slides
+				if(slide.id === i+1) {
+					slide.active = true; //Active the clicked slide
+				}
+			});
 		}
 
 		$scope.myInterval = 8000;
@@ -30,6 +23,23 @@ var PremiumMeat = angular.module('PremiumMeat')
 		var posts = $scope.posts = [];
 		$http.get(servicepath + 'articles/nl.json').then(function(res){
 			$scope.posts = res.data;
+		});
+
+		app.directive('errSrc', function() {
+		  return {
+		    link: function(scope, element, attrs) {
+		      element.bind('error', function() {
+		        if (attrs.src != attrs.errSrc) {
+		          attrs.$set('src', attrs.errSrc);
+		        }
+		        attrs.$observe('ngSrc', function(value) {
+			  if (!value && attrs.errSrc) {
+			    attrs.$set('src', attrs.errSrc);
+			  }
+			});
+		      });
+		    }
+		  }
 		});
 
 	});
