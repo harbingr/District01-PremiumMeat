@@ -40,13 +40,25 @@
 		<div class="col span_2_of_3 nocollapse">
 			<!--http://stackoverflow.com/questions/16872191/angularjs-ui-bootstrap-tabs-that-support-routing-->
 			<div class="col span_1_of_4 franchiseselect" >
-				<ul class="franchiseselectlist">
-					<a ui-sref=".kontich" >Kontich<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></a>
-					<a ui-sref=".brussel">Brussel<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></a>
-					<a ui-sref=".gent">Gent<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></a>
-					<a ui-sref=".boechout">Boechout<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></a>
-					<a ui-sref=".brugge">Brugge<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></a>
-					<a ui-sref=".luik">Luik<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i></a>
+				<ul class="franchiseselectlist" ng-init="selectedTab = 'kontich'">
+					<a ui-sref=".kontich" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'">Kontich
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
+					<a ui-sref=".brussel" ng-class="{'active':selectedTab === 'brussel'}" ng-click="selectedTab = 'brussel'">Brussel
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
+					<a ui-sref=".gent" ng-class="{'active':selectedTab === 'gent'}" ng-click="selectedTab = 'gent'">Gent
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
+					<a ui-sref=".boechout" ng-class="{'active':selectedTab === 'boechout'}" ng-click="selectedTab = 'boechout'">Boechout
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
+					<a ui-sref=".brugge" ng-class="{'active':selectedTab === 'brugge'}" ng-click="selectedTab = 'brugge'">Brugge
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
+					<a ui-sref=".luik" ng-class="{'active':selectedTab === 'luik'}" ng-click="selectedTab = 'luik'">Luik
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
 				</ul>
 <!--
 				<tabset vertical="true" type="pills">
@@ -62,7 +74,7 @@
 
 			<div>
 
-				<div class="col span_3_of_4 franchisecontent" ui-view>
+				<div class="col span_3_of_4 franchisecontent" ui-view ng-animate=" 'animate' ">
 
 				</div>
 
@@ -72,16 +84,4 @@
 
 	</section>
 
-</div>
-
-<div>
-
-<a ng-click="pageslidetoggle()">Toggle page slide</a>
-
-	<pageslide ps-open="checked">
-        <div>
-            <p>some random content...</p>
-        </div>
-    </pageslide>
-    ...
 </div>

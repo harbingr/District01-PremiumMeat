@@ -20,9 +20,10 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 		//console.log($scope.franchises[0].location[0].lat);
 	});
 
-	$scope.checked = false;
+	$scope.checked = true;
 	$scope.pageslidetoggle = function pageslidetoggle(){
-
+		$scope.checked = !$scope.checked
 	}
+
 
 });
