@@ -5,7 +5,6 @@
 var servicepath = "http://franchise.district01.be/api/";
 angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $window, $http, $stateParams) {
 	$scope.franchises = [];
-	$scope.selectedImg = {};
 
 	$scope.ID = parseInt($stateParams.locationName);
 
@@ -20,4 +19,10 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 		//console.log($scope.franchises[0].location[0].long);
 		//console.log($scope.franchises[0].location[0].lat);
 	});
+
+	$scope.checked = false;
+	$scope.pageslidetoggle = function pageslidetoggle(){
+
+	}
+
 });

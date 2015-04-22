@@ -1,6 +1,5 @@
 angular.module("PremiumMeat").controller('contactController', function($scope, $stateParams) {
 
-		//$scope.onderwerp = $stateParams.onderwerp;
 		console.log($stateParams.onderwerp);
 
 	$scope.submitForm = function(isValid) {
