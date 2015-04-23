@@ -14,12 +14,14 @@ enquire.register("screen and (max-width: 480px)", {
 			console.log("X click");
 			$(".franchiseselectlist").css('display','block');
 			$(".franchisecontent").css('visibility', 'hidden');
+			$(".viewback").css('visibility', 'hidden');
 		});
 
 	},
 	unmatch : function() {
 		console.log("unmatch");
-		$(".franchiseslide").removeClass("franchiseslide");
+		$(".franchiseselectlist").removeClass("franchiseslide");
+		$(".franchiseselectlist").css('display','block');
 		$(".viewback").css('visibility', 'hidden');
 	}
 });

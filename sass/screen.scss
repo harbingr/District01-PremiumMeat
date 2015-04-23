@@ -47,6 +47,7 @@ body {
 	font-family: 'OswaldRegular';
 	color: $dark;
 }
+main{z-index: 1;}
 
 header{
 	@include wrap(80%, 0px, 25px);
@@ -89,8 +90,7 @@ h4{
 }
 //TOP CONTACT MINI MENU
 #top{@include wrap(80%, 5px, 0px);}
-	#top img,p{display: inline !important; font-size: 12px;
-	}
+	#top img, #top p{display: inline !important; font-size: 12px;}
 	#top img{
 		@media only screen and (max-width: 480px) {
 			display: none !important;
@@ -125,26 +125,42 @@ header{
 		@media only screen and (max-width: 1024px) {
 			top: 0%;}
 		@media only screen and (max-width: 768px) {
-			margin-left: 23%; top: 1%;}
+			margin-left: 23%; top: 2%;}
 		@media only screen and (max-width: 640px) {
-			top: 2%;}
+			top: 3%;}
 		@media only screen and (max-width: 480px) {
-			top: 3%; display: none;}
+			width: 200px;
+			margin-left: 30%;
+		}
+		@media only screen and (max-width: 360px) {
+			width: 150px;
+			margin-left: 25%;
+		}
 	}
 }
 
 // MENU LIST ITEMS
 	nav{
-
+		a#pull{display: none;}
+		width: 100%;
+		position: relative;
+		@media only screen and (max-width: 480px) {
+				z-index: 1000;
+			}
 		ul{padding-top: 50px;
 			@media only screen and (max-width: 480px) {
 				padding-top: 60px;
+				z-index: 1000;
 			}
 
 			li{
 				margin: 0px;
 				display: inline;
+				float: left;
+				z-index: 1000;
 				@media only screen and (max-width: 480px) {
+				margin: 0px !important;
+				z-index: 1000;
 				width: 100%;
 				height: 100px;
 				text-align: center;
@@ -153,11 +169,16 @@ header{
 					&:nth-child(even) {
 						background-color: $light;
 					}
+					/*&:nth-child(last){
+						border-bottom: 1px solid $dark;
+					}*/
 				}
 
 				a{
+					z-index: 1000;
 					display: inline;
 					@media only screen and (max-width: 480px) {
+						z-index: 1000;
 						padding-top: 20px;
 						margin-top: 20px;
 						font-size: 25px;
@@ -243,50 +264,55 @@ footer{
 	.footwrap{@include wrap(80%, 20px, 20px);}
 	.bottomwrap{@include wrap(80%, 20px, 20px);}
 
-	img{float: left; width: 20%;}
-
-	nav{
-		@include wrap(60%, 25px, 25px);
-		float: left;
-		margin-left: 50px;
-		margin-top: 10px;
+	img#footerlogo{float: left; width: 18%;
+		@media only screen and (max-width: 1100px) {
+			width: 20%;
+		}
+		@media only screen and (max-width: 768px) {
+			width: 30%; margin-top: 20px;
+		}
 	}
-	ul{
-		margin-top: 20px;
-		li{display: inline;
-			a{
-				text-decoration:  none;
-				color: $light;
-				margin:  25px;
-				@media only screen and (max-width: 1024px) {
-					margin: 15px;
+
+	#footmenu{
+		nav{
+			@include wrap(60%, 0px, 0px);
+			margin-top: 10px;
+			margin-bottom: 40px;
+				@media only screen and (max-width: 768px) {
+						//		margin: 0px;
 				}
-				@media only screen and (max-width: 850px) {
-					margin: 5px;
+			ul{
+				width: 100%;
+				margin-top: 20px;
+				li{display: inline-block;
+					a{
+						text-decoration:  none;
+						color: $light;
+						margin:  20%;
+						@media only screen and (max-width: 768px) {
+							display: none;
+						}
+					}
 				}
+			}
+		}
+		p{
+			display: block;
+			text-align: justify;
+			max-height: 50px;
+			line-height: 80px;
+			letter-spacing: 0.2em;
+			padding-left: 5%;
+			:after {
+				content: "";
+				display: inline-block;
+				width: 100%;
 			}
 		}
 	}
 
-	div#footmenu{height: 130px;}
-	p{
-		letter-spacing: 5px;
-		word-spacing: 5px;
-		margin-left: 75px;
-		@media only screen and (max-width: 1200px) {
-			letter-spacing: 4px; word-spacing: 4px;
-		}
-		@media only screen and (max-width: 1024px) {
-			letter-spacing: 3px; word-spacing: 3px;
-		}
-		@media only screen and (max-width: 768px) {
-			letter-spacing: 2px; word-spacing: 2px;
-		}
-		@media only screen and (max-width: 640px) {
-			display: none;
-		}
-	}
 	.up{float: right;}
+
 	#bottom{
 		height: 50px;
 		background-color: $light;
@@ -540,11 +566,12 @@ footer{
 	}
 
 	@media only screen and (max-width: 480px) {
-		div.col.list{ width: 100% !important; }
-		img{
-			min-width: 480px;
-			margin-left: auto;
-			margin-right: auto;
+		div.col.list{ width: 100% !important;
+			img{
+				min-width: 480px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 
@@ -759,10 +786,6 @@ footer{
 			opacity: 1;
 		}
 	}
-}
-
-.franchiseslide{
-
 }
 
 	.light{background-color: $light; color: $dark;}
