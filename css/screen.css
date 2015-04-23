@@ -170,15 +170,21 @@ header .menuwrap {
   header .menuwrap nav {
     display: none;
   }
+  header .menuwrap nav.active {
+    display: block;
+  }
 }
-header button.burger {
+header .burger {
   display: none;
+  width: 50px;
+  right: 20px;
 }
 @media only screen and (max-width: 480px) {
-  header button.burger {
+  header .burger {
     display: block;
     float: right;
     margin-top: 50px;
+    margin-right: 20px;
   }
 }
 header img {

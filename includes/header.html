@@ -7,25 +7,18 @@
 	<header>
 		<div class="menuwrap">
 
-		<script>
-			function toggle(nav) {
-				var nav = document.getElementById("nav");
-				if ( nav.style.display != 'none' ) {nav.style.display = 'none';}
-				else {nav.style.display = 'block';}
-			}
-		</script>
-
 			<a ui-sref="home"><img src="images/logo.png" alt="logo"></a>
 
 			<div>
-				<button class="btn btn-default burger" onclick="toggle()">Burger</button>
+				{{navActive}}
+				<a  ng-click="status.navActive = true"><img src="images/burger.png" alt="menu" class="burger"></a>
 				<div collapse="isCollapsed">
-						<nav class="section group nav" id="nav">
+						<nav class="section group nav" id="nav" ng-class="{active: status.navActive}">
 							<ul>
-								<li class="after col span_1_of_6"><a ui-sref="menu" onclick="collapse()">menu</a></li>
-								<li class="after col span_1_of_6"><a ui-sref="locaties" onclick="collapse()">locaties</a></li>
-								<li class="before floatright col span_1_of_6 "><a ui-sref="franchise.kontich" onclick="collapse()">franchise</a></li>
-								<li class="before floatright col span_1_of_6 "><a ui-sref="jobs" onclick="collapse()">jobs</a></li>
+								<li class="after col span_1_of_6"><a ng-click="collapse()" ui-sref="menu">menu</a></li>
+								<li class="after col span_1_of_6"><a ui-sref="locaties" ng-click="collapse()">locaties</a></li>
+								<li class="before floatright col span_1_of_6 "><a ui-sref="franchise.kontich" ng-click="collapse()">franchise</a></li>
+								<li class="before floatright col span_1_of_6 "><a ui-sref="jobs" ng-click="collapse()">jobs</a></li>
 							</ul>
 							 <a href="#" id="pull">Menu</a>
 						</nav>

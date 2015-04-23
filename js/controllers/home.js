@@ -1,6 +1,4 @@
-
 var servicepath = "http://franchise.district01.be/api/";
-
 var PremiumMeat = angular.module('PremiumMeat')
 
 	.controller('HomeCtrl', function ($scope, $http) {
