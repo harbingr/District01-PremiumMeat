@@ -689,11 +689,6 @@ footer #bottom img.socialimg.hover {
 .blog .imgblog {
   width: 100%;
 }
-@media only screen and (max-width: 480px) {
-  .blog .imgblog {
-    width: 5%;
-  }
-}
 .blog .readmore {
   display: block;
   text-decoration: none;
@@ -969,7 +964,7 @@ div.col.list.loc:hover img {
 }
 @media only screen and (max-width: 850px) {
   .FranchiseSection .francontact {
-    width: 100% !important;
+    width: 100%;
   }
   .FranchiseSection .francontact h2 {
     font-size: 32px;
@@ -1068,7 +1063,9 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .franchisecontent img {
   margin-left: 25px;
-  width: 100%;
+}
+.FranchiseSection .franchisecontent.active {
+  display: block;
 }
 @media only screen and (max-width: 1200px) {
   .FranchiseSection .franchisecontent h3 {
@@ -1084,20 +1081,14 @@ div.col.list.loc:hover img {
   }
 }
 @media only screen and (max-width: 630px) {
+  .FranchiseSection .franchisecontent img {
+    width: auto;
+  }
   .FranchiseSection .franchisecontent h3 {
     width: 200px;
   }
 }
-@media only screen and (max-width: 480px) {
-  .FranchiseSection .franchisecontent {
-    visibility: hidden;
-  }
-}
-.FranchiseSection .franchisecontent .viewback {
-  visibility: hidden;
-}
 .FranchiseSection .franchisecontent .animate-enter {
-  /* Chrome */
   transition: 1s linear all;
   opacity: 0;
 }

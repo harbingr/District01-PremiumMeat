@@ -39,23 +39,31 @@
 
 		<div class="col span_2_of_3 nocollapse">
 			<div class="col span_1_of_4 franchiseselect" >
-				<ul class="franchiseselectlist" ng-init="selectedTab = 'kontich'">
-					<a ui-sref=".kontich" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'">Kontich
+				{{status.franchiseActive}}
+				  <button ng-click="count = count + 1" ng-init="count=0">
+					+1
+				</button>
+				<span>
+				  tel: {{count}}
+				</span>
+
+				<ul class="franchiseselectlist">
+					<a ui-sref=".kontich" ng-click="count = count + 1" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'" ng-click="status.franchiseActive = true" ng-click="franchisecollapse">Kontich
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
-					<a ui-sref=".brussel" ng-class="{'active':selectedTab === 'brussel'}" ng-click="selectedTab = 'brussel'">Brussel
+					<a ui-sref=".brussel" ng-class="{'active':selectedTab === 'brussel'}" ng-click="selectedTab = 'brussel'" ng-click="status.franchiseActive = true">Brussel
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
-					<a ui-sref=".gent" ng-class="{'active':selectedTab === 'gent'}" ng-click="selectedTab = 'gent'">Gent
+					<a ui-sref=".gent" ng-class="{'active':selectedTab === 'gent'}" ng-click="selectedTab = 'gent'" ng-click="status.franchiseActive = true">Gent
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
-					<a ui-sref=".boechout" ng-class="{'active':selectedTab === 'boechout'}" ng-click="selectedTab = 'boechout'">Boechout
+					<a ui-sref=".boechout" ng-class="{'active':selectedTab === 'boechout'}" ng-click="selectedTab = 'boechout'" ng-click="status.franchiseActive = true">Boechout
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
-					<a ui-sref=".brugge" ng-class="{'active':selectedTab === 'brugge'}" ng-click="selectedTab = 'brugge'">Brugge
+					<a ui-sref=".brugge" ng-class="{'active':selectedTab === 'brugge'}" ng-click="selectedTab = 'brugge'" ng-click="status.franchiseActive = true">Brugge
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
-					<a ui-sref=".luik" ng-class="{'active':selectedTab === 'luik'}" ng-click="selectedTab = 'luik'">Luik
+					<a ui-sref=".luik" ng-class="{'active':selectedTab === 'luik'}" ng-click="selectedTab = 'luik'" ng-click="status.franchiseActive = true">Luik
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
 				</ul>
@@ -64,7 +72,7 @@
 
 			<div>
 
-				<div class="col span_3_of_4 franchisecontent" ui-view>
+				<div class="col span_3_of_4 franchisecontent" ui-view ng-class="{active: status.franchiseActive}">
 
 				</div>
 
