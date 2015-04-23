@@ -1,8 +1,20 @@
 enquire.register("screen and (max-width: 480px)", {
+
 	match : function() {
 		console.log("match")
-		$(".franchiseselectlist").addClass("franchiseslide");
 
+		//MENU COLLAPSE
+		var nav = document.getElementById("nav");
+		if (nav.style.display != 'none' ) {nav.style.display = 'none';}
+		nav.addEventListener(collapse);
+
+		function collapse(){
+			console.log("collapsed!");
+			if (nav.style.display != 'none' ) {nav.style.display = 'none';}
+		}
+
+		//FRANCHISE VIEW
+		$(".franchiseselectlist").addClass("franchiseslide");
 		$( ".franchiseslide > a" ).click(function() {
 			console.log("in fran click");
 			$(".franchiseselectlist").css('display','none');
@@ -20,6 +32,11 @@ enquire.register("screen and (max-width: 480px)", {
 	},
 	unmatch : function() {
 		console.log("unmatch");
+
+		var nav = document.getElementById("nav");
+		if (nav.style.display = 'none' ) {nav.style.display = 'block';}
+		nav.removeListener(collapse);
+
 		$(".franchiseselectlist").removeClass("franchiseslide");
 		$(".franchiseselectlist").css('display','block');
 		$(".viewback").css('visibility', 'hidden');
