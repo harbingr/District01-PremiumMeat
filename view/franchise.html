@@ -39,16 +39,9 @@
 
 		<div class="col span_2_of_3 nocollapse">
 			<div class="col span_1_of_4 franchiseselect" >
-				{{status.franchiseActive}}
-				  <button ng-click="count = count + 1" ng-init="count=0">
-					+1
-				</button>
-				<span>
-				  tel: {{count}}
-				</span>
 
 				<ul class="franchiseselectlist">
-					<a ui-sref=".kontich" ng-click="count = count + 1" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'" ng-click="status.franchiseActive = true" ng-click="franchisecollapse">Kontich
+					<a ui-sref=".kontich" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'" ng-click="status.franchiseActive = true" ng-click="franchisecollapse">Kontich
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
 					<a ui-sref=".brussel" ng-class="{'active':selectedTab === 'brussel'}" ng-click="selectedTab = 'brussel'" ng-click="status.franchiseActive = true">Brussel
