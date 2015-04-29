@@ -107,7 +107,7 @@ header{
 			@include wrap(100%, 0px, 0px);
 			nav{
 				display: none;
-
+				margin-top: 100px;
 				&.active {
 					display: block;
 				}
@@ -179,9 +179,6 @@ header{
 					&:nth-child(even) {
 						background-color: $light;
 					}
-					/*&:nth-child(last){
-						border-bottom: 1px solid $dark;
-					}*/
 				}
 
 				a{
@@ -212,6 +209,10 @@ header{
 				margin: 0 25%;
 				@media only screen and (max-width: 768px) {
 					display: none;}
+				.foot:after{
+					@media only screen and (max-width: 900px) {
+					display: none;}
+				}
 			}
 			li.before:before {
 				content:"/";
@@ -290,9 +291,9 @@ footer{
 			@include wrap(60%, 0px, 0px);
 			margin-top: 10px;
 			margin-bottom: 40px;
-				@media only screen and (max-width: 768px) {
-						//		margin: 0px;
-				}
+			@media only screen and (max-width: 480px) {
+				display: none;
+			}
 			ul{
 				width: 100%;
 				margin-top: 20px;
@@ -309,12 +310,19 @@ footer{
 			}
 		}
 		p{
+			margin-left: 18%;
 			display: block;
 			text-align: justify;
 			max-height: 50px;
-			line-height: 80px;
 			letter-spacing: 0.2em;
 			padding-left: 5%;
+			@media only screen and (max-width: 860px) {
+				font-size: 14px;
+				letter-spacing: 0em;
+			}
+			@media only screen and (max-width: 480px) {
+				padding-top: 10%;
+			}
 			:after {
 				content: "";
 				display: inline-block;
@@ -340,17 +348,20 @@ footer{
 		}
 	}
 	@media only screen and (max-width: 480px) {
-		display: none;
+		//display: none;
 	}
 }
 //HOMEPAGE
+.home{@include wrap(80%, 25px, 50px);}
 .carouselwrap{height: 450px; overflow: hidden;
+	@media only screen and (max-width: 1500px) {
+			height: 420px;}
 	@media only screen and (max-width: 1300px) {
-			height: 400px;}
-	@media only screen and (max-width: 1024px) {
 			height: 350px;}
-	@media only screen and (max-width: 860px) {
+	@media only screen and (max-width: 1024px) {
 			height: 300px;}
+	@media only screen and (max-width: 860px) {
+			height: 280px;}
 	@media only screen and (max-width: 768px) {
 			height: 250px;}
 	@media only screen and (max-width: 640px) {
@@ -364,19 +375,17 @@ footer{
 	width: 100%;
 	z-index: -1;
 	img{
-		//position: absolute;
 		width: 100%;
 		top: 50px;
 		left: 0px;
-		//max-height: 401px;
 	}
-	.carousel-control{display: none;}
 	.carousel-caption{
 		letter-spacing: 5px;
 		width: 50%;
-		height:  45%;
+		height:  50%;
+		max-height: 200px;
 		position: absolute;
-		top: 35%;
+		top: 20%;
 		left: 50%;
 		background-color: $red;
 		opacity: 0.7;
@@ -391,8 +400,6 @@ footer{
 		@media only screen and (max-width: 800px) {
 				height: 30%;}
 
-	.carousel-indicators{display: none;}
-
 		 h4{
 			@media only screen and (max-width: 800px) {
 				display: none;
@@ -401,9 +408,11 @@ footer{
 		@media only screen and (max-width: 480px) {
 				display: none;
 			}
-
 	}
 }
+	.carousel-control{display: none;}
+	.carousel-indicators{display: none;}
+
 //PROMOS
 .promo{
 	background-color: $light;
@@ -567,7 +576,7 @@ footer{
 		}
 		div.col:hover img{opacity: 1;}
 		p{
-			text-align: center;
+			//text-align: center;
 			display: block;
 			padding-bottom: 10px;
 		}
@@ -591,7 +600,7 @@ footer{
 .LocatiesSection{
 	.col{overflow: hidden; margin-bottom: 30px;
 		@media only screen and (max-width: 960px){
-			div.col{ width: 20% !important; position: relative;
+			div.col{ width: 100% !important; position: relative;
 				p{text-align: left;}
 			}
 		}
@@ -606,26 +615,32 @@ footer{
 			color: $dark;
 		}
 	}
-	.cleanslider{
-		margin-top: 0px;
-			img{
-				width: 100%;
-			}
-		}
 	&:hover{opacity: 1;}
-}
-
-.home{@include wrap(80%, 25px, 50px);
-}
 
 //LOCATIE
-.locatie{
-	@include wrap(80%, 10px, 5px);
-		@media only screen and (max-width: 480px) {
-			@include wrap(100%, 15px, 5px);
+	.cleanslider{
+	margin-top: 0px;
+	@media only screen and (max-width: 1024px) {
+		position: relative;
+		bottom: 0px;
+		display: none;
+	}
+		img{
+			width: 100%;
 		}
 	}
-.locationslider{}
+}
+
+.locatie{
+	@include wrap(80%, 10px, 5px);
+	.col{
+		@media only screen and (max-width: 1024px) {
+			position: relative; top: 0px;
+			width: 100%;
+		}
+	}
+}
+
 #map{margin-top: 50px; height: 355px;}
 #locatieimgsq{
 	ul{

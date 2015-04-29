@@ -90,7 +90,7 @@ $urlRouterProvider.otherwise("/");
 				url: "/boechout",
 				templateUrl: "view/franchise.luik.html",
 			})
-			//https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/
+
 		.state('contact', {
 			params:{
 				onderwerp: "vraag",
