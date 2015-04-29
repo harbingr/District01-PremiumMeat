@@ -808,9 +808,6 @@ footer{
 				img{width: auto;}
 				h3{width: 200px;}
 			}
-		@media only screen and (max-width: 480px){
-
-			}
 		.viewback{}
 
 		.animate-enter {
@@ -847,10 +844,22 @@ footer{
 //CONTACT
 .contact{
 	@include wrap(80%, 25px, 50px);
-	form{margin-left: 50px;}
+	form{margin-left: 50px;
+		@media only screen and (max-width: 480px){
+			margin-left: 0px;
+		}
+	}
 	select{
+		padding-left: 15px;
+		background: transparent;
+		appearance: none;
+		-webkit-appearance: none;
+		line-height: 2;
+		background: url(images/up.png) no-repeat right #ddd;
 		width: 100%;
-		font-family: inherit;
+		font-family: 'OswaldRegular';
+		color: $dark !important;
+		opacity: 0.5;
 	}
 	.formsubmit{
 		width: 250px;
@@ -869,4 +878,5 @@ footer{
 	h6{margin-top: 20px;}
 	h2{text-align: left;}
 	p{font-size: 20px;}
+	img{width: 100%;}
 }

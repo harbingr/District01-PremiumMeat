@@ -1160,9 +1160,22 @@ div.col.list.loc:hover img {
 .contact form {
   margin-left: 50px;
 }
+@media only screen and (max-width: 480px) {
+  .contact form {
+    margin-left: 0px;
+  }
+}
 .contact select {
+  padding-left: 15px;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  line-height: 2;
+  background: url(images/up.png) no-repeat right #ddd;
   width: 100%;
-  font-family: inherit;
+  font-family: 'OswaldRegular';
+  color: #352f2b !important;
+  opacity: 0.5;
 }
 .contact .formsubmit {
   width: 250px;
@@ -1187,4 +1200,7 @@ div.col.list.loc:hover img {
 }
 .contactgeg p {
   font-size: 20px;
+}
+.contactgeg img {
+  width: 100%;
 }
