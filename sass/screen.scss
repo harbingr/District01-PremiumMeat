@@ -738,6 +738,7 @@ footer{
 		}
 	}
 	.franchiseselect{
+
 		.active{
 			background-color: $dark;
 			color: $light;
@@ -748,6 +749,7 @@ footer{
 		.franchiseselectlist{
 			width: 100%;
 			border-right: 2px solid $dark;
+			margin-left: 0px;
 			@media only screen and (max-width: 850px){
 				margin: 0px;
 				border: none;
@@ -773,6 +775,7 @@ footer{
 			@media only screen and (max-width: 1024px){
 				font-size: 20px;
 				margin: 0px 0px 5px 15px;
+				a{margin-left: 0px !important;}
 			}
 			@media only screen and (max-width: 850px){
 				font-size: 20px;

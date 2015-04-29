@@ -1027,6 +1027,7 @@ div.col.list.loc:hover img {
 .FranchiseSection .franchiseselect .franchiseselectlist {
   width: 100%;
   border-right: 2px solid #352f2b;
+  margin-left: 0px;
 }
 @media only screen and (max-width: 850px) {
   .FranchiseSection .franchiseselect .franchiseselectlist {
@@ -1059,6 +1060,9 @@ div.col.list.loc:hover img {
   .FranchiseSection .franchiseselect a {
     font-size: 20px;
     margin: 0px 0px 5px 15px;
+  }
+  .FranchiseSection .franchiseselect a a {
+    margin-left: 0px !important;
   }
 }
 @media only screen and (max-width: 850px) {

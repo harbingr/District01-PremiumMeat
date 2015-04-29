@@ -1,4 +1,3 @@
-<!--https://alexfeinberg.wordpress.com/2014/03/08/dynamically-populating-angular-ui-router-states-from-a-service/-->
 <div class="locatie">
 
 	<section class="section header">
@@ -41,6 +40,16 @@
 			<div class="col span_1_of_4 franchiseselect" >
 
 				<ul class="franchiseselectlist">
+
+					<a ui-sref="franchise.detail({detailID: detail.id, detailName: detail.name})" ng-repeat = "detail in franchises" >{{detail.name}}
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+					</a>
+
+					<!-- ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'" ng-click="status.franchiseActive = true" ng-click="franchisecollapse" -->
+
+
+
+					<!--
 					<a ui-sref=".kontich" ng-class="{'active':selectedTab === 'kontich'}" ng-click="selectedTab = 'kontich'" ng-click="status.franchiseActive = true" ng-click="franchisecollapse">Kontich
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
@@ -59,6 +68,7 @@
 					<a ui-sref=".luik" ng-class="{'active':selectedTab === 'luik'}" ng-click="selectedTab = 'luik'" ng-click="status.franchiseActive = true">Luik
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
+				-->
 				</ul>
 
 			</div>

@@ -66,6 +66,28 @@ $urlRouterProvider.otherwise("/");
 			controller: "FranchisesCtrl",
 			templateUrl: "view/franchise.html"
 		})
+
+			.state('franchise.detail ', {
+				params: {
+					detailID: 1,
+					detailName: "brussel"
+				},
+				resolve: {
+					franchisedetail:
+						function ($stateParams, $http){
+							var url ="http://franchise.district01.be/api/franchises/" + $stateParams.detailID + "/nl.json";
+							$http.get(url).then(function(res){
+								return res.data;
+							});
+						}
+				},
+				url: "/:detailName",
+				controller: "FranchisesDetailCtrl",
+				templateUrl: "view/franchise.detail.html"
+			})
+
+
+		/*
 			.state('franchise.kontich', {
 				url: "/kontich",
 				templateUrl: "view/franchise.kontich.html",
@@ -90,6 +112,7 @@ $urlRouterProvider.otherwise("/");
 				url: "/boechout",
 				templateUrl: "view/franchise.luik.html",
 			})
+		*/
 
 		.state('contact', {
 			params:{
