@@ -811,6 +811,10 @@ footer{
 				img{width: auto;}
 				h3{width: 200px;}
 			}
+		@media only screen and (max-width: 480px){
+				display: none;
+			}
+
 		.viewback{}
 
 		.animate-enter {

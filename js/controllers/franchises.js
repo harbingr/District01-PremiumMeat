@@ -10,7 +10,6 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 		$scope.selectedImg = {};
 	});
 
-
 	$scope.franchisemobilewidth = function franchisemobilewidth(){
 		console.log("in fmw");
 	}

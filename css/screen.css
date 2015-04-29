@@ -1118,6 +1118,11 @@ div.col.list.loc:hover img {
     width: 200px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .FranchiseSection .franchisecontent {
+    display: none;
+  }
+}
 .FranchiseSection .franchisecontent .animate-enter {
   transition: 1s linear all;
   opacity: 0;
