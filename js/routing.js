@@ -70,7 +70,7 @@ $urlRouterProvider.otherwise("/");
 			.state('franchise.detail', {
 				params: {
 					detailID: 1,
-					detailName: "kontich"
+					detailName: "Kontich"
 				},
 				url: "/:detailName",
 				controller: "FranchisesDetailCtrl",
