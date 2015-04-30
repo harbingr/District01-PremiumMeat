@@ -1249,3 +1249,28 @@ div.col.list.loc:hover img {
 .contactgeg img {
   width: 100%;
 }
+
+section.languagesection {
+  width: 80%;
+  height: 50%;
+  background-color: lightorange;
+}
+
+img#langlogo {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.langdiv {
+  float: left;
+  margin: 50px;
+  width: 300px;
+}
+
+button.langbutton {
+  width: 200px;
+  height: 40px;
+  background-color: lightorange;
+  margin: 30px;
+}

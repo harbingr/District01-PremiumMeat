@@ -3,23 +3,24 @@ var PremiumMeat = angular.module('PremiumMeat')
 
 	.controller('HomeCtrl', function ($scope, $http) {
 
+		$scope.language = "fr";
 		$scope.changeActiveSlide = function(i) {
 			angular.forEach($scope.slides, function(slide) {
-				slide.active = false; //Desactive all slides
+				slide.active = false; //Deactive all slides
 				if(slide.id === i+1) {
-					slide.active = true; //Active the clicked slide
+					slide.active = true; //Activate clicked slide
 				}
 			});
 		}
 
 		$scope.myInterval = 8000;
 		var slides = $scope.slides = [];
-		$http.get(servicepath + 'promos/nl.json').then(function(res){
+		$http.get(servicepath + 'promos/' + $scope.language + '.json').then(function(res){
 			$scope.slides = res.data;
 		});
 
 		var posts = $scope.posts = [];
-		$http.get(servicepath + 'articles/nl.json').then(function(res){
+		$http.get(servicepath + 'articles/' + $scope.language + '.json').then(function(res){
 			$scope.posts = res.data;
 		});
 

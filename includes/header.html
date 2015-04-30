@@ -15,9 +15,10 @@
 						<nav class="section group nav" id="nav" ng-class="{active: status.navActive}">
 							<ul>
 								<li class="after col span_1_of_6"><a ng-click="collapse()" ui-sref="menu">menu</a></li>
-								<li class="after col span_1_of_6"><a ui-sref="locaties" ng-click="collapse()">locaties</a></li>
+								<li class="after col span_1_of_6"><a ui-sref="locaties" ng-click="collapse()">{{ 'LOCATIES' | translate }}</a></li>
 								<li class="before floatright col span_1_of_6 "><a ui-sref="franchise.detail" ng-click="collapse()">franchise</a></li>
 								<li class="before floatright col span_1_of_6 "><a ui-sref="jobs" ng-click="collapse()">jobs</a></li>
+								<li class="before floatright col span_1_of_6 "><a ui-sref="language" ng-click="collapse()">language</a></li>
 							</ul>
 							 <a href="#" id="pull">Menu</a>
 						</nav>
