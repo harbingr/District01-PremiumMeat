@@ -36,12 +36,12 @@
 				</div>
 		</div>
 
-		<div class="col span_2_of_3 nocollapse">
+		<div class="col span_2_of_3 nocollapse franchisecontainer" ng-class="{active: status.franchiseActive}">
 			<div class="col span_1_of_4 franchiseselect" >
 
 				<ul class="franchiseselectlist">
 
-					<a ui-sref="franchise.detail({detailID: detail.id, detailName: detail.name})" ng-repeat = "detail in franchises"
+					<a ui-sref="franchise.detail({detailID: detail.id, detailName: detail.name})"  ng-repeat = "detail in franchises"
 					ui-sref-active="active" ng-click="franchisemobiler()" >{{detail.name}}
 						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
 					</a>
@@ -51,7 +51,7 @@
 			</div>
 
 			<div>
-				<div class="col span_3_of_4 franchisecontent" ui-view ng-class="{active: status.franchiseActive}">
+				<div class="col span_3_of_4 franchisecontent" ui-view>
 
 				</div>
 			</div>

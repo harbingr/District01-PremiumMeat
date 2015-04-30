@@ -3,6 +3,10 @@ var servicepath = "http://franchise.district01.be/api/";
 angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $window, $http, $stateParams) {
 	$scope.franchises = [];
 
+	$scope.status = {
+
+	};
+
 	$scope.ID = parseInt($stateParams.locationName);
 
 	$http.get(servicepath + 'franchises/nl.json').then(function(res){
@@ -11,8 +15,7 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 	});
 
 	$scope.franchisemobiler = function(){
-		var w =  $window.innerWidth;
-		console.log("screen width: "+w);
+		$scope.status.franchiseActive = true;
 	}
 
 });

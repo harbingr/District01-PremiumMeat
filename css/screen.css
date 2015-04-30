@@ -1120,15 +1120,52 @@ div.col.list.loc:hover img {
 }
 @media only screen and (max-width: 480px) {
   .FranchiseSection .franchisecontent {
-    display: none;
+    width: 100% !important;
   }
 }
-.FranchiseSection .franchisecontent .animate-enter {
-  transition: 1s linear all;
-  opacity: 0;
+@media only screen and (max-width: 480px) {
+  .FranchiseSection h1.franchisecontenthead {
+    display: inline-block;
+    margin-left: 80px;
+    padding-bottom: 20px;
+  }
 }
-.FranchiseSection .franchisecontent .animate-enter.animate-enter-active {
-  opacity: 1;
+.FranchiseSection h3.franchisecontenttext {
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .FranchiseSection h3.franchisecontenttext {
+    margin-left: 0px;
+  }
+}
+.FranchiseSection img.viewback {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .FranchiseSection img.viewback {
+    display: inline-block;
+    margin-left: 0px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .franchisecontainer img.franchisecontentimg {
+    margin-left: 0px;
+  }
+  .franchisecontainer .franchiseselectlist {
+    display: block;
+  }
+  .franchisecontainer .franchisecontent {
+    display: none;
+  }
+  .franchisecontainer.active .franchiseselectlist {
+    display: none;
+  }
+  .franchisecontainer.active .franchisecontent {
+    display: block;
+    width: 100%;
+  }
 }
 
 .light {
@@ -1150,8 +1187,7 @@ div.col.list.loc:hover img {
 }
 
 .franchisecontent[ui-view].ng-enter {
-  /* Chrome */
-  transition: 1s linear all;
+  transition: 0.5s linear all;
   opacity: 0;
 }
 

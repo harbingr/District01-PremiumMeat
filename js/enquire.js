@@ -27,5 +27,6 @@ enquire.register("screen and (max-width: 480px)", {
 		$(".viewback").css('visibility', 'hidden');
 
 	}
+*/
 });
 
