@@ -59,13 +59,21 @@ var PremiumMeat = angular.module('PremiumMeat', [
 		HEADLINE: 'Laatste Blogposts',
 		QUOTE: 'De kwaliteit meten we met de glimlach van de klant',
 		LOCATIES: 'Locaties',
-		SOLLICITEER: 'Solliciteer voor deze job!'
+		SOLLICITEER: 'Solliciteer voor deze job!',
+		FRANCHISEHEAD: "Franchise beginnen?",
+		FRANCHISEFUTURE: "Een mooie toekomst lacht u toe!",
+		FRANCHISEWHY: "Waarom zou je?",
+		FRANCHISECONTACT: "Neem contact op!"
 	})
 	.translations('en', {
 		HEADLINE: 'Latest Blogposts',
 		QUOTE: 'We measure the quality by the smile of the customer',
 		LOCATIES: 'Locations',
-		SOLLICITEER: 'Apply to this job!'
+		SOLLICITEER: 'Apply to this job!',
+		FRANCHISEHEAD: "Start a Franchise?",
+		FRANCHISEFUTURE: "A bright future smiles at you!",
+		FRANCHISEWHY: "Why would you?",
+		FRANCHISECONTACT: "Contact us!"
 	});
 
 	$translateProvider.preferredLanguage('en');

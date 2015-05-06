@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Open Apen</title>
+	<title>District01 - Premium Meat</title>
+	<!-- {{currentPage}} -->
 
 <!-- EXTERNAL DEPENDENCIES-->
 <!-- CSS -->
@@ -58,9 +59,9 @@
 </head>
 
 <body layout="column" breakpoints id="scroll" ng-controller="routeCtrl">
-	cp:{{currentPage}}
 
-	<div ng-include=" 'includes/header.html ' " ng-controller="HeaderCtrl" ng-show="{{currentPage != '/language'}}">
+	<div ng-include=" 'includes/header.html ' " ng-show="!state.includes('language')">
+	<!-- ng-show="{{!isCurrentPage('/language')}}" -->
 
 	</div>
 
@@ -70,7 +71,7 @@
 
 	</main>
 
-	<div ng-include=" 'includes/footer.html' " ng-show="{{currentPage != '/language'}}">
+	<div ng-include=" 'includes/footer.html' " ng-show="!state.includes('language')">
 
 
 	</div>

@@ -3,9 +3,6 @@ var PremiumMeat = angular.module('PremiumMeat')
 
 	.controller('HomeCtrl', function ($scope, $http, $location) {
 
-		$scope.currentPage = $location.path() === "/home";
-		console.log($scope.currentPage)
-
 		$scope.language = "fr";
 		$scope.changeActiveSlide = function(i) {
 			angular.forEach($scope.slides, function(slide) {

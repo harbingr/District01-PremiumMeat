@@ -1308,11 +1308,11 @@ div.langdiv h3.langhead {
 
 div#darkback {
   position: absolute;
-  top: 70%;
+  top: 75%;
   z-index: -10;
   background-color: #352f2b;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 button.langbutton {
