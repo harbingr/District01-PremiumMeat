@@ -1250,13 +1250,45 @@ div.col.list.loc:hover img {
   width: 100%;
 }
 
+div#langhead {
+  width: 100%;
+  height: 180px;
+  background-color: #f2f3ec;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+div#langhead img {
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 section.languagesection {
+  position: absolute;
   width: 80%;
-  height: 50%;
-  background-color: lightorange;
+  height: 65%;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#langwrap {
+  background-color: #f0f0f0;
+  width: 1000px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  box-shadow: 0px 1px 2px #969696;
 }
 
 img#langlogo {
+  position: absolute;
+  top: 32%;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -1264,8 +1296,23 @@ img#langlogo {
 
 div.langdiv {
   float: left;
-  margin: 50px;
-  width: 300px;
+  margin: 60px 100px;
+  width: 270px;
+}
+div.langdiv h3.langhead {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 35px;
+  line-height: 25px;
+}
+
+div#darkback {
+  position: absolute;
+  top: 70%;
+  z-index: -10;
+  background-color: #352f2b;
+  width: 100%;
+  height: 400px;
 }
 
 button.langbutton {
@@ -1273,4 +1320,11 @@ button.langbutton {
   height: 40px;
   background-color: lightorange;
   margin: 30px;
+  margin-bottom: 50px;
+  background-color: #ca4123;
+  color: white;
+  border: none;
+  font-family: 'OswaldLight';
+  font-size: 18px;
+  letter-spacing: 2px;
 }

@@ -1,7 +1,10 @@
 var servicepath = "http://franchise.district01.be/api/";
 var PremiumMeat = angular.module('PremiumMeat')
 
-	.controller('HomeCtrl', function ($scope, $http) {
+	.controller('HomeCtrl', function ($scope, $http, $location) {
+
+		$scope.currentPage = $location.path() === "/home";
+		console.log($scope.currentPage)
 
 		$scope.language = "fr";
 		$scope.changeActiveSlide = function(i) {
@@ -24,7 +27,20 @@ var PremiumMeat = angular.module('PremiumMeat')
 			$scope.posts = res.data;
 		});
 
+	  	$scope.checkCookie = function ($cookies){
+	      console.log("check koek");
+	    		var cookie = $cookieStore.get('languageCookie');
+	    		console.log(cookie);
+		}
+
+  	$scope.deleteCookie = function ($cookies){
+	      console.log("delete koek");
+			$cookieStore.remove('languageCookie');
+		}
+
 	});
+
+
 
 	PremiumMeat.directive('errSrc', function() {
 	  return {
@@ -37,4 +53,5 @@ var PremiumMeat = angular.module('PremiumMeat')
 	    }
 	  }
 	});
+
 

@@ -73,20 +73,24 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	//$translateProvider.useCookieStorage();
 
 	$urlRouterProvider.otherwise("/");
-		$stateProvider
+
+	$stateProvider
 			.state('home', {
 				url: "/",
 				data: {
-					rule: function() {
-			                        if (true) {
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'home'
+			                        	  	}
+						}
 			                        	// language button set localstorage
 			                        	// if localstorage set
-			                            return {
+			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                            };
-			                        }
-			                    }
+			                        };
+			                }
 				},
 				controller: "HomeCtrl",
 				templateUrl: "view/home.html"
@@ -94,14 +98,19 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			.state('menu', {
 				url: "/menu",
 				data: {
-					rule: function() {
-			                        if (true) {
-			                            return {
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'menu'
+			                        	  	}
+						}
+			                        	// language button set localstorage
+			                        	// if localstorage set
+			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                            };
-			                        }
-			                    }
+			                        };
+			                }
 				},
 				controller: "MenuCtrl",
 				templateUrl: "view/menu.html"
@@ -109,14 +118,19 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			.state('locaties', {
 				url: "/locaties",
 				data: {
-					rule: function() {
-			                        if (true) {
-			                            return {
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'locaties'
+			                        	  	}
+						}
+			                        	// language button set localstorage
+			                        	// if localstorage set
+			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                            };
-			                        }
-			                    }
+			                        };
+			                }
 				},
 				controller: "FranchisesCtrl",
 				templateUrl: "view/locaties.html"
@@ -124,15 +138,20 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				.state('locatie', {
 					url: "/locaties/:locationName",
 					data: {
-						rule: function() {
-				                        if (true) {
-				                            return {
-				                                toState: 'language',
-				                                toParams: {}
-				                            };
-				                        }
-				                    }
-					},
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'locatie'
+			                        	  	}
+						}
+			                        	// language button set localstorage
+			                        	// if localstorage set
+			                         else return {
+			                                toState: 'language',
+			                                toParams: {}
+			                        };
+			                }
+				},
 					controller: "FranchisesCtrl",
 					templateUrl: "view/locatie.html"
 				})
@@ -140,15 +159,20 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			.state('jobs', {
 				url: "/jobs",
 				data: {
-						rule: function() {
-				                        if (true) {
-				                            return {
-				                                toState: 'language',
-				                                toParams: {}
-				                            };
-				                        }
-				                    }
-					},
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'jobs'
+			                        	  	}
+						}
+			                        	// language button set localstorage
+			                        	// if localstorage set
+			                         else return {
+			                                toState: 'language',
+			                                toParams: {}
+			                        };
+			                }
+				},
 				controller: "JobsCtrl",
 				templateUrl: "view/jobs.html"
 			})
@@ -156,15 +180,20 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			.state('franchise', {
 				url: "/franchise",
 				data: {
-						rule: function() {
-				                        if (true) {
-				                            return {
-				                                toState: 'language',
-				                                toParams: {}
-				                            };
-				                        }
-				                    }
-					},
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'franchise'
+			                        	  	}
+						}
+			                        	// language button set localstorage
+			                        	// if localstorage set
+			                         else return {
+			                                toState: 'language',
+			                                toParams: {}
+			                        };
+			                }
+				},
 				controller: "FranchisesCtrl",
 				templateUrl: "view/franchise.html"
 			})
@@ -194,15 +223,20 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				},
 				url: "/contact?onderwerp",
 				data: {
-						rule: function() {
-				                        if (true) {
-				                            return {
-				                                toState: 'language',
-				                                toParams: {}
-				                            };
-				                        }
-				                    }
-					},
+					rule: function($cookieStore) {
+			                        if ($cookieStore.get('languageCookie')) {
+			                        	  	return {
+			                        	  		toState: 'contact'
+			                        	  	}
+						}
+			                        	// language button set localstorage
+			                        	// if localstorage set
+			                         else return {
+			                                toState: 'language',
+			                                toParams: {}
+			                        };
+			                }
+				},
 				controller: "contactController",
 				templateUrl: "view/contact.html"
 			})
@@ -213,4 +247,5 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				templateUrl: "view/language.html"
 			})
 	});
+
 

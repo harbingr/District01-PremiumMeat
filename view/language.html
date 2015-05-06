@@ -1,27 +1,35 @@
 <link rel="stylesheet" href="css/screen.css">
-<section class="home">
+<section>
 
 <!--BLOGPOSTS-->
+<div id="langhead">
+	<img src="images/logo.png" alt="logo" id="langlogo">
+</div>
+
+
 	<section id="languagesection">
-		<img src="images/logo.png" alt="logo" id="langlogo">
 
-		<div>
+		<div id="langwrap">
 
 			<div class="langdiv">
-				<h3>Welkom bij District01</h3>
+				<h3 class="langhead">Welkom bij District01 Premium Meat, kwaliteitsvolle fastfood in België</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nesciunt odit officia, hic, alias quasi error dolorem. Sed tenetur sunt voluptates maxime mollitia debitis, quas nisi laboriosam ut, facilis adipisci.</p>
-				<button ng-click="changeLanguage('nl')" class="langbutton">nederlands</button>
+				<button ng-click="changeLanguage('nl')" ui-sref="home" class="langbutton">nederlands</button>
 			</div>
 
 			<div class="langdiv">
-				<h3>Welcome to District01</h3>
+				<h3 class="langhead">Welcome at District01 Premium Meat, Belgiums quality fastfood </h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nesciunt odit officia, hic, alias quasi error dolorem. Sed tenetur sunt voluptates maxime mollitia debitis, quas nisi laboriosam ut, facilis adipisci.</p>
-				<button ng-click="changeLanguage('en')" class="langbutton">english</button>
+				<button ng-click="changeLanguage('en')" ui-sref="home" class="langbutton">english</button>
 			</div>
-
-			<button ng-click="checkCookie()" class="langbutton">get cookie</button>
-			<button ng-click="deleteCookie()" class="langbutton">delete cookie</button>
 
 		</div>
 
 	</section>
+
+	<div id="darkback">
+		<!--
+			<button ng-click="checkCookie()" class="langbutton">get cookie</button>
+			<button ng-click="deleteCookie()" class="langbutton">delete cookie</button>
+		-->
+	</div>
