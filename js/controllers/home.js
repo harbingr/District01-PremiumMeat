@@ -3,6 +3,8 @@ var PremiumMeat = angular.module('PremiumMeat')
 
 	.controller('HomeCtrl', function ($scope, $http, $location) {
 
+		//console.log($translateProvider.CookieStorage);
+
 		$scope.language = "fr";
 		$scope.changeActiveSlide = function(i) {
 			angular.forEach($scope.slides, function(slide) {

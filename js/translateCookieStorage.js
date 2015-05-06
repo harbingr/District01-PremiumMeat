@@ -10,6 +10,7 @@ var PremiumMeat = angular.module('PremiumMeat')
 
       get: function (name) {
         return $cookieStore.get(name);
+        console.log($cookieStore.get(name));
       },
       put: function (name, value) {
         $cookieStore.put(name, value);

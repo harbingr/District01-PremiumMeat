@@ -8,14 +8,16 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	//"angular-google-analytics"
 	])
 
-.run(function($rootScope, $state){
+.run(function($rootScope, $state, $cookieStore){
+
 		$rootScope.$state = $state;
 
 		 $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-                // Check if a rule is present
+		 	console.log("state change");
                 if (!toState.data || !angular.isFunction(toState.data.rule)) {
                     return;
                 }
+
                 // if a rule is present we should first wait till the authentication was resolved
                 // after that, execute the rule
                 var test = function test() {
@@ -33,29 +35,6 @@ var PremiumMeat = angular.module('PremiumMeat', [
 
 
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide, $translateProvider) {
-/*
-	//Google analytics tracking ID: UA-61932007-1
-	AnalyticsProvider.setAccount('UA-61932007-1');
-	// automatic route tracking (default=true)
-	AnalyticsProvider.trackPages(false);
-	//Optional set domain (Use 'none' for testing on localhost)
-	AnalyticsProvider.setDomainName('');
-	//Use analytics.js instead of ga.js
-	AnalyticsProvider.useAnalytics(true);
-	// Ignore first page view.
-	AnalyticsProvider.ignoreFirstPageLoad(true);
-	AnalyticsProvider.useECommerce(false);
-	AnalyticsProvider.useEnhancedLinkAttribution(true);
-	AnalyticsProvider.setExperimentId('12345');
-	//Set custom cookie parameters for analytics.js
-	AnalyticsProvider.setCookieConfig({
-	  cookieDomain: 'foo.example.com',
-	  cookieName: 'myNewName',
-	  cookieExpires: 20000
-	});
-	//Change the default page event name. This is useful for ui-router, which fires $stateChangeSuccess instead of $routeChangeSuccess
-	AnalyticsProvider.setPageEvent('$stateChangeSuccess');
-*/
 	$translateProvider.translations('nl', {
 		HEADLINE: 'Laatste Blogposts',
 		QUOTE: 'De kwaliteit meten we met de glimlach van de klant',
@@ -88,7 +67,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        if ($cookieStore.get('translateCookieStorage')){
 			                        	  	return {
 			                        	  		toState: 'home'
 			                        	  	}
