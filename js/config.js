@@ -31,6 +31,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
             });
 	})
 
+
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide, $translateProvider) {
 /*
 	//Google analytics tracking ID: UA-61932007-1
@@ -76,9 +77,9 @@ var PremiumMeat = angular.module('PremiumMeat', [
 		FRANCHISECONTACT: "Contact us!"
 	});
 
-	$translateProvider.preferredLanguage('en');
-	//$translateProvider.rememberLanguage(true);
-	//$translateProvider.useCookieStorage();
+	$translateProvider.preferredLanguage('nl');
+	$translateProvider.useCookieStorage();
+	$translateProvider.useLocalStorage();
 
 	$urlRouterProvider.otherwise("/");
 
@@ -255,5 +256,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				templateUrl: "view/language.html"
 			})
 	});
+
+
 
 

@@ -3,7 +3,6 @@ angular.module('PremiumMeat')
 .controller('languageCtrl', function($translate, $scope, $cookieStore, $location) {
 
   $scope.changeLanguage = function (langKey) {
-    console.log("chane language");
     $translate.use(langKey);
     $cookieStore.put('languageCookie', langKey);
     var cookie = $cookieStore.get('languageCookie');
