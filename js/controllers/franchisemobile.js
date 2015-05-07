@@ -5,7 +5,6 @@ angular.module('PremiumMeat')
 
 	$scope.franchisecollapse = function franchisecollapse () {
 		$scope.status.franchiseActive = false;
-		console.log($scope.status.franchiseActive);
 	};
 });
 

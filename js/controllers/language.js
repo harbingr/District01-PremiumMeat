@@ -6,7 +6,7 @@ angular.module('PremiumMeat')
     $translate.use(langKey);
     $cookieStore.put('languageCookie', langKey);
     var cookie = $cookieStore.get('languageCookie');
-    console.log(cookie);
+    console.log("cookie = " + cookie);
     $location.path('/home')
   };
 

@@ -33,36 +33,36 @@
 			<form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate ng-hide="hideForm" >
 
 			<div class="form-group">
-				<input type="text" name="name" class="form-control" ng-model="name" placeholder="Naam*" ng-minlength="2" ng-maxlength="15" required>
-				<p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Gelieve uw naam in te vullen</p>
+				<input type="text" name="name" class="form-control" ng-model="name" placeholder="{{ 'CONTACTNAAM' | translate }} *" ng-minlength="2" ng-maxlength="15" required>
+				<p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">{{ 'CONTACTNAAMFEEDBACK' | translate }} </p>
 			</div>
 
 			<div class="form-group">
 				<input type="email" name="email" class="form-control" ng-model="email" placeholder="E - mail*" required>
-				<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Gelieve een geldig email aders in te vullen</p>
+				<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">{{ 'CONTACTEMAILFEEDBACK' | translate }}</p>
 			</div>
 
 			<div class="form-group">
-				<input type="text" name="telefoon" class="form-control" ng-model="user.telefoon" placeholder="Telefoon" >
+				<input type="text" name="telefoon" class="form-control" ng-model="user.telefoon" placeholder="{{ 'CONTACTTELEFOON' | translate }}" >
 			</div>
 
 			<div class="form-group">
 				<select ng-model="contactform.onderwerp">
-					<option value="vraag" selected="selected" ng-init="vraag" autocomplete="off">Vraag</option>
+					<option value="vraag" selected="selected" ng-init="vraag" autocomplete="off">{{ 'CONTACTVRAAG' | translate }}</option>
 					<option value="feedback" autocomplete="off">Feedback</option>
-					<option value="sollicitatie" autocomplete="off">Sollicitatie</option>
+					<option value="sollicitatie" autocomplete="off">{{ 'CONTACTJOB' | translate }}</option>
 					<option value="franchise" autocomplete="off">Franchise</option>
 				</select>
 			</div>
 
 			<div class="form-group">
-				<textarea name="bericht" class="form-control" ng-model="bericht" placeholder="Uw bericht*" rows="5" cols="20" required></textarea>
+				<textarea name="bericht" class="form-control" ng-model="bericht" placeholder="{{ 'CONTACTBERICHT' | translate }}*" rows="5" cols="20" required></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-primary formsubmit" ng-disabled="userForm.$invalid">Formulier versturen</button>
+			<button type="submit" class="btn btn-primary formsubmit" ng-disabled="userForm.$invalid">{{ 'CONTACTSUBMIT' | translate }}</button>
 			</form>
 
-			<h4 ng-show="hideForm">Uw bericht werd verstuurd, we beantwoorden zo snel mogelijk uw vraag</h4>
+			<h4 ng-show="hideForm">{{ 'CONTACTSENT' | translate }}</h4>
 
 		</div>
 

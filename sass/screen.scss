@@ -129,7 +129,7 @@ header{
 		width: 25%;
 		margin-left: 25%;
 		position: absolute;
-		top: -1%;
+		top: -2%;
 		max-width: 300px;
 		@media only screen and (max-width: 1024px) {
 			top: 0%;}
@@ -161,7 +161,6 @@ header{
 				padding-top: 60px;
 				z-index: 1000;
 			}
-
 			li{
 				margin: 0px;
 				display: inline;
@@ -180,7 +179,6 @@ header{
 						background-color: $light;
 					}
 				}
-
 				a{
 					z-index: 1000;
 					display: inline;
@@ -310,7 +308,7 @@ footer{
 			}
 		}
 		p{
-			margin-left: 18%;
+			margin-left: 17%;
 			display: block;
 			text-align: justify;
 			max-height: 50px;
@@ -330,9 +328,7 @@ footer{
 			}
 		}
 	}
-
 	.up{float: right;}
-
 	#bottom{
 		height: 50px;
 		background-color: $light;
@@ -346,9 +342,6 @@ footer{
 			filter: grayscale(100%);
 			&.hover{filter: grayscale(0%);}
 		}
-	}
-	@media only screen and (max-width: 480px) {
-		//display: none;
 	}
 }
 
@@ -400,15 +393,12 @@ footer{
 			}
 		@media only screen and (max-width: 800px) {
 				height: 30%;}
-
 		 h4{
-			@media only screen and (max-width: 800px) {
-				display: none;
-			}
+		 	@media only screen and (max-width: 800px) {
+				display: none;}
 		}
 		@media only screen and (max-width: 480px) {
-				display: none;
-			}
+				display: none;}
 	}
 }
 	.carousel-control{display: none;}
@@ -447,18 +437,13 @@ footer{
 		}
 	}
 
-	@media only screen and (max-width: 640px) {
-			/*width: 48% !important;*/}
-	@media only screen and (max-width: 480px) {
-			/*width: 100% !important;*/}
-
 	.promoinfo{
 		position: absolute;
 		bottom: 15px;
 		text-align: center;
 		width: 100%;
 		margin-bottom: 0px;
-		@media only screen and (max-width: 900px) {
+			@media only screen and (max-width: 900px) {
 			bottom: 5px;}
 		}
 
@@ -577,7 +562,6 @@ footer{
 		}
 		div.col:hover img{opacity: 1;}
 		p{
-			//text-align: center;
 			display: block;
 			padding-bottom: 10px;
 		}
@@ -715,7 +699,6 @@ footer{
 			h3{font-size: 16px;}
 			h2{font-size: 20px;}
 		}
-
 		ul{
 			li{
 				font-size: 16px; margin: 15px;
@@ -739,14 +722,11 @@ footer{
 		}
 	}
 	.franchiseselect{
-
 		.active{
 			background-color: $dark;
-			color: $light;
-		}
+			color: $light;}
 		@media only screen and (max-width: 960px){
-				width:23.8% !important;
-			}
+				width:23.8% !important;}
 		.franchiseselectlist{
 			width: 100%;
 			border-right: 2px solid $dark;
@@ -843,19 +823,12 @@ footer{
 		@media only screen and (max-width: 480px){
 			img.franchisecontentimg{margin-left: 0px;}
 			.franchiseselectlist {
-				display: block;
-			}
-
+				display: block;}
 			.franchisecontent {
-				display: none;
-			}
-
-
+				display: none;}
 			&.active{
 				.franchiseselectlist {
-					display: none;
-				}
-
+					display: none;}
 				.franchisecontent {
 					display: block;
 					width: 100%;
@@ -922,15 +895,18 @@ footer{
 }
 
 //LANGUAGE PAGE
-div#langhead{width: 100%; height: 180px;
+div#langhead{width: 100%; height: 120px;
 	background-color: $light;
-	margin-top: 60px; margin-bottom: 100px;
+	margin-top: 1%; margin-bottom: 5%;
 	img{
-		width: 350px;
+		width: 250px;
 		position: absolute;
 		left: 50%;
-		top: 20%;
+		top: 18%;
 		transform: translate(-50%, -50%);
+		@media only screen and (max-width: 480px){
+			width: 250px;
+		}
 	}
 }
 section.languagesection{
@@ -945,23 +921,26 @@ div#langwrap{background-color: rgb(240, 240, 240);
 width: 1000px; height: 400px;
 margin-left: auto; margin-right: auto; margin-top: 50px;
 box-shadow: 0px 1px 2px rgb(150, 150, 150);}
-img#langlogo{
-	position: absolute;
-	top: 32%;
-	width: 500px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 div.langdiv{
 	float: left;
 	margin: 60px 100px;
 	width: 270px;
+	@media only screen and (max-width: 1000px){
+		margin:80px;}
+	@media only screen and (max-width: 800px){
+		margin:40px;}
+	@media only screen and (max-width: 650px){
+		margin:20px;
+		width: 220px;}
+	@media only screen and (max-width: 480px){
+		margin: 15px;
+		width: 170px;}
 	h3.langhead{
 		font-size: 18px;
 		text-align: center;
 		margin-bottom: 35px;
-		line-height: 25px;
-	}
+		line-height: 25px;}
 }
 div#darkback{
 	position: absolute;
@@ -982,4 +961,9 @@ button.langbutton{
 	border: none;
 	font-family: 'OswaldLight';
 	font-size: 18px; letter-spacing: 2px;
+	@media only screen and (max-width: 480px){
+		margin-left: 15px;
+		margin-top: 15px;
+		width: 140px;
+	}
 }

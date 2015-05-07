@@ -8,12 +8,20 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	//"angular-google-analytics"
 	])
 
-.run(function($rootScope, $state, $cookieStore){
+.run(function($rootScope, $window, $state, $cookieStore, $translate, $location){
+
+		var store = $translate.storage();
+			if(angular.equals(store, {})){
+				$location.path('/language');
+			}
+			else {
+				$location.path('/home');
+			}
 
 		$rootScope.$state = $state;
 
 		 $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-		 	console.log("state change");
+			//console.log("state change");
                 if (!toState.data || !angular.isFunction(toState.data.rule)) {
                     return;
                 }
@@ -38,22 +46,46 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	$translateProvider.translations('nl', {
 		HEADLINE: 'Laatste Blogposts',
 		QUOTE: 'De kwaliteit meten we met de glimlach van de klant',
+		QUOTESUB: 'Lees het volledige',
+		QUOTELINK: ' Interview met CEO M. Verlinde',
 		LOCATIES: 'Locaties',
+		LOCATIEBEZOEK: 'Bezoek',
 		SOLLICITEER: 'Solliciteer voor deze job!',
 		FRANCHISEHEAD: "Franchise beginnen?",
 		FRANCHISEFUTURE: "Een mooie toekomst lacht u toe!",
 		FRANCHISEWHY: "Waarom zou je?",
-		FRANCHISECONTACT: "Neem contact op!"
+		FRANCHISECONTACT: "Neem contact op!",
+		CONTACTNAAM: "Naam",
+		CONTACTNAAMFEEDBACK: "Gelieve een geldige naam in te vullen",
+		CONTACTEMAILFEEDBACK: "Gelieve een geldig email aders in te vullen",
+		CONTACTTELEFOON: "Telefoon",
+		CONTACTBERICHT: "Uw bericht",
+		CONTACTVRAAG: "Vraag",
+		CONTACTJOB: "Sollicitatie",
+		CONTACTSUBMIT: "Formulier versturen",
+		CONTACTSENT: "Uw bericht werd verstuurd, we beantwoorden zo snel mogelijk uw vraag."
 	})
 	.translations('en', {
 		HEADLINE: 'Latest Blogposts',
-		QUOTE: 'We measure the quality by the smile of the customer',
+		QUOTE: ' "We measure the quality by the smile of the customer" ',
+		QUOTESUB: 'Read the full',
+		QUOTELINK: 'Interview with CEO M. Verlinde',
 		LOCATIES: 'Locations',
+		LOCATIEBEZOEK: 'Visit',
 		SOLLICITEER: 'Apply to this job!',
 		FRANCHISEHEAD: "Start a Franchise?",
 		FRANCHISEFUTURE: "A bright future smiles at you!",
 		FRANCHISEWHY: "Why would you?",
-		FRANCHISECONTACT: "Contact us!"
+		FRANCHISECONTACT: "Contact us!",
+		CONTACTNAAM: "Name",
+		CONTACTNAAMFEEDBACK: "Please fill in a correct name",
+		CONTACTEMAILFEEDBACK: "Please fill in a correct e-mail adress",
+		CONTACTTELEFOON: "Telephone",
+		CONTACTBERICHT: "Your message",
+		CONTACTVRAAG: "Question",
+		CONTACTJOB: "Appllication",
+		CONTACTSUBMIT: "Send form",
+		CONTACTSENT: "Your message was sent, we will answer your question as soon as possible."
 	});
 
 	$translateProvider.preferredLanguage('nl');
@@ -67,7 +99,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('translateCookieStorage')){
+			                        /*if ($cookieStore.get('translateCookieStorage')){
 			                        	  	return {
 			                        	  		toState: 'home'
 			                        	  	}
@@ -77,7 +109,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 				controller: "HomeCtrl",
@@ -87,7 +119,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/menu",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        /*if ($cookieStore.get('languageCookie')) {
 			                        	  	return {
 			                        	  		toState: 'menu'
 			                        	  	}
@@ -97,7 +129,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 				controller: "MenuCtrl",
@@ -107,7 +139,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/locaties",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        /*if ($cookieStore.get('languageCookie')) {
 			                        	  	return {
 			                        	  		toState: 'locaties'
 			                        	  	}
@@ -117,7 +149,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 				controller: "FranchisesCtrl",
@@ -127,7 +159,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 					url: "/locaties/:locationName",
 					data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        /*if ($cookieStore.get('languageCookie')) {
 			                        	  	return {
 			                        	  		toState: 'locatie'
 			                        	  	}
@@ -137,7 +169,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 					controller: "FranchisesCtrl",
@@ -148,7 +180,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/jobs",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        /*if ($cookieStore.get('languageCookie')) {
 			                        	  	return {
 			                        	  		toState: 'jobs'
 			                        	  	}
@@ -158,7 +190,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 				controller: "JobsCtrl",
@@ -169,7 +201,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/franchise",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        /*if ($cookieStore.get('languageCookie')) {
 			                        	  	return {
 			                        	  		toState: 'franchise'
 			                        	  	}
@@ -179,7 +211,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 				controller: "FranchisesCtrl",
@@ -212,7 +244,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				url: "/contact?onderwerp",
 				data: {
 					rule: function($cookieStore) {
-			                        if ($cookieStore.get('languageCookie')) {
+			                        /*if ($cookieStore.get('languageCookie')) {
 			                        	  	return {
 			                        	  		toState: 'contact'
 			                        	  	}
@@ -222,7 +254,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			                         else return {
 			                                toState: 'language',
 			                                toParams: {}
-			                        };
+			                        };*/
 			                }
 				},
 				controller: "contactController",

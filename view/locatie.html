@@ -28,7 +28,7 @@
 
 		<div class="col span_1_of_2">
 			<div>
-				<h3>Bezoek {{ franchises[ID-1].name }}</h3>
+				<h3>{{ 'LOCATIEBEZOEK' | translate }} {{ franchises[ID-1].name }}</h3>
 				<p>{{ franchises[ID-1].description }}</p>
 				<img ng-src="https://maps.googleapis.com/maps/api/staticmap?center=
 				{{franchises[ID-1].location[0].lat}},{{ franchises[ID-1].location[0].long}}

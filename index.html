@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="PremiumMeat" lang="en">
+<html ng-app="PremiumMeat" lang="en" xmlns:ng="http://angularjs.org">
 <head>
 	<meta charset="UTF-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +22,14 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- JS -->
+
+	<script src="//cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js"></script>
+
+	<!--[if lte IE 9]>
+	<script src="xdomain.js" slave="http://example.org/proxy.html"></script>
+
+	<script src="//cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js"></script>
+	<![endif]-->
 
 	<!-- JQ -->
 	<script src="js/jquery/jquery-2.1.3.js"></script>
@@ -61,13 +69,11 @@
 	<script src="js/ng-scrollto.js"></script>
 	<script src="js/angular/ngAnimate.js"></script>
 
-
 </head>
 
 <body layout="column" breakpoints id="scroll" ng-controller="routeCtrl">
 <p></p>
 	<div ng-include=" 'includes/header.html ' " ng-show="!state.includes('language')">
-	<!-- ng-show="{{!isCurrentPage('/language')}}" -->
 
 	</div>
 
