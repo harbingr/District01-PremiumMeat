@@ -88,6 +88,11 @@ header {
   height: 150px;
   background-color: #f9faf5;
 }
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 100px;
+  }
+}
 
 section {
   margin-top: 50px;
@@ -175,6 +180,24 @@ header .menuwrap {
   margin-top: 0px;
   margin-bottom: 25px;
 }
+@media only screen and (max-width: 1024px) {
+  header .menuwrap {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .menuwrap {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+}
 @media only screen and (max-width: 480px) {
   header .menuwrap {
     width: 100%;
@@ -205,7 +228,7 @@ header .burger {
   }
 }
 header img {
-  width: 25%;
+  width: 270px;
   margin-left: 25%;
   position: absolute;
   top: -2%;
@@ -213,18 +236,14 @@ header img {
 }
 @media only screen and (max-width: 1024px) {
   header img {
-    top: 0%;
+    width: 220px;
   }
 }
 @media only screen and (max-width: 768px) {
   header img {
-    margin-left: 23%;
-    top: 2%;
-  }
-}
-@media only screen and (max-width: 640px) {
-  header img {
-    top: 3%;
+    width: 170px;
+    margin-left: 30%;
+    top: 1%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -254,6 +273,11 @@ nav a#pull {
 }
 nav ul {
   padding-top: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    padding-top: 30px;
+  }
 }
 @media only screen and (max-width: 480px) {
   nav ul {
@@ -313,7 +337,7 @@ nav ul li.after:after {
   color: #ca4123;
   margin: 0 25%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   nav ul li.after:after {
     display: none;
   }
@@ -328,14 +352,14 @@ nav ul li.before:before {
   color: #ca4123;
   margin: 0 25%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   nav ul li.before:before {
     display: none;
   }
 }
 
 main {
-  margin-top: 25px;
+  margin-top: -50px;
   margin-bottom: 50px;
   z-index: 0;
 }
@@ -346,7 +370,7 @@ section {
 
 .sectionheader {
   height: 100px;
-  margin-top: 55px;
+  margin-top: 35px;
   position: relative;
 }
 .sectionheader .sectionposth {
@@ -431,6 +455,11 @@ footer #footmenu nav {
   margin-top: 10px;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 1024px) {
+  footer #footmenu nav {
+    margin-bottom: 20px;
+  }
+}
 @media only screen and (max-width: 480px) {
   footer #footmenu nav {
     display: none;
@@ -512,7 +541,6 @@ footer #bottom img.socialimg.hover {
 
 .carouselwrap {
   height: 450px;
-  overflow: hidden;
 }
 @media only screen and (max-width: 1500px) {
   .carouselwrap {
@@ -526,22 +554,12 @@ footer #bottom img.socialimg.hover {
 }
 @media only screen and (max-width: 1024px) {
   .carouselwrap {
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 860px) {
-  .carouselwrap {
-    height: 280px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .carouselwrap {
-    height: 250px;
+    min-height: 300px;
   }
 }
 @media only screen and (max-width: 640px) {
   .carouselwrap {
-    height: 200px;
+    height: 250px;
   }
 }
 

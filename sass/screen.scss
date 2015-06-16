@@ -53,6 +53,7 @@ header{
 	@include wrap(80%, 0px, 25px);
 	height: 150px;
 	background-color: $light;
+	@media only screen and (max-width: 1024px) {height: 100px;}
 }
 
 section{margin-top: 50px;}
@@ -112,6 +113,12 @@ header{
 	z-index: 2 !important;
 	.menuwrap{
 		@include wrap(70%, 0px, 25px);
+		@media only screen and (max-width: 1024px) {
+			@include wrap(80%, 0px, 25px);
+		}
+		@media only screen and (max-width: 768px) {
+			@include wrap(90%, 0px, 25px);
+		}
 		@media only screen and (max-width: 480px) {
 			@include wrap(100%, 0px, 0px);
 			nav{
@@ -135,17 +142,21 @@ header{
 		}
 	}
 	img{
-		width: 25%;
+		width: 270px;
 		margin-left: 25%;
 		position: absolute;
 		top: -2%;
 		max-width: 300px;
 		@media only screen and (max-width: 1024px) {
-			top: 0%;}
+			width: 220px;
+			}
 		@media only screen and (max-width: 768px) {
-			margin-left: 23%; top: 2%;}
+			width: 170px;
+			margin-left: 30%;
+			top: 1%;
+			}
 		@media only screen and (max-width: 640px) {
-			top: 3%;}
+			}
 		@media only screen and (max-width: 480px) {
 			width: 200px;
 			margin-left: 30%;
@@ -166,6 +177,9 @@ header{
 				z-index: 1000;
 			}
 		ul{padding-top: 50px;
+			@media only screen and (max-width: 1024px) {
+				padding-top: 30px;
+			}
 			@media only screen and (max-width: 480px) {
 				padding-top: 60px;
 				z-index: 1000;
@@ -214,7 +228,7 @@ header{
 				content:"/";
 				color: $red;
 				margin: 0 25%;
-				@media only screen and (max-width: 768px) {
+				@media only screen and (max-width: 1024px) {
 					display: none;}
 				.foot:after{
 					@media only screen and (max-width: 900px) {
@@ -225,19 +239,19 @@ header{
 				content:"/";
 				color: $red;
 				margin: 0 25%;
-				@media only screen and (max-width: 768px) {
+				@media only screen and (max-width: 1024px) {
 					display: none;}
 			}
 		}
 	}
 
-main{margin-top: 25px; margin-bottom: 50px; z-index: 0;}
+main{margin-top: -50px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
 
 //HEADER LINES
 .sectionheader {
 	height: 100px;
-	margin-top: 55px;
+	margin-top: 35px;
 	position: relative;
 
 	.sectionposth {
@@ -298,6 +312,9 @@ footer{
 			@include wrap(60%, 0px, 0px);
 			margin-top: 10px;
 			margin-bottom: 40px;
+			@media only screen and (max-width: 1024px) {
+				margin-bottom: 20px;
+			}
 			@media only screen and (max-width: 480px) {
 				display: none;
 			}
@@ -356,19 +373,15 @@ footer{
 
 //HOMEPAGE
 .home{@include wrap(80%, 25px, 50px);}
-.carouselwrap{height: 450px; overflow: hidden;
+.carouselwrap{height: 450px;
 	@media only screen and (max-width: 1500px) {
 			height: 420px;}
 	@media only screen and (max-width: 1300px) {
 			height: 350px;}
 	@media only screen and (max-width: 1024px) {
-			height: 300px;}
-	@media only screen and (max-width: 860px) {
-			height: 280px;}
-	@media only screen and (max-width: 768px) {
-			height: 250px;}
+			min-height: 300px;}
 	@media only screen and (max-width: 640px) {
-			height: 200px;}
+			height: 250px;}
 }
 .carousel{
 	margin-top: 50px;
