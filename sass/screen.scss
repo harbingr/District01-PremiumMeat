@@ -6,7 +6,7 @@
 @import "compass/reset";
 
 //COLORS
-	$light:rgb(242,243,236);
+	$light:rgb(249,250,245);
 	$dark:rgb(53,47,43);
 	$green:rgb(90,135,56);
 	$red:rgb(202,65,35);
@@ -89,13 +89,22 @@ h4{
 	padding-bottom: 10px;
 }
 //TOP CONTACT MINI MENU
-#top{@include wrap(80%, 5px, 0px);}
-	#top img, #top p{display: inline !important; font-size: 12px;}
+#top{@include wrap(80%, 0px, 0px); height: 25px;}
+	img.topimg{float: left; display: inline-block;}
+	p.topp{display: inline-block;}
+	/*p.topp{float: left;}*/
+
 	#top img{
+		margin-top: 2px;
 		@media only screen and (max-width: 480px) {
 			display: none !important;
 		}
 	}
+	#top p{
+		margin: 6px 10px 0px 5px;
+		font-size: 12px;
+	}
+
 //NAVIGATIEMENU
 //MENU IMG
 header{

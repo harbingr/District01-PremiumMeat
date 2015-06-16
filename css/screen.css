@@ -86,7 +86,7 @@ header {
   margin-top: 0px;
   margin-bottom: 25px;
   height: 150px;
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
 }
 
 section {
@@ -129,19 +129,33 @@ h4 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 0px;
+  height: 25px;
 }
 
-#top img, #top p {
-  display: inline !important;
-  font-size: 12px;
+img.topimg {
+  float: left;
+  display: inline-block;
 }
 
+p.topp {
+  display: inline-block;
+}
+
+/*p.topp{float: left;}*/
+#top img {
+  margin-top: 2px;
+}
 @media only screen and (max-width: 480px) {
   #top img {
     display: none !important;
   }
+}
+
+#top p {
+  margin: 6px 10px 0px 5px;
+  font-size: 12px;
 }
 
 header {
@@ -263,7 +277,7 @@ nav ul li {
     color: #352f2b;
   }
   nav ul li:nth-child(even) {
-    background-color: #f2f3ec;
+    background-color: #f9faf5;
   }
 }
 nav ul li a {
@@ -374,7 +388,7 @@ footer {
   font-size: 15px;
   height: 200px;
   background-color: #352f2b;
-  color: #f2f3ec;
+  color: #f9faf5;
   margin-top: 50px;
 }
 footer .footwrap {
@@ -429,7 +443,7 @@ footer #footmenu nav ul li {
 }
 footer #footmenu nav ul li a {
   text-decoration: none;
-  color: #f2f3ec;
+  color: #f9faf5;
   margin: 20%;
 }
 @media only screen and (max-width: 768px) {
@@ -466,7 +480,7 @@ footer .up {
 }
 footer #bottom {
   height: 50px;
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   clear: both;
   width: 100%;
 }
@@ -595,24 +609,24 @@ footer #bottom img.socialimg.hover {
 }
 
 .promo {
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   color: #352f2b;
   height: 140px;
   position: relative;
 }
 .promo.active {
   background-color: #5a8738;
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 .promo.active p {
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 .promo:hover {
   background-color: #5a8738;
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 .promo:hover p {
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 .promo h2 {
   line-height: 140%;
@@ -676,7 +690,7 @@ footer #bottom img.socialimg.hover {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 25px;
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   border-top: 1px solid rgba(53, 47, 43, 0.1);
   border-bottom: 1px solid rgba(53, 47, 43, 0.1);
 }
@@ -687,7 +701,7 @@ footer #bottom img.socialimg.hover {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 25px;
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   overflow: hidden;
   margin-bottom: 25px;
 }
@@ -793,7 +807,7 @@ div.col.list.loc:hover img {
 
   .ingredienten {
     opacity: 1;
-    background-color: #f2f3ec;
+    background-color: #f9faf5;
     position: relative;
     top: 0px;
   }
@@ -929,7 +943,7 @@ div.col.list.loc:hover img {
 }
 .jobs .jobknop {
   background-color: #352f2b;
-  color: #f2f3ec;
+  color: #f9faf5;
   height: 35px;
   width: 250px;
   border-radius: 0px;
@@ -1007,7 +1021,7 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .franchiseselect .active {
   background-color: #352f2b;
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 @media only screen and (max-width: 960px) {
   .FranchiseSection .franchiseselect {
@@ -1043,7 +1057,7 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .franchiseselect a:hover {
   background-color: #352f2b !important;
-  color: #f2f3ec;
+  color: #f9faf5;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
@@ -1159,13 +1173,13 @@ div.col.list.loc:hover img {
 }
 
 .light {
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   color: #352f2b;
 }
 
 .dark {
   background-color: #352f2b;
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 
 #franchisecontact {
@@ -1173,7 +1187,7 @@ div.col.list.loc:hover img {
   font-size: 20px;
 }
 #franchisecontact a {
-  color: #f2f3ec;
+  color: #f9faf5;
 }
 
 .franchisecontent[ui-view].ng-enter {
@@ -1220,7 +1234,7 @@ div.col.list.loc:hover img {
 }
 .contact .formsubmit :hover {
   text-decoration: underline;
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   color: #352f2b;
 }
 
@@ -1243,7 +1257,7 @@ div.col.list.loc:hover img {
 div#langhead {
   width: 100%;
   height: 120px;
-  background-color: #f2f3ec;
+  background-color: #f9faf5;
   margin-top: 1%;
   margin-bottom: 5%;
 }
