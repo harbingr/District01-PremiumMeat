@@ -135,15 +135,16 @@ h4 {
 }
 
 img.topimg {
-  float: left;
   display: inline-block;
+  float: left;
 }
 
 p.topp {
   display: inline-block;
+  float: left;
+  margin-bottom: 5px;
 }
 
-/*p.topp{float: left;}*/
 #top img {
   margin-top: 2px;
 }
@@ -159,6 +160,7 @@ p.topp {
 }
 
 header {
+  display: inline-block;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
