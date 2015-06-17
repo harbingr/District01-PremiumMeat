@@ -978,6 +978,27 @@ div.col.list.loc:hover img {
   margin-top: 25px;
   margin-bottom: 150px;
 }
+.jobs div.panel, .jobs div.panel-default {
+  border: none;
+}
+.jobs h4.panel-title {
+  height: 40px;
+  color: #352f2b;
+  margin-top: -10px;
+  padding: 0px;
+}
+.jobs div.panel-heading:hover, .jobs h4.panel-title:hover {
+  text-decoration: none;
+  background-color: #352f2b;
+  color: #f9faf5;
+}
+.jobs h2.accordionhead {
+  letter-spacing: 3px;
+  padding: 15px;
+}
+.jobs h2.accordionhead:hover {
+  text-decoration: none !important;
+}
 .jobs div.col.joblogo {
   margin-top: 5%;
 }
@@ -1010,6 +1031,8 @@ div.col.list.loc:hover img {
   border-radius: 0px;
   float: right;
   margin-top: 40px;
+  outline: none;
+  border: none;
 }
 
 .accordionhead {
@@ -1037,19 +1060,29 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .francontact h2 {
   font-size: 26px;
+  text-align: left;
 }
 .FranchiseSection .francontact h3 {
-  font-size: 20px;
+  font-size: 16px;
+}
+.FranchiseSection .francontact p.future {
+  font-family: 'OswaldLight';
+  margin-left: 15px;
+  line-height: 130%;
 }
 @media only screen and (max-width: 1000px) {
   .FranchiseSection .francontact h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .FranchiseSection .francontact h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
+.FranchiseSection .francontact ul {
+  margin-bottom: 25px;
+}
 .FranchiseSection .francontact ul li {
+  font-family: 'OswaldLight';
   font-size: 16px;
   margin: 15px;
 }
@@ -1080,6 +1113,9 @@ div.col.list.loc:hover img {
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
+.FranchiseSection .franchiseselect {
+  margin-top: 0px;
+}
 .FranchiseSection .franchiseselect .active {
   background-color: #352f2b;
   color: #f9faf5;
@@ -1092,7 +1128,7 @@ div.col.list.loc:hover img {
 .FranchiseSection .franchiseselect .franchiseselectlist {
   width: 100%;
   border-right: 2px solid #352f2b;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 @media only screen and (max-width: 850px) {
   .FranchiseSection .franchiseselect .franchiseselectlist {
@@ -1110,10 +1146,11 @@ div.col.list.loc:hover img {
 }
 .FranchiseSection .franchiseselect a {
   display: block;
-  font-size: 26px;
+  font-family: 'OswaldLight';
+  font-size: 24px;
   color: #352f2b;
   margin: 0px 0px 5px 15px;
-  padding: 20px 20px 20px 15px;
+  padding: 25px 20px 25px 15px;
   text-decoration: none;
 }
 .FranchiseSection .franchiseselect a:hover {
@@ -1149,15 +1186,18 @@ div.col.list.loc:hover img {
     width: 440px;
   }
 }
+.FranchiseSection .franchisecontent {
+  margin-top: 0px;
+}
 .FranchiseSection .franchisecontent h1 {
   padding-top: 0px;
 }
 .FranchiseSection .franchisecontent h3 {
-  margin-left: 25px;
+  margin-left: 50px;
   width: 500px;
 }
 .FranchiseSection .franchisecontent img {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 .FranchiseSection .franchisecontent.active {
   display: block;
@@ -1195,6 +1235,10 @@ div.col.list.loc:hover img {
     padding-bottom: 20px;
   }
 }
+.FranchiseSection p.franchisecontentsub {
+  margin: 20px 0px 10px 50px;
+  font-family: 'OswaldLight';
+}
 .FranchiseSection h3.franchisecontenttext {
   width: 100%;
 }
@@ -1222,6 +1266,7 @@ div.col.list.loc:hover img {
     display: block;
   }
   .franchisecontainer .franchisecontent {
+    padding-left: 50px !important;
     display: none;
   }
   .franchisecontainer.active .franchiseselectlist {
@@ -1241,6 +1286,7 @@ div.col.list.loc:hover img {
 .dark {
   background-color: #352f2b;
   color: #f9faf5;
+  margin: 0px !important;
 }
 
 #franchisecontact {
@@ -1252,7 +1298,7 @@ div.col.list.loc:hover img {
 }
 
 .franchisecontent[ui-view].ng-enter {
-  transition: 0.5s linear all;
+  transition: 0.2s linear all;
   opacity: 0;
 }
 
