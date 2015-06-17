@@ -322,11 +322,11 @@ nav ul li a:hover {
 }
 nav ul li a:visited {
   color: #352f2b;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 nav ul li a:active {
   color: #5a8738;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 @media only screen and (max-width: 480px) {
   nav ul li a {
@@ -1364,6 +1364,7 @@ div.col.list.loc:hover img {
   color: #352f2b !important;
   opacity: 0.5;
   border: 1px solid rgba(53, 47, 43, 0.3);
+  overflow: hidden;
 }
 .contact textarea {
   border-radius: 0px;
@@ -1372,7 +1373,7 @@ div.col.list.loc:hover img {
 .contact .formsubmit {
   font-family: 'OswaldLight';
   letter-spacing: 2px;
-  width: 60%;
+  width: 300px;
   font-size: 18px;
   background-color: #352f2b;
   border-color: #352f2b;
@@ -1384,8 +1385,8 @@ div.col.list.loc:hover img {
   color: #352f2b;
 }
 
-.contactgeg h2, .contactgeg h4, .contactgeg h6 {
-  margin-bottom: 15px;
+.contactgeg h2.headquarters {
+  padding-top: 0px !important;
 }
 .contactgeg h6 {
   margin: 30px;

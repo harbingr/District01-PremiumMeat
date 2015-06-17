@@ -209,8 +209,11 @@ header{
 					z-index: 1000;
 					display: inline;
 					&:hover{text-decoration: none; color: $green;}
-					&:visited{color: $dark; text-decoration: none;}
-					&:active{color: $green; text-decoration: none;}
+					&:visited{color: $dark;
+						text-decoration: none !important;
+
+					}
+					&:active{color: $green; text-decoration: none !important; }
 					@media only screen and (max-width: 480px) {
 						width: 100%;
 						height: 100%;
@@ -986,6 +989,7 @@ footer{
 		color: $dark !important;
 		opacity: 0.5;
 		border: 1px solid rgba(53,47,43, 0.3);
+		overflow: hidden;
 	}
 	textarea{
 		border-radius: 0px;
@@ -994,7 +998,7 @@ footer{
 	.formsubmit{
 		font-family: 'OswaldLight';
 		letter-spacing: 2px;
-		width: 60%;
+		width: 300px;
 		font-size: 18px;
 		background-color: $dark;
 		border-color: $dark;
@@ -1007,7 +1011,7 @@ footer{
 	}
 }
 .contactgeg{
-	h2,h4,h6{margin-bottom: 15px;}
+	h2.headquarters{padding-top: 0px !important;}
 	h6{margin: 30px;
 		font-family: 'OswaldLight';
 		letter-spacing: 2px;
