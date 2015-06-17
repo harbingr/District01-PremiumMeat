@@ -176,7 +176,7 @@ header{
 		@media only screen and (max-width: 480px) {
 				z-index: 1000;
 			}
-		ul{padding-top: 50px;
+		ul{padding-top: 40px;
 			@media only screen and (max-width: 1024px) {
 				padding-top: 30px;
 			}
@@ -205,6 +205,9 @@ header{
 				a{
 					z-index: 1000;
 					display: inline;
+					&:hover{text-decoration: none; color: $green;}
+					&:visited{text-decoration: underline;}
+					&:active{text-decoration: underline; color: $green;}
 					@media only screen and (max-width: 480px) {
 						width: 100%;
 						height: 100%;
@@ -224,26 +227,31 @@ header{
 					color: $dark;
 					&:hover{text-decoration: underline;}
 				}
-			li.after:after {
+			li.after
+				:after {
 				content:"/";
 				color: $red;
 				margin: 0 25%;
+				text-decoration: none;
+
 				@media only screen and (max-width: 1024px) {
-					display: none;}
-				.foot:after{
-					@media only screen and (max-width: 900px) {
 					display: none;}
 				}
-			}
-			li.before:before {
+			.before
+				:before {
 				content:"/";
 				color: $red;
 				margin: 0 25%;
-				@media only screen and (max-width: 1024px) {
-					display: none;}
+				&:hover{text-decoration: none;}
+					@media only screen and (max-width: 1024px) {
+						display: none;}
+				}
+			li#lastfooterlink{
+				margin-left: 25px;
 			}
 		}
 	}
+	p.copyright{margin-top: 50px;}
 
 main{margin-top: -60px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
@@ -290,15 +298,19 @@ footer{
 	@include full-width;
 	margin-top: 50px;
 	font-size: 15px;
-	height: 200px;
+	height: 180px;
 	background-color: $dark;
 	color: $light;
 	margin-top: 50px;
+	@media only screen and (max-width: 480px) {
+		height: 100px;
+	}
 
 	.footwrap{@include wrap(80%, 20px, 20px);}
-	.bottomwrap{@include wrap(80%, 20px, 20px);}
+	.bottomwrap{@include wrap(80%, 0px, 0px);}
 
 	img#footerlogo{float: left; width: 18%;
+		filter: grayscale(100%);
 		@media only screen and (max-width: 1100px) {
 			width: 20%;
 		}
@@ -356,8 +368,9 @@ footer{
 	}
 	.up{float: right;}
 	#bottom{
-		height: 50px;
+		height: 40px;
 		background-color: $light;
+		bottom: 0px;
 		@include full-width;
 		ul{padding: 10px 0px 10px 0px;}
 		img.socialimg{
@@ -408,9 +421,6 @@ footer{
 		line-height: 280%;
 		h1{padding: 0px; margin: 20px;}
 		h4{padding: 0px; margin: 0px;}
-		/*@media only screen and (max-width: 1155px) {
-				height: 190px;
-			}*/
 		@media only screen and (max-width: 1070px) {
 			height: 130px;
 				h1{font-size: 18px;
@@ -419,8 +429,6 @@ footer{
 			}
 		@media only screen and (max-width: 985px) {
 				line-height: 200%;
-				/*h1{font-size: 16px;}
-				h4{font-size: 12px;}*/
 			}
 		@media only screen and (max-width: 875px) {
 			height: 100px;
@@ -528,7 +536,6 @@ footer{
 			}
 		}
 		.readmore{
-			font-family: 'OswaldLight';
 			display: block;
 			text-decoration: none;
 			margin-top: 15px !important;
@@ -538,7 +545,7 @@ footer{
 		}
 	}
 
-#quote{ height: 100px;
+#quote{
 	p{display: block !important; text-align: center;}
 	a{color: $green; text-decoration:  none; margin: 0px;}
 	a:hover{text-decoration: underline;}
@@ -616,9 +623,14 @@ footer{
 //LOCATIES
 .LocatiesSection{
 	.col{overflow: hidden; margin-bottom: 30px;
+		font-family: 'OswaldRegular';
+		font-size: 13px;
+		line-height: 125%;
 		@media only screen and (max-width: 960px){
 			div.col{ width: 100% !important; position: relative;
-				p{text-align: left;}
+				p{
+					text-align: left;
+				}
 			}
 		}
 	}
@@ -629,7 +641,7 @@ footer{
 		margin-top: 15px;
 		text-decoration: none;
 		&:hover{
-			color: $dark;
+			text-decoration: underline;
 		}
 	}
 	&:hover{opacity: 1;}
@@ -985,7 +997,6 @@ div#darkback{
 button.langbutton{
 	width: 200px;
 	height: 40px;
-	background-color: lightorange;
 	margin: 30px;
 	margin-bottom: 50px;
 	background-color: $red;
@@ -993,6 +1004,10 @@ button.langbutton{
 	border: none;
 	font-family: 'OswaldLight';
 	font-size: 18px; letter-spacing: 2px;
+	outline: none;
+	&:hover{
+		opacity: 0.85;
+	}
 	@media only screen and (max-width: 480px){
 		margin-left: 15px;
 		margin-top: 15px;
