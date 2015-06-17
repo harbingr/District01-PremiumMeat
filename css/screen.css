@@ -85,7 +85,7 @@ header {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  height: 150px;
+  height: 120px;
   background-color: #f9faf5;
 }
 @media only screen and (max-width: 1024px) {
@@ -95,7 +95,7 @@ header {
 }
 
 section {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 h1 {
@@ -125,9 +125,15 @@ h3 {
 
 h4 {
   font-family: 'OswaldBold';
-  font-size: 20px;
+  font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+p {
+  font-family: 'OswaldLight';
+  font-size: 15px;
+  line-height: 150%;
 }
 
 #top {
@@ -228,7 +234,7 @@ header .burger {
   }
 }
 header img {
-  width: 270px;
+  width: 245px;
   margin-left: 25%;
   position: absolute;
   top: -2%;
@@ -272,7 +278,7 @@ nav a#pull {
   }
 }
 nav ul {
-  padding-top: 40px;
+  padding-top: 35px;
 }
 @media only screen and (max-width: 1024px) {
   nav ul {
@@ -315,11 +321,12 @@ nav ul li a:hover {
   color: #5a8738;
 }
 nav ul li a:visited {
-  text-decoration: underline;
+  color: #352f2b;
+  text-decoration: none;
 }
 nav ul li a:active {
-  text-decoration: underline;
   color: #5a8738;
+  text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
   nav ul li a {
@@ -391,7 +398,6 @@ section {
 }
 
 .sectionheader {
-  height: 100px;
   margin-top: 35px;
   position: relative;
 }
@@ -570,7 +576,8 @@ footer #bottom img.socialimg.hover {
 }
 
 .carouselwrap {
-  height: 355px;
+  height: 300px;
+  margin-top: 1px;
 }
 @media only screen and (max-width: 1100px) {
   .carouselwrap {
@@ -597,13 +604,13 @@ footer #bottom img.socialimg.hover {
   margin-top: 50px;
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 340px;
   width: 100%;
   z-index: -1;
 }
 .carousel img {
   width: 100%;
-  top: 50px;
+  top: -100px;
   left: 0px;
 }
 .carousel .carousel-caption {
@@ -616,7 +623,7 @@ footer #bottom img.socialimg.hover {
   left: 50%;
   background-color: #ca4123;
   opacity: 0.7;
-  line-height: 280%;
+  line-height: 290%;
 }
 .carousel .carousel-caption h1 {
   padding: 0px;
@@ -625,13 +632,14 @@ footer #bottom img.socialimg.hover {
 .carousel .carousel-caption h4 {
   padding: 0px;
   margin: 0px;
+  font-size: 18px;
 }
 @media only screen and (max-width: 1070px) {
   .carousel .carousel-caption {
     height: 130px;
   }
   .carousel .carousel-caption h1 {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px;
     margin: 0px;
   }
@@ -897,8 +905,8 @@ div.col.list.loc:hover img {
 .LocatiesSection .col {
   overflow: hidden;
   margin-bottom: 30px;
-  font-family: 'OswaldRegular';
-  font-size: 13px;
+  font-family: 'OswaldLight';
+  font-size: 14px;
   line-height: 125%;
 }
 @media only screen and (max-width: 960px) {
@@ -908,10 +916,19 @@ div.col.list.loc:hover img {
   }
   .LocatiesSection .col div.col p {
     text-align: left;
+    line-height: 150%;
   }
+}
+.LocatiesSection div.locatiesinfo h4 {
+  font-size: 24px;
 }
 .LocatiesSection .LocatiesImg {
   max-height: 200px;
+}
+.LocatiesSection p.adres {
+  font-family: 'OswaldLight';
+  font-size: 16px;
+  margin: 20px 0px;
 }
 .LocatiesSection a.detail {
   color: #5a8738;
@@ -937,6 +954,12 @@ div.col.list.loc:hover img {
 }
 .LocatiesSection .cleanslider img {
   width: 100%;
+}
+.LocatiesSection h4.locatietitle {
+  margin-top: 0px;
+}
+.LocatiesSection div.locatiecontent {
+  margin-top: 0px;
 }
 
 .locatie {
@@ -1240,7 +1263,8 @@ div.col.list.loc:hover img {
   font-family: 'OswaldLight';
 }
 .FranchiseSection h3.franchisecontenttext {
-  width: 100%;
+  width: 90%;
+  margin-bottom: 15px;
 }
 @media only screen and (max-width: 480px) {
   .FranchiseSection h3.franchisecontenttext {
@@ -1321,23 +1345,38 @@ div.col.list.loc:hover img {
     margin-left: 0px;
   }
 }
+.contact form input {
+  border-radius: 0px;
+  width: 70%;
+  outline: #5a8738;
+  border: 1px solid rgba(53, 47, 43, 0.3);
+}
 .contact select {
+  width: 70% !important;
   padding-left: 15px;
+  border-radius: 0px !important;
   background: transparent;
-  appearance: none;
-  -webkit-appearance: none;
+  outline: #5a8738;
   line-height: 2;
   background: url(images/up.png) no-repeat right #ddd;
   width: 100%;
   font-family: 'OswaldRegular';
   color: #352f2b !important;
   opacity: 0.5;
+  border: 1px solid rgba(53, 47, 43, 0.3);
+}
+.contact textarea {
+  border-radius: 0px;
+  border: 1px solid rgba(53, 47, 43, 0.3);
 }
 .contact .formsubmit {
-  width: 250px;
+  font-family: 'OswaldLight';
+  letter-spacing: 2px;
+  width: 60%;
   font-size: 18px;
   background-color: #352f2b;
   border-color: #352f2b;
+  border-radius: 0px;
 }
 .contact .formsubmit :hover {
   text-decoration: underline;
@@ -1349,7 +1388,9 @@ div.col.list.loc:hover img {
   margin-bottom: 15px;
 }
 .contactgeg h6 {
-  margin-top: 20px;
+  margin: 30px;
+  font-family: 'OswaldLight';
+  letter-spacing: 2px;
 }
 .contactgeg h2 {
   text-align: left;
@@ -1368,28 +1409,21 @@ div#langhead {
   margin-top: 1%;
   margin-bottom: 5%;
 }
-div#langhead img {
-  width: 250px;
-  position: absolute;
-  left: 50%;
-  top: 18%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+
+img#langlogo {
+  display: block;
+  width: 220px;
+  position: relative;
+  margin: 25px auto 0px auto;
 }
 @media only screen and (max-width: 480px) {
-  div#langhead img {
+  img#langlogo {
     width: 250px;
   }
 }
 
-section.languagesection {
-  position: absolute;
-  width: 80%;
-  height: 65%;
-  z-index: 50;
-  margin-left: auto;
-  margin-right: auto;
+section#languagesection {
+  margin-top: -30px;
 }
 
 div#langwrap {
@@ -1438,11 +1472,11 @@ div.langdiv h3.langhead {
 
 div#darkback {
   position: absolute;
-  top: 75%;
+  top: 400px;
   z-index: -10;
   background-color: #352f2b;
   width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 button.langbutton {
