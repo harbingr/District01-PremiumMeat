@@ -50,7 +50,7 @@ body {
 main{z-index: 1;}
 
 header{
-	@include wrap(80%, 0px, 25px);
+	@include wrap(80%, 0px, 0px);
 	height: 150px;
 	background-color: $light;
 	@media only screen and (max-width: 1024px) {height: 100px;}
@@ -245,7 +245,7 @@ header{
 		}
 	}
 
-main{margin-top: -50px; margin-bottom: 50px; z-index: 0;}
+main{margin-top: -60px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
 
 //HEADER LINES
@@ -412,23 +412,24 @@ footer{
 				height: 190px;
 			}*/
 		@media only screen and (max-width: 1070px) {
-			height: 150px;
+			height: 130px;
 				h1{font-size: 18px;
 					padding: 0px; margin: 0px;}
 				h4{font-size: 14px;}
 			}
-		@media only screen and (max-width: 960px) {
-				h1{font-size: 16px;}
-				h4{font-size: 12px;}
+		@media only screen and (max-width: 985px) {
+				line-height: 200%;
+				/*h1{font-size: 16px;}
+				h4{font-size: 12px;}*/
 			}
-		@media only screen and (max-width: 800px) {
-				height: 30%;}
-		 h4{
-		 	@media only screen and (max-width: 800px) {
-				display: none;}
+		@media only screen and (max-width: 875px) {
+			height: 100px;
+			h4{display: none;}
 		}
 		@media only screen and (max-width: 480px) {
-				display: none;}
+				display: none;
+			h1{display: none;}
+		}
 	}
 }
 	.carousel-control{display: none;}
@@ -473,7 +474,7 @@ footer{
 		text-align: center;
 		width: 100%;
 		margin-bottom: 0px;
-			@media only screen and (max-width: 900px) {
+			@media only screen and (max-width: 930px) {
 			bottom: 5px;}
 		}
 
@@ -484,7 +485,7 @@ footer{
 		font-size: 25px;
 		margin-left: 10px;
 		line-height: 150%;
-		@media only screen and (max-width: 900px) {
+		@media only screen and (max-width: 930px) {
 			font-size: 20px;
 			line-height: 100%;
 		}
@@ -527,6 +528,7 @@ footer{
 			}
 		}
 		.readmore{
+			font-family: 'OswaldLight';
 			display: block;
 			text-decoration: none;
 			margin-top: 15px !important;

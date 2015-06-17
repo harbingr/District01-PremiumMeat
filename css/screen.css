@@ -84,7 +84,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   height: 150px;
   background-color: #f9faf5;
 }
@@ -359,7 +359,7 @@ nav ul li.before:before {
 }
 
 main {
-  margin-top: -50px;
+  margin-top: -60px;
   margin-bottom: 50px;
   z-index: 0;
 }
@@ -601,7 +601,7 @@ footer #bottom img.socialimg.hover {
 }
 @media only screen and (max-width: 1070px) {
   .carousel .carousel-caption {
-    height: 150px;
+    height: 130px;
   }
   .carousel .carousel-caption h1 {
     font-size: 18px;
@@ -612,26 +612,26 @@ footer #bottom img.socialimg.hover {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 960px) {
-  .carousel .carousel-caption h1 {
-    font-size: 16px;
-  }
-  .carousel .carousel-caption h4 {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 985px) {
   .carousel .carousel-caption {
-    height: 30%;
+    line-height: 200%;
+    /*h1{font-size: 16px;}
+    h4{font-size: 12px;}*/
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 875px) {
+  .carousel .carousel-caption {
+    height: 100px;
+  }
   .carousel .carousel-caption h4 {
     display: none;
   }
 }
 @media only screen and (max-width: 480px) {
   .carousel .carousel-caption {
+    display: none;
+  }
+  .carousel .carousel-caption h1 {
     display: none;
   }
 }
@@ -700,7 +700,7 @@ footer #bottom img.socialimg.hover {
   width: 100%;
   margin-bottom: 0px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
   .promo .promoinfo {
     bottom: 5px;
   }
@@ -713,7 +713,7 @@ footer #bottom img.socialimg.hover {
   margin-left: 10px;
   line-height: 150%;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
   .promo span.prijs {
     font-size: 20px;
     line-height: 100%;
@@ -760,6 +760,7 @@ footer #bottom img.socialimg.hover {
   width: 100%;
 }
 .blog .readmore {
+  font-family: 'OswaldLight';
   display: block;
   text-decoration: none;
   margin-top: 15px !important;

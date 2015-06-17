@@ -45,7 +45,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 .config(function($stateProvider, $urlRouterProvider, $httpProvider, $provide, $translateProvider) {
 	$translateProvider.translations('nl', {
 		HEADLINE: 'Laatste Blogposts',
-		QUOTE: 'De kwaliteit meten we met de glimlach van de klant',
+		QUOTE: ' "De kwaliteit meten we met de glimlach van de klant" ',
 		QUOTESUB: 'Lees het volledige',
 		QUOTELINK: ' Interview met CEO M. Verlinde',
 		LOCATIES: 'Locaties',
