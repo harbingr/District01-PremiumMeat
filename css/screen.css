@@ -558,7 +558,7 @@ footer #footmenu p :after {
 }
 footer div.upbutton {
   float: right;
-  margin-top: 75px;
+  margin-top: 60px;
   width: 45px;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -570,6 +570,9 @@ footer div.upbutton .up {
           filter: brightness(0) invert(0.6);
   padding-right: 5px;
   padding-top: 5px;
+}
+footer div.upbutton:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 footer #bottom {
   height: 40px;
@@ -586,12 +589,12 @@ footer #bottom img.socialimg {
   width: 20px;
   margin-right: 15px;
   margin-bottom: 5px;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+  -webkit-filter: brightness(0) invert(0.25);
+          filter: brightness(0) invert(0.25);
 }
-footer #bottom img.socialimg.hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+footer #bottom img.socialimg:hover {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 .home {
@@ -955,7 +958,7 @@ div.col.list.loc:hover img {
 .LocatiesSection p.adres {
   font-family: 'OswaldLight';
   font-size: 16px;
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 .LocatiesSection a.detail {
   color: #5a8738;
@@ -984,6 +987,7 @@ div.col.list.loc:hover img {
 }
 .LocatiesSection h4.locatietitle {
   margin-top: 0px;
+  margin-bottom: 25px;
 }
 .LocatiesSection div.locatiecontent {
   margin-top: 0px;
@@ -1010,15 +1014,8 @@ div.col.list.loc:hover img {
 }
 
 #locatieimgsq ul li img {
-  display: inline;
-  float: left;
-  margin: 15px 5px 0px 0px;
-  width: 15.73%;
-}
-@media only screen and (max-width: 1355px) {
-  #locatieimgsq ul li img {
-    width: 15.4%;
-  }
+  display: inline-block;
+  margin: 15px 0px 0px 0px;
 }
 
 .jobs {

@@ -383,7 +383,7 @@ footer{
 	}
 	div.upbutton{
 		float: right;
-		margin-top: 75px;
+		margin-top: 60px;
 		width: 45px;
 		height: 45px;
 		background-color: rgba(0,0,0, 0.2);
@@ -392,6 +392,9 @@ footer{
 		.up{float: right; filter: brightness(0) invert(0.6);
 			padding-right: 5px;
 			padding-top: 5px;
+		}
+		&:hover{
+			background-color: rgba(0,0,0, 0.5);
 		}
 	}
 
@@ -406,8 +409,10 @@ footer{
 			width: 20px;
 			margin-right: 15px;
 			margin-bottom: 5px;
-			filter: grayscale(80%);
-			&.hover{filter: grayscale(0%);}
+			filter: brightness(0) invert(0.25);
+			&:hover{
+				filter: brightness(0);
+			}
 		}
 	}
 }
@@ -672,7 +677,7 @@ footer{
 	.LocatiesImg{max-height: 200px;}
 	p.adres{font-family: 'OswaldLight';
 		font-size: 16px;
-		margin: 20px 0px;
+		margin: 15px 0px;
 	}
 	a.detail{
 		color: $green;
@@ -697,7 +702,7 @@ footer{
 			width: 100%;
 		}
 	}
-	h4.locatietitle{margin-top: 0px;}
+	h4.locatietitle{margin-top: 0px; margin-bottom: 25px;}
 	div.locatiecontent{
 		margin-top: 0px;
 	}
@@ -718,13 +723,8 @@ footer{
 	ul{
 		li{
 			img{
-				display: inline;
-				float: left;
-				margin: 15px 5px 0px 0px;
-				width: 15.73%;
-				@media only screen and (max-width: 1355px){
-					width: 15.4%;
-				}
+				display: inline-block;
+				margin: 15px 0px 0px 0px;
 			}
 		}
 	}
