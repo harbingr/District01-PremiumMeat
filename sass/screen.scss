@@ -184,7 +184,6 @@ header{
 				padding-top: 30px;
 			}
 			@media only screen and (max-width: 480px) {
-				padding-top: 60px;
 				z-index: 1000;
 			}
 			li{
@@ -269,6 +268,7 @@ section{overflow: hidden;}
 	position: relative;
 
 	.sectionposth {
+		line-height: 120%;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -419,7 +419,7 @@ footer{
 
 //HOMEPAGE
 .home{@include wrap(80%, 25px, 50px);}
-.carouselwrap{height: 300px;
+.carouselwrap{height: 320px;
 	margin-top: 1px;
 	@media only screen and (max-width: 1100px) {
 			height: 300px;}
@@ -581,6 +581,7 @@ footer{
 	}
 
 #quote{
+	word-spacing: 5px;
 	p{display: block !important; text-align: center;}
 	a{color: $green; text-decoration:  none; margin: 0px;}
 	a:hover{text-decoration: underline;}
@@ -702,6 +703,14 @@ footer{
 			width: 100%;
 		}
 	}
+	.cleanslider2{display: none;
+		li{width: 15%; margin: 0px;}
+		@media only screen and (max-width: 1024px) {
+			position: relative;
+			bottom: 0px;
+			display: block;
+		}
+	}
 	h4.locatietitle{margin-top: 0px; margin-bottom: 25px;}
 	div.locatiecontent{
 		margin-top: 0px;
@@ -717,6 +726,7 @@ footer{
 		}
 	}
 }
+.angular-google-map-container { height: 400px; margin-top: 20px;}
 
 #map{margin-top: 50px; height: 355px;}
 #locatieimgsq{
@@ -788,6 +798,7 @@ footer{
 			margin-top: 40px;
 			outline: none;
 			border: none;
+			letter-spacing: 1px;
 		}
 	}
 
@@ -816,7 +827,7 @@ footer{
 			h3{font-size: 14px;}
 			h2{font-size: 18px;}
 		}
-		ul{margin-bottom: 25px;
+		ul{margin-bottom: 40px;
 			li{
 				font-family: 'OswaldLight';
 				font-size: 16px; margin: 15px;
@@ -831,10 +842,12 @@ footer{
 		}
 	}
 	ul#franchiselist{
-		list-style-image: url('images/arrow.png');
+		margin-left: 10px;
 		li{
-			list-style-image: url('images/arrow.png');
-			background-image: url('images/arrow.png');
+			padding-left: 40px;
+			background: url('../images/arrow.png') no-repeat 15px;
+			background-position: 0px 0px;
+			background-size: 20px;
 			background-repeat: no-repeat;
 			background-position: 0px 0px;
 		}

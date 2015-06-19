@@ -287,7 +287,6 @@ nav ul {
 }
 @media only screen and (max-width: 480px) {
   nav ul {
-    padding-top: 60px;
     z-index: 1000;
   }
 }
@@ -402,6 +401,7 @@ section {
   position: relative;
 }
 .sectionheader .sectionposth {
+  line-height: 120%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -606,7 +606,7 @@ footer #bottom img.socialimg:hover {
 }
 
 .carouselwrap {
-  height: 300px;
+  height: 320px;
   margin-top: 1px;
 }
 @media only screen and (max-width: 1100px) {
@@ -831,6 +831,9 @@ footer #bottom img.socialimg:hover {
   text-decoration: underline;
 }
 
+#quote {
+  word-spacing: 5px;
+}
 #quote p {
   display: block !important;
   text-align: center;
@@ -985,6 +988,20 @@ div.col.list.loc:hover img {
 .LocatiesSection .cleanslider img {
   width: 100%;
 }
+.LocatiesSection .cleanslider2 {
+  display: none;
+}
+.LocatiesSection .cleanslider2 li {
+  width: 15%;
+  margin: 0px;
+}
+@media only screen and (max-width: 1024px) {
+  .LocatiesSection .cleanslider2 {
+    position: relative;
+    bottom: 0px;
+    display: block;
+  }
+}
 .LocatiesSection h4.locatietitle {
   margin-top: 0px;
   margin-bottom: 25px;
@@ -1006,6 +1023,11 @@ div.col.list.loc:hover img {
     top: 0px;
     width: 100%;
   }
+}
+
+.angular-google-map-container {
+  height: 400px;
+  margin-top: 20px;
 }
 
 #map {
@@ -1080,6 +1102,7 @@ div.col.list.loc:hover img {
   margin-top: 40px;
   outline: none;
   border: none;
+  letter-spacing: 1px;
 }
 
 .accordionhead {
@@ -1126,7 +1149,7 @@ div.col.list.loc:hover img {
   }
 }
 .FranchiseSection .francontact ul {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 .FranchiseSection .francontact ul li {
   font-family: 'OswaldLight';
@@ -1152,11 +1175,13 @@ div.col.list.loc:hover img {
   }
 }
 .FranchiseSection ul#franchiselist {
-  list-style-image: url("images/arrow.png");
+  margin-left: 10px;
 }
 .FranchiseSection ul#franchiselist li {
-  list-style-image: url("images/arrow.png");
-  background-image: url("images/arrow.png");
+  padding-left: 40px;
+  background: url("../images/arrow.png") no-repeat 15px;
+  background-position: 0px 0px;
+  background-size: 20px;
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }

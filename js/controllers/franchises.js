@@ -6,6 +6,7 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 	$scope.status = {};
 
 	$scope.language = "fr";
+	$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
 	$scope.ID = parseInt($stateParams.locationName);
 

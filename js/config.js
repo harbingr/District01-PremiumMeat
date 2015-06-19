@@ -4,7 +4,8 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	"ngScrollTo",
 	"ngAnimate",
 	'pascalprecht.translate',
-	'ngCookies'
+	'ngCookies',
+	'uiGmapgoogle-maps'
 	//"angular-google-analytics"
 	])
 
