@@ -436,10 +436,11 @@ section {
 }
 
 footer {
+  overflow: auto;
   clear: both;
   width: 100%;
   margin-top: 50px;
-  font-size: 15px;
+  font-size: 12px;
   height: 180px;
   background-color: #352f2b;
   color: #f9faf5;
@@ -481,12 +482,27 @@ footer img#footerlogo {
     margin-top: 20px;
   }
 }
+footer #footmenu {
+  float: left;
+  width: 700px;
+}
+@media only screen and (max-width: 1200px) {
+  footer #footmenu {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  footer #footmenu {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer #footmenu {
+    width: 430px;
+  }
+}
 footer #footmenu nav {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 40px !important;
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -518,11 +534,11 @@ footer #footmenu nav ul li a {
   }
 }
 footer #footmenu p {
-  margin-left: 17%;
+  margin-left: 3%;
   display: block;
   text-align: justify;
   max-height: 50px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.8px;
   padding-left: 5%;
 }
 @media only screen and (max-width: 860px) {
@@ -541,8 +557,20 @@ footer #footmenu p :after {
   display: inline-block;
   width: 100%;
 }
-footer .up {
+footer div.upbutton {
   float: right;
+  margin-top: 75px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+footer div.upbutton .up {
+  float: right;
+  -webkit-filter: brightness(0) invert(0.6);
+          filter: brightness(0) invert(0.6);
+  padding-right: 5px;
+  padding-top: 5px;
 }
 footer #bottom {
   height: 40px;
@@ -966,7 +994,7 @@ div.col.list.loc:hover img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 1024px) {
@@ -1070,7 +1098,7 @@ div.col.list.loc:hover img {
 }
 
 .FranchiseSection {
-  margin-top: 0px;
+  margin-top: 20px;
 }
 .FranchiseSection div {
   margin: 20px 0px 15px 0px;
@@ -1387,20 +1415,23 @@ div.col.list.loc:hover img {
 
 .contactgeg h2.headquarters {
   padding-top: 0px !important;
+  margin-bottom: 20px;
 }
 .contactgeg h6 {
-  margin: 30px;
+  margin: 20px;
   font-family: 'OswaldLight';
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .contactgeg h2 {
   text-align: left;
 }
 .contactgeg p {
   font-size: 20px;
+  letter-spacing: 2px;
 }
 .contactgeg img {
   width: 100%;
+  margin-top: 20px;
 }
 
 div#langhead {

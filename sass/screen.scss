@@ -301,9 +301,10 @@ section{overflow: hidden;}
 }
 
 footer{
+	overflow: auto;
 	@include full-width;
 	margin-top: 50px;
-	font-size: 15px;
+	font-size: 12px;
 	height: 180px;
 	background-color: $dark;
 	color: $light;
@@ -326,8 +327,17 @@ footer{
 	}
 
 	#footmenu{
+		float: left;
+		width: 700px;
+		@media only screen and (max-width: 1200px) {
+			width: 600px;}
+		@media only screen and (max-width: 1024px) {
+			width: 500px;}
+		@media only screen and (max-width: 768px) {
+			width: 430px;}
+
 		nav{
-			@include wrap(60%, 0px, 0px);
+			margin-left: 40px !important;
 			margin-top: 10px;
 			margin-bottom: 40px;
 			@media only screen and (max-width: 1024px) {
@@ -352,11 +362,11 @@ footer{
 			}
 		}
 		p{
-			margin-left: 17%;
+			margin-left: 3%;
 			display: block;
 			text-align: justify;
 			max-height: 50px;
-			letter-spacing: 0.2em;
+			letter-spacing: 0.8px;
 			padding-left: 5%;
 			@media only screen and (max-width: 860px) {
 				font-size: 14px;
@@ -372,7 +382,20 @@ footer{
 			}
 		}
 	}
-	.up{float: right;}
+	div.upbutton{
+		float: right;
+		margin-top: 75px;
+		width: 45px;
+		height: 45px;
+		background-color: rgba(0,0,0, 0.2);
+		border-radius: 3px;
+
+		.up{float: right; filter: brightness(0) invert(0.6);
+			padding-right: 5px;
+			padding-top: 5px;
+		}
+	}
+
 	#bottom{
 		height: 40px;
 		background-color: $light;
@@ -682,7 +705,7 @@ footer{
 }
 
 .locatie{
-	@include wrap(80%, 10px, 5px);
+	@include wrap(80%, 25px, 5px);
 	.col{
 		@media only screen and (max-width: 1024px) {
 			position: relative; top: 0px;
@@ -778,7 +801,7 @@ footer{
 .JobsImg{width: 100%;}
 
 //FRANCHISE
-.FranchiseSection{margin-top: 0px;
+.FranchiseSection{margin-top: 20px;
 	div{margin: 20px 0px 15px 0px;}
 	h2,h3,ul{
 		margin-left: 15px;
@@ -1011,14 +1034,15 @@ footer{
 	}
 }
 .contactgeg{
-	h2.headquarters{padding-top: 0px !important;}
-	h6{margin: 30px;
+	h2.headquarters{padding-top: 0px !important;
+		margin-bottom: 20px;}
+	h6{margin: 20px;
 		font-family: 'OswaldLight';
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 	}
 	h2{text-align: left;}
-	p{font-size: 20px;}
-	img{width: 100%;}
+	p{font-size: 20px; letter-spacing: 2px;}
+	img{width: 100%; margin-top: 20px;}
 }
 
 //LANGUAGE PAGE
