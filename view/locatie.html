@@ -42,8 +42,8 @@ var t = {
 				<h4 class="locatietitle">{{ 'LOCATIEBEZOEK' | translate }} {{ franchises[ID-1].name }}</h4>
 				<p>{{ franchises[ID-1].description }}</p>
 
-				<p>{{franchises[ID-1].location[0].lat}}</p>
-				<p>{{franchises[ID-1].location[0].long}}</p>
+				<!--<p>{{franchises[ID-1].location[0].lat}}</p>
+				<p>{{franchises[ID-1].location[0].long}}</p>-->
 
 
 <ui-gmap-google-map
@@ -51,13 +51,14 @@ var t = {
 	zoom='map.zoom'>
 </ui-gmap-google-map>
 
-<p>{{lat}}</p>
+<!--
 <ui-gmap-google-map
 
 	center='{{franchises[ID-1].location[0].lat}},
 	{{franchises[ID-1].location[0].long}}'
 	zoom='map.zoom'>
 </ui-gmap-google-map>
+-->
 
 <!-- 			markers=
 				{{franchises[ID-1].location[0].lat}},
