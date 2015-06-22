@@ -156,25 +156,30 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				controller: "FranchisesCtrl",
 				templateUrl: "view/locaties.html"
 			})
-				.state('locatie', {
-					url: "/locaties/:locationName",
+				.state('locaties.detail', {
+					params: {
+						locatieID: 1,
+						locatieName: "Kontich",
+						locatieLat: 51.2,
+						locatieLong: 4.4
+					},
+					url: "/:locatieName",
 					data: {
 					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'locatie'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
+						//check cookie --> return to language
+					}
 				},
 					controller: "FranchisesCtrl",
-					templateUrl: "view/locatie.html"
+					templateUrl: "view/locatie.html",
+					resolve: {
+						locatiedetail:
+							function ($stateParams, $http){
+								var url ="http://franchise.district01.be/api/franchises/" + $stateParams.locatieID + "/nl.json";
+								return $http.get(url).then(function(res){
+									return res.data;
+								});
+							}
+					}
 				})
 
 			.state('jobs', {
