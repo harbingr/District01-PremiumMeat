@@ -83,7 +83,7 @@ h3{
 h4{
 	font-family: 'OswaldBold';
 	font-size:  24px;
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-bottom: 10px;
 }
 p{
@@ -107,7 +107,7 @@ p{
 		margin: 6px 10px 0px 5px;
 		font-size: 12px;
 	}
-	.contactmap{width: 100%;}
+
 
 //NAVIGATIEMENU
 //MENU IMG
@@ -441,7 +441,7 @@ footer{
 	width: 100%;
 	z-index: -1;
 	img{
-		min-height: 400px !important;
+		//min-height: 400px !important;
 		width: 100%;
 		margin-top: -50px;
 	}
@@ -597,6 +597,7 @@ footer{
 		&:nth-child(#{$rows}n + 1){margin-left: 0px;}
 	}
 	div.col.list{
+		//max-height: 250px;
 		overflow: hidden;
 		position: relative;
 
@@ -681,13 +682,15 @@ footer{
 		}
 	}
 	div.locatiesinfo{
-		h4{font-size: 24px;}
+		h4{
+			font-size: 24px;
+		}
 	}
 
 	.LocatiesImg{max-height: 200px;}
 	p.adres{font-family: 'OswaldLight';
 		font-size: 16px;
-		margin: 15px 0px;
+		margin: 10px 0px;
 	}
 	a.detail{
 		color: $green;
@@ -1067,6 +1070,10 @@ footer{
 	h2{text-align: left;}
 	p{font-size: 20px; letter-spacing: 2px;}
 	img{width: 100%; margin-top: 20px;}
+
+	.angular-google-map-container{
+		height: 250px !important;
+		width: 100%;}
 }
 
 //LANGUAGE PAGE

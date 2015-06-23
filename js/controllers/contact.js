@@ -1,6 +1,15 @@
 angular.module("PremiumMeat").controller('contactController', function($scope, $stateParams) {
 
-		$scope.map = { center: { latitude: 51.2, longitude: 4.4}, zoom: 10 };
+		$scope.mapd01 = { center: { latitude: 51.142057, longitude: 4.442918}, zoom: 10 };
+
+		$scope.mapd01.marker = {
+		      id: 0,
+		      coords: {
+		        latitude: 51.142057,
+		        longitude: 4.442918
+		      }
+		};
+
 		$scope.contactform = {};
 		$scope.contactform.onderwerp = $stateParams.onderwerp;
 

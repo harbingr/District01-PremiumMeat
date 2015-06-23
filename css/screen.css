@@ -126,7 +126,7 @@ h3 {
 h4 {
   font-family: 'OswaldBold';
   font-size: 24px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
 }
 
@@ -168,10 +168,6 @@ p.topp {
 #top p {
   margin: 6px 10px 0px 5px;
   font-size: 12px;
-}
-
-.contactmap {
-  width: 100%;
 }
 
 header {
@@ -645,7 +641,6 @@ footer #bottom img.socialimg:hover {
   z-index: -1;
 }
 .carousel img {
-  height: 400px !important;
   width: 100%;
   margin-top: -50px;
 }
@@ -973,7 +968,7 @@ div.col.list.loc:hover img {
 .LocatiesSection p.adres {
   font-family: 'OswaldLight';
   font-size: 16px;
-  margin: 15px 0px;
+  margin: 10px 0px;
 }
 .LocatiesSection a.detail {
   color: #5a8738;
@@ -1471,6 +1466,10 @@ div.col.list.loc:hover img {
 .contactgeg img {
   width: 100%;
   margin-top: 20px;
+}
+.contactgeg .angular-google-map-container {
+  height: 250px !important;
+  width: 100%;
 }
 
 div#langhead {
