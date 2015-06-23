@@ -419,7 +419,10 @@ footer{
 
 //HOMEPAGE
 .home{@include wrap(80%, 25px, 50px);}
-.carouselwrap{height: 320px;
+.carouselwrap{
+	min-height: 320px;
+	position: static;
+	top: -50px;
 	margin-top: 1px;
 	@media only screen and (max-width: 1100px) {
 			height: 300px;}
@@ -434,13 +437,13 @@ footer{
 	margin-top: 50px;
 	position: relative;
 	overflow: hidden;
-	height: 340px;
+	height: 350px;
 	width: 100%;
 	z-index: -1;
 	img{
+		min-height: 400px !important;
 		width: 100%;
-		top: -100px;
-		left: 0px;
+		margin-top: -50px;
 	}
 	.carousel-caption{
 		letter-spacing: 5px;
