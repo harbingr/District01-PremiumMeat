@@ -19,10 +19,12 @@
 <!-- ACCORDION -->
 		<div class="col span_2_of_3 nocollapse">
 			<div ng-repeat="item in jobs">
-				<accordion close-others=true>
-					<accordion-group><!--is-open="status.open"-->
-						<accordion-heading ><h2 class="accordionhead">
-							"{{item.title}} "<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+				<accordion close-others="oneAtATime">
+					<accordion-group ng-click="status.open=!status.open">
+						<accordion-heading is-open="status.isFirstOpen">
+							<h2 class="accordionhead">
+								"{{item.title}}"
+								<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-up': !status.open}"></i>
 							</h2>
 						</accordion-heading>
 						{{item.description}}

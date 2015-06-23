@@ -774,13 +774,14 @@ footer{
 				background-color: $dark;
 				color: $light;
 			}
+			a{text-decoration: none;}
 		}
 		h2.accordionhead{
 			letter-spacing: 3px;
 			padding: 15px;
-			text-decoration: none !important;
 			&:hover{
-				text-decoration: none !important;}
+				text-decoration: none;
+			}
 		}
 		div.col.joblogo{
 			margin-top: 5%;
