@@ -9,6 +9,7 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 	$scope.map = { center: { latitude: 51.2, longitude: 4.4}, zoom: 10 };
 	$scope.lat = $scope.franchises.location;
 
+	//dynamic center function set-up
 	$scope.setCenter = function(lat, lng)
 	{
 		$scope.map.center = {latitude: lat, longitude: lng };
