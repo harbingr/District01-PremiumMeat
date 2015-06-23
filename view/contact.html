@@ -26,8 +26,8 @@
 			zoom='mapd01.zoom'
 			class="contactmap" >
 			<ui-gmap-marker
-				coords="mapd01.marker.coords"
-				idkey="mapd01.marker.id">
+				idkey="mapd01.marker.id"
+				coords="mapd01.marker.coords">
 			</ui-gmap-marker>
 		</ui-gmap-google-map>
 
@@ -48,7 +48,7 @@
 			</div>
 
 			<div class="form-group">
-				<input type="text" name="telefoon" class="form-control" ng-model="user.telefoon" placeholder="{{ 'CONTACTTELEFOON' | translate }}" >
+				<input type="text" name="telefoon" class="form-control" ng-model="telefoon" placeholder="{{ 'CONTACTTELEFOON' | translate }}" >
 			</div>
 
 			<div class="form-group">
