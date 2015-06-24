@@ -257,7 +257,13 @@ header{
 			}
 		}
 	}
-	p.copyright{margin-top: 50px;}
+	p.copyright{margin-top: 50px;
+		@media only screen and (max-width: 480px) {
+			margin-top: 10px;
+			width: 200px;
+			float: left;
+		}
+	}
 
 main{margin-top: -60px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
@@ -308,9 +314,6 @@ footer{
 	background-color: $dark;
 	color: $light;
 	margin-top: 50px;
-	@media only screen and (max-width: 480px) {
-		height: 100px;
-	}
 
 	.footwrap{@include wrap(80%, 20px, 20px);}
 	.bottomwrap{@include wrap(80%, 0px, 0px);}
@@ -323,6 +326,9 @@ footer{
 		@media only screen and (max-width: 768px) {
 			width: 30%; margin-top: 20px;
 		}
+		@media only screen and (max-width: 480px) {
+			margin-top: 0px;
+		}
 	}
 
 	#footmenu{
@@ -334,6 +340,8 @@ footer{
 			width: 500px;}
 		@media only screen and (max-width: 768px) {
 			width: 430px;}
+		@media only screen and (max-width: 480px) {
+			width: auto;}
 
 		nav{
 			margin-left: 40px !important;
@@ -388,6 +396,8 @@ footer{
 		height: 45px;
 		background-color: rgba(0,0,0, 0.2);
 		border-radius: 3px;
+		@media only screen and (max-width: 480px) {
+			margin-top: 30px;}
 
 		.up{float: right; filter: brightness(0) invert(0.6);
 			padding-right: 5px;
@@ -420,7 +430,7 @@ footer{
 //HOMEPAGE
 .home{@include wrap(80%, 25px, 50px);}
 .carouselwrap{
-	min-height: 320px;
+	height: 320px;
 	position: static;
 	top: -50px;
 	margin-top: 1px;
@@ -432,6 +442,8 @@ footer{
 			height: 220px;}
 	@media only screen and (max-width: 640px) {
 			height: 150px;}
+	@media only screen and (max-width: 480px) {
+			height: 200px;}
 }
 .carousel{
 	margin-top: 50px;
@@ -444,6 +456,12 @@ footer{
 		//min-height: 400px !important;
 		width: 100%;
 		margin-top: -50px;
+	}
+	.carousel-inner{
+		img{
+		@media only screen and (max-width: 480px) {
+			height: 265px;}
+		}
 	}
 	.carousel-caption{
 		letter-spacing: 5px;

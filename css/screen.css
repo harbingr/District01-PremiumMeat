@@ -385,6 +385,13 @@ nav ul li#lastfooterlink {
 p.copyright {
   margin-top: 50px;
 }
+@media only screen and (max-width: 480px) {
+  p.copyright {
+    margin-top: 10px;
+    width: 200px;
+    float: left;
+  }
+}
 
 main {
   margin-top: -60px;
@@ -445,11 +452,6 @@ footer {
   color: #f9faf5;
   margin-top: 50px;
 }
-@media only screen and (max-width: 480px) {
-  footer {
-    height: 100px;
-  }
-}
 footer .footwrap {
   width: 80%;
   margin-left: auto;
@@ -481,6 +483,11 @@ footer img#footerlogo {
     margin-top: 20px;
   }
 }
+@media only screen and (max-width: 480px) {
+  footer img#footerlogo {
+    margin-top: 0px;
+  }
+}
 footer #footmenu {
   float: left;
   width: 700px;
@@ -498,6 +505,11 @@ footer #footmenu {
 @media only screen and (max-width: 768px) {
   footer #footmenu {
     width: 430px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer #footmenu {
+    width: auto;
   }
 }
 footer #footmenu nav {
@@ -564,6 +576,11 @@ footer div.upbutton {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
+@media only screen and (max-width: 480px) {
+  footer div.upbutton {
+    margin-top: 30px;
+  }
+}
 footer div.upbutton .up {
   float: right;
   -webkit-filter: brightness(0) invert(0.6);
@@ -606,7 +623,7 @@ footer #bottom img.socialimg:hover {
 }
 
 .carouselwrap {
-  min-height: 320px;
+  height: 320px;
   position: static;
   top: -50px;
   margin-top: 1px;
@@ -631,6 +648,11 @@ footer #bottom img.socialimg:hover {
     height: 150px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .carouselwrap {
+    height: 200px;
+  }
+}
 
 .carousel {
   margin-top: 50px;
@@ -643,6 +665,11 @@ footer #bottom img.socialimg:hover {
 .carousel img {
   width: 100%;
   margin-top: -50px;
+}
+@media only screen and (max-width: 480px) {
+  .carousel .carousel-inner img {
+    height: 265px;
+  }
 }
 .carousel .carousel-caption {
   letter-spacing: 5px;
