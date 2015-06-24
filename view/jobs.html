@@ -17,14 +17,16 @@
 		</div>
 
 <!-- ACCORDION -->
-		<div class="col span_2_of_3 nocollapse">
+		<div class="col span_2_of_3">
 			<div ng-repeat="item in jobs">
-				<accordion close-others="oneAtATime">
-					<accordion-group ng-click="status.open=!status.open">
+				<accordion close-others=true>
+					<accordion-group ng-click="job.selected = (job.selected != $index ? $index : undefined)">
 						<accordion-heading is-open="status.isFirstOpen">
 							<h2 class="accordionhead">
 								"{{item.title}}"
-								<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-up': !status.open}"></i>
+								<i class="pull-right glyphicon "
+								ng-class="{'glyphicon-chevron-up': $index == job.selected, 'glyphicon-chevron-down': $index != job.selected}"
+								></i>
 							</h2>
 						</accordion-heading>
 						{{item.description}}
