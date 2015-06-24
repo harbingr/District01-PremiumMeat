@@ -783,6 +783,17 @@ footer{
 				text-decoration: none;
 			}
 		}
+		.jobopen{
+			div.panel-heading, h4.panel-title{
+				background-color: $dark;
+				color: $light;
+			}
+		}
+
+		span.jobdescr{
+			line-height: 200%;
+			font-family: 'OswaldLight';}
+
 		div.col.joblogo{
 			margin-top: 5%;
 			@media only screen and (max-width: 960px){
@@ -791,14 +802,6 @@ footer{
 			}
 			@media only screen and (max-width: 640px){
 				display: none;
-			}
-		}
-		div.col.nocollapse{
-			@media only screen and (max-width: 960px){
-				width: 66.13% !important;
-			}
-			@media only screen and (max-width: 640px){
-				width: 100% !important;
 			}
 		}
 		.jobknop{

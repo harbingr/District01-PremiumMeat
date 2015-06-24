@@ -1078,6 +1078,14 @@ div.col.list.loc:hover img {
 .jobs h2.accordionhead:hover {
   text-decoration: none;
 }
+.jobs .jobopen div.panel-heading, .jobs .jobopen h4.panel-title {
+  background-color: #352f2b;
+  color: #f9faf5;
+}
+.jobs span.jobdescr {
+  line-height: 200%;
+  font-family: 'OswaldLight';
+}
 .jobs div.col.joblogo {
   margin-top: 5%;
 }
@@ -1090,16 +1098,6 @@ div.col.list.loc:hover img {
 @media only screen and (max-width: 640px) {
   .jobs div.col.joblogo {
     display: none;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .jobs div.col.nocollapse {
-    width: 66.13% !important;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .jobs div.col.nocollapse {
-    width: 100% !important;
   }
 }
 .jobs .jobknop {
