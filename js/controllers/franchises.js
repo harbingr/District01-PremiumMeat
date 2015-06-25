@@ -13,7 +13,6 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 	{
 		$scope.map.center = {latitude: lat, longitude: lng };
 	}
-	//franchises[ID-1].location[0].lat;
 
 	$scope.ID = parseInt($stateParams.locationName);
 

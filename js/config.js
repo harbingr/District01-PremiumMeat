@@ -138,21 +138,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			})
 			.state('locaties', {
 				url: "/locaties",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'locaties'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
+				data: {rule: function($cookieStore) {} },
 				controller: "FranchisesCtrl",
 				templateUrl: "view/locaties.html"
 			})
@@ -164,12 +150,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 						locatieLong: 4.4
 					},
 					url: "/:locatieName",
-					data: {
-					rule: function($cookieStore) {
-						//check cookie --> return to language
-					}
-				},
-					controller: "FranchisesCtrl",
+					controller: "LocatieDetailCtrl",
 					templateUrl: "view/locatie.html",
 					resolve: {
 						locatiedetail:
@@ -181,49 +162,12 @@ var PremiumMeat = angular.module('PremiumMeat', [
 							}
 					}
 				})
-
-			.state('jobs', {
-				url: "/jobs",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'jobs'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
-				controller: "JobsCtrl",
-				templateUrl: "view/jobs.html"
-			})
-
 			.state('franchise', {
 				url: "/franchise",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'franchise'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
+				data: {rule: function($cookieStore) {}},
 				controller: "FranchisesCtrl",
 				templateUrl: "view/franchise.html"
 			})
-
 				.state('franchise.detail', {
 					params: {
 						detailID: 1,
@@ -242,6 +186,16 @@ var PremiumMeat = angular.module('PremiumMeat', [
 							}
 					}
 				})
+
+			.state('jobs', {
+				url: "/jobs",
+				data: {
+					rule: function($cookieStore) {
+			                }
+				},
+				controller: "JobsCtrl",
+				templateUrl: "view/jobs.html"
+			})
 
 			.state('contact', {
 				params:{
