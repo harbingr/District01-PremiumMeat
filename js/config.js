@@ -145,7 +145,8 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				.state('locaties.detail', {
 					params: {
 						locatieID: {value : "1"},
-						locatieName: {value : "Kontich"},
+						locatieName: {value : "Stad"},
+						locatieDescr: {value : "Beschrijving"},
 						locatieLat: {value: 51.2},
 						locatieLong: {value : 4.4}
 					},
@@ -155,7 +156,6 @@ var PremiumMeat = angular.module('PremiumMeat', [
 					resolve: {
 						locatiedetail:
 							function ($stateParams, $http){
-								console.log($stateParams);
 								var url ="http://franchise.district01.be/api/franchises/" + $stateParams.locatieID + "/nl.json";
 								return $http.get(url).then(function(res){
 									return res.data;

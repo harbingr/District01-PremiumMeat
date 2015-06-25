@@ -29,14 +29,14 @@
 
 		<div class="col span_1_of_2 locatiecontent">
 			<div>
-				<h4 class="locatietitle">{{ 'LOCATIEBEZOEK' | translate }} {{stateparams.locatieName}}</h4>
-
-				locatie lat: {{stateparams.locatieLat}}
-				locatie long: {{stateparams.locatieLong}}
+				<h4 class="locatietitle">{{ 'LOCATIEBEZOEK' | translate }} {{locatieParams.locatieName}}</h4>
+				<p>{{locatieParams.locatieDescr}}</p>
 
 <ui-gmap-google-map
-	center='map.center'
+	center='locatieCenter'
 	zoom='map.zoom'>
+	<ui-gmap-marker coords="locatieCenter"  idkey="locatieParams.locatieID">
+        </ui-gmap-marker>
 </ui-gmap-google-map>
 
 
