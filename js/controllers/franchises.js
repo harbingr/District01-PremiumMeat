@@ -10,14 +10,6 @@ angular.module('PremiumMeat').controller('FranchisesCtrl', function ($scope, $wi
 
 	$scope.locatiemap = {};
 
-	$scope.lat = $scope.franchises.location;
-
-	//dynamic center function set-up
-	$scope.setCenter = function(lat, lng)
-	{
-		$scope.map.center = {latitude: lat, longitude: lng };
-	}
-
 	$scope.ID = parseInt($stateParams.locationName);
 
 	$http.get(servicepath + 'franchises/' + $scope.language + '.json').then(function(res){

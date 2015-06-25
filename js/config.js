@@ -142,8 +142,8 @@ var PremiumMeat = angular.module('PremiumMeat', [
 				controller: "FranchisesCtrl",
 				templateUrl: "view/locaties.html"
 			})
-				.state('locaties.detail', {
-					params: {
+			.state('locatiedetail', {
+				params: {
 						locatieID: {value : "1"},
 						locatieName: {value : "Stad"},
 						locatieDescr: {value : "Beschrijving"},
@@ -162,7 +162,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 								});
 							}
 					}
-				})
+			})
 			.state('franchise', {
 				url: "/franchise",
 				data: {rule: function($cookieStore) {}},
