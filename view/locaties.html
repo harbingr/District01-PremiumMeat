@@ -18,7 +18,15 @@
 				<h4>{{item.name}}</h4>
 				<p class="adres">Koning Astridplein 23 - 2060 Antwerpen</p>
 				<p>{{item.description}}</p>
-				<a ui-sref="locatie({locationName: item.id})" class="detail">Bekijk detail >></a>
+				<a ui-sref="locaties.detail({
+					locatieID: item.id,
+					locatieName: item.name,
+					locatieDescr: item.description,
+					locatieLat: item.location[0].lat,
+					locatieLong: item.location[0].long
+				})"
+				class="detail">Bekijk detail >></a>
+
 			</div>
 
 		</div>

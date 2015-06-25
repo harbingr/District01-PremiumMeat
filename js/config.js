@@ -138,87 +138,37 @@ var PremiumMeat = angular.module('PremiumMeat', [
 			})
 			.state('locaties', {
 				url: "/locaties",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'locaties'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
+				data: {rule: function($cookieStore) {} },
 				controller: "FranchisesCtrl",
 				templateUrl: "view/locaties.html"
 			})
-				.state('locatie', {
-					url: "/locaties/:locationName",
-					data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'locatie'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
-					controller: "FranchisesCtrl",
-					templateUrl: "view/locatie.html"
+				.state('locaties.detail', {
+					params: {
+						locatieID: {value : "1"},
+						locatieName: {value : "Stad"},
+						locatieDescr: {value : "Beschrijving"},
+						locatieLat: {value: 51.2},
+						locatieLong: {value : 4.4}
+					},
+					url: "/:locatieName",
+					controller: "LocatieDetailCtrl",
+					templateUrl: "view/locatie.html",
+					resolve: {
+						locatiedetail:
+							function ($stateParams, $http){
+								var url ="http://franchise.district01.be/api/franchises/" + $stateParams.locatieID + "/nl.json";
+								return $http.get(url).then(function(res){
+									return res.data;
+								});
+							}
+					}
 				})
-
-			.state('jobs', {
-				url: "/jobs",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'jobs'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
-				controller: "JobsCtrl",
-				templateUrl: "view/jobs.html"
-			})
-
 			.state('franchise', {
 				url: "/franchise",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'franchise'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
+				data: {rule: function($cookieStore) {}},
 				controller: "FranchisesCtrl",
 				templateUrl: "view/franchise.html"
 			})
-
 				.state('franchise.detail', {
 					params: {
 						detailID: 1,
@@ -237,6 +187,16 @@ var PremiumMeat = angular.module('PremiumMeat', [
 							}
 					}
 				})
+
+			.state('jobs', {
+				url: "/jobs",
+				data: {
+					rule: function($cookieStore) {
+			                }
+				},
+				controller: "JobsCtrl",
+				templateUrl: "view/jobs.html"
+			})
 
 			.state('contact', {
 				params:{
