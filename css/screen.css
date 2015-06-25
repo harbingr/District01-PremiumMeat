@@ -612,29 +612,19 @@ footer #bottom img.socialimg:hover {
   top: -50px;
   margin-top: 1px;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
   .carouselwrap {
     height: 300px;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .carouselwrap {
-    height: 270px;
-  }
-}
-@media only screen and (max-width: 860px) {
-  .carouselwrap {
-    height: 220px;
-  }
-}
 @media only screen and (max-width: 640px) {
   .carouselwrap {
-    height: 150px;
+    height: 275px;
   }
 }
 @media only screen and (max-width: 480px) {
   .carouselwrap {
-    height: 200px;
+    height: 240px;
   }
 }
 
@@ -642,17 +632,33 @@ footer #bottom img.socialimg:hover {
   margin-top: 50px;
   position: relative;
   overflow: hidden;
-  height: 350px;
+  height: 320px;
   width: 100%;
   z-index: -1;
 }
-.carousel img {
+.carousel .carousel-inner img {
+  height: 370px;
   width: 100%;
   margin-top: -50px;
 }
+@media only screen and (max-width: 1100px) {
+  .carousel .carousel-inner img {
+    height: 360px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .carousel .carousel-inner img {
+    height: 340px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .carousel .carousel-inner img {
+    height: 320px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .carousel .carousel-inner img {
-    height: 265px;
+    height: 280px;
   }
 }
 .carousel .carousel-caption {
@@ -719,11 +725,20 @@ footer #bottom img.socialimg:hover {
   display: none;
 }
 
+section.promosection {
+  margin-top: 0px;
+}
+
 .promo {
   background-color: #f9faf5;
   color: #352f2b;
   height: 140px;
   position: relative;
+}
+@media only screen and (max-width: 920px) {
+  .promo {
+    height: 100px;
+  }
 }
 .promo.active {
   background-color: #5a8738;
@@ -743,12 +758,15 @@ footer #bottom img.socialimg:hover {
   line-height: 140%;
   margin: -20px 10px;
 }
+@media only screen and (max-width: 840px) {
+  .promo h2 {
+    font-size: 22px;
+  }
+}
 @media only screen and (max-width: 640px) {
   .promo h2 {
-    margin-top: 0px;
+    font-size: 20px;
     line-height: 100%;
-    margin: 5px;
-    font-size: 25px;
   }
 }
 .promo p {
@@ -757,7 +775,7 @@ footer #bottom img.socialimg:hover {
   font-size: 15px;
   display: block;
 }
-@media only screen and (max-width: 835px) {
+@media only screen and (max-width: 920px) {
   .promo p {
     display: none !important;
   }

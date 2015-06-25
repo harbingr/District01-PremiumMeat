@@ -431,33 +431,33 @@ footer{
 	position: static;
 	top: -50px;
 	margin-top: 1px;
-	@media only screen and (max-width: 1100px) {
-			height: 300px;}
 	@media only screen and (max-width: 1024px) {
-			height: 270px;}
-	@media only screen and (max-width: 860px) {
-			height: 220px;}
+			height: 300px;}
 	@media only screen and (max-width: 640px) {
-			height: 150px;}
+			height: 275px;}
 	@media only screen and (max-width: 480px) {
-			height: 200px;}
+			height: 240px;}
 }
 .carousel{
 	margin-top: 50px;
 	position: relative;
 	overflow: hidden;
-	height: 350px;
+	height: 320px;
 	width: 100%;
 	z-index: -1;
-	img{
-		//min-height: 400px !important;
-		width: 100%;
-		margin-top: -50px;
-	}
 	.carousel-inner{
 		img{
-		@media only screen and (max-width: 480px) {
-			height: 265px;}
+			height: 370px;
+			width: 100%;
+			margin-top: -50px;
+			@media only screen and (max-width: 1100px) {
+					height: 360px;}
+			@media only screen and (max-width: 1024px) {
+					height: 340px;}
+			@media only screen and (max-width: 640px) {
+					height: 320px;}
+			@media only screen and (max-width: 480px) {
+					height: 280px;}
 		}
 	}
 	.carousel-caption{
@@ -497,10 +497,14 @@ footer{
 	.carousel-indicators{display: none;}
 
 //PROMOS
+section.promosection{margin-top: 0px;}
 .promo{
 	background-color: $light;
 	color: $dark;
 	height: 140px;
+	@media only screen and (max-width: 920px) {
+			height: 100px;
+		}
 	position: relative;
 	&.active{background-color: $green; color: $light;
 		p{color: $light;}}
@@ -509,10 +513,11 @@ footer{
 	h2{
 		line-height: 140%;
 		margin: -20px 10px;
+		@media only screen and (max-width: 840px) {
+			font-size: 22px;}
 		@media only screen and (max-width: 640px) {
-			margin-top: 0px;
-			line-height: 100%; margin: 5px;
-			font-size: 25px;
+			font-size: 20px;
+			line-height: 100%;
 		}
 	}
 	p{
@@ -520,7 +525,7 @@ footer{
 		font-family: 'OswaldLight';
 		font-size: 15px;
 		display: block;
-		@media only screen and (max-width: 835px) {
+		@media only screen and (max-width: 920px) {
 			display: none !important;
 		}
 		@media only screen and (max-width: 480px) {
