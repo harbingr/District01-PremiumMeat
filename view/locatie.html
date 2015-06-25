@@ -27,68 +27,21 @@
 
 		</div>
 
-<script>
-
-var t = {
-		latitude:50.85034,
-		longitude:4.35171
-	};
-	console.log(t);
-
-</script>
-
 		<div class="col span_1_of_2 locatiecontent">
 			<div>
-				<h4 class="locatietitle">{{ 'LOCATIEBEZOEK' | translate }} {{ franchises[ID-1].name }}</h4>
-				<p>{{ franchises[ID-1].description }}</p>
 
-<!--
-				<p>{{franchises[ID-1].location[0].lat}}</p>
-				<p>{{franchises[ID-1].location[0].long}}</p>
-
-				<p>{{franchises[0].location}}</p>
-				<p>{{map.center}}</p>
--->
-
-
-<ui-gmap-google-map
-	center='map.center'
-	zoom='map.zoom'>
-</ui-gmap-google-map>
-
-
-
-<!--
-<ui-gmap-google-map
-
-	center='{{franchises[ID-1].location[0].lat}},
-	{{franchises[ID-1].location[0].long}}'
-	zoom='map.zoom'>
-</ui-gmap-google-map>
--->
-
-<!-- 			markers=
-				{{franchises[ID-1].location[0].lat}},
-				{{ franchises[ID-1].location[0].long}}
-
-				&key=AIzaSyBGPdCnpglb4ok6k8BaVuF0srvPR7Gg770"
--->
-
-
-<!--
-		<div class="col span_1_of_2 cleanslider2">
-			<img src="http://lorempixel.com/output/city-q-c-400-300-1.jpg" ng-src="{{selectedImg.src}}" alt="{{selectedImg.src}}">
-
-			<div id="locatieimgsq">
-				<ul>
-					<li class="" ng-repeat="thumb in franchises">
-						<img ng-src="{{thumb.images[0].list}}" alt="{{thumb.images[0].list}}" ng-click="selectedImg.src = thumb.images[0].list" >
-					</li>
-				</ul>
+				<h4 class="locatietitle">{{ 'LOCATIEBEZOEK' | translate }} {{locatieParams.locatieName}}</h4>
+				<p>{{locatieParams.locatieDescr}}</p>
 			</div>
 
+			<ui-gmap-google-map
+				center='locatieCenter'
+				zoom='map.zoom'>
+				<ui-gmap-marker coords="locatieCenter"  idkey="locatieParams.locatieID">
+			        </ui-gmap-marker>
+			</ui-gmap-google-map>
 		</div>
--->
+
 	</section>
 
 </div>
