@@ -22,9 +22,6 @@ var PremiumMeat = angular.module('PremiumMeat')
 		});
 
 		var posts = $scope.posts = [];
-		/*$http.get(servicepath + 'articles/' + $scope.language + '.json').then(function(res){
-			$scope.posts = res.data;
-		});*/
 		$http.get(servicepath + 'articles/' + $scope.language + '.json?callback=JSON_CALLBACK').
 		  success(function(data, status, headers, config) {
 			$scope.posts = data;
