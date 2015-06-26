@@ -14,13 +14,29 @@ angular.module("PremiumMeat").controller('contactController', function($scope, $
 		$scope.contactform.onderwerp = $stateParams.onderwerp;
 
 	$scope.submitForm = function(isValid) {
-
 		$scope.hideForm = false;
-
 		if (isValid) {
 			if ($scope.userForm.name.$valid == true) {
 				$scope.hideForm = true;
 			};
 		};
+		saveContact();
+	};
+
+	$scope.saveContact = function() {
+
+		console.log("save");
+		$scope.contact.name = $scope.name;
+
+		consonle.log($scope.name);
+		consonle.log($scope.email);
+
+		httpPost();
+	}
+
+	var httpPost = function() {
+		$http.post('save.php', JSON.stringify($scope.contact))
+			.error(function(status){console.log(status)}
+		);
 	};
 });
