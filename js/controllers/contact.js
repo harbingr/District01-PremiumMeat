@@ -56,5 +56,33 @@ angular.module("PremiumMeat")
 		$http.post('save.php', JSON.stringify($scope.contact))
 			.error(function(status){console.log(status)}
 		);
+
+		var htmlBody = '<div>Naam: ' + $scope.name + '</div>' +
+                 '<div>Bericht: ' + $scope.bericht + '</div>' +
+                 '<div>Datum: ' + (new Date()).toString() + '</div>';
+
+		$http({
+			url: 'https://api.postmarkapp.com/email',
+			method: 'POST',
+			data: {
+				'From': $scope.email ,
+				'To': 'robbert@harbingermultimedia.com',
+				'HtmlBody': htmlBody,
+				'Subject': $scope.bericht
+			},
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+				'X-Postmark-Server-Token': '8569dcd45-6a1a-4e7b-ae75-ea37629de4'
+			}
+		}).
+		success(function (data) {
+			$scope.success = true;
+		}).
+		error(function (data) {
+			$scope.error = true;
+		});
+
 	};
+
 });
