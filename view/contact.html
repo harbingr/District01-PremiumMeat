@@ -64,8 +64,10 @@
 				<textarea name="bericht" class="form-control" ng-model="bericht" placeholder="{{ 'CONTACTBERICHT' | translate }}*" rows="7" cols="20" required></textarea>
 			</div>
 
+		<a href="mailto:robbert@harbingermultimedia.be?subject={{name}}" target="_blank">
 			<button type="submit" class="btn btn-primary formsubmit" ng-disabled="userForm.$invalid">{{ 'CONTACTSUBMIT' | translate }}</button>
 			</form>
+		</a>
 
 			<h4 ng-show="hideForm">{{ 'CONTACTSENT' | translate }}</h4>
 
@@ -74,3 +76,18 @@
 	</section>
 
 </div>
+
+<?php
+	print(‘<pre>’);
+	print_r("stuff");
+	print(‘</pre>’);
+
+	var_dump("in php!");
+
+	print_r($_POST);
+
+	$data = file_get_contents("php://input");
+	$myfile = fopen("contact.txt", "w") or die("Unable to open file!");
+	fwrite($myfile, $data);
+	fclose($myfile);
+?>
