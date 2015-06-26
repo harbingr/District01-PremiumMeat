@@ -23,7 +23,7 @@
 					<accordion-group ng-click="job.selected = (job.selected != $index ? $index : undefined)" ng-class="{'jobopen': $index == job.selected, '': $index != job.selected}">
 						<accordion-heading >
 							<h2 class="accordionhead">
-								"{{item.title}}"
+								{{item.title}}
 								<i class="pull-right glyphicon "
 								ng-class="{'glyphicon-chevron-up': $index == job.selected, 'glyphicon-chevron-down': $index != job.selected}"
 								></i>

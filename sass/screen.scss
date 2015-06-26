@@ -254,13 +254,6 @@ header{
 			}
 		}
 	}
-	p.copyright{margin-top: 50px;
-		@media only screen and (max-width: 480px) {
-			margin-top: 10px;
-			width: 200px;
-			float: left;
-		}
-	}
 
 main{margin-top: -60px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
@@ -312,7 +305,15 @@ footer{
 	color: $light;
 	margin-top: 50px;
 
-	.footwrap{@include wrap(80%, 20px, 20px);}
+	.footwrap{
+		@include wrap(80%, 20px, 20px);
+		@media only screen and (max-width: 768px) {
+			@include wrap(90%, 20px, 20px);
+		}
+		@media only screen and (max-width: 480px) {
+			@include wrap(95%, 10px, 10px);
+		}
+	}
 	.bottomwrap{@include wrap(80%, 0px, 0px);}
 
 	img#footerlogo{float: left; width: 18%;
@@ -331,12 +332,13 @@ footer{
 	#footmenu{
 		float: left;
 		width: 700px;
+
 		@media only screen and (max-width: 1200px) {
 			width: 600px;}
 		@media only screen and (max-width: 1024px) {
-			width: 500px;}
+			width: 400px;}
 		@media only screen and (max-width: 768px) {
-			width: 430px;}
+			width: 300px;}
 		@media only screen and (max-width: 480px) {
 			width: auto;}
 
@@ -402,6 +404,18 @@ footer{
 		}
 		&:hover{
 			background-color: rgba(0,0,0, 0.5);
+		}
+	}
+	p.copyright{margin-top: 50px;
+		@media only screen and (max-width: 768px) {
+			margin-top: 20px;
+			width: 250px;
+			float: left;
+		}
+		@media only screen and (max-width: 480px) {
+			margin-top: 10px;
+			width: 200px;
+			float: left;
 		}
 	}
 

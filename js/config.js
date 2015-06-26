@@ -150,7 +150,7 @@ var PremiumMeat = angular.module('PremiumMeat', [
 						locatieLat: {value: 51.2},
 						locatieLong: {value : 4.4}
 					},
-					url: "/:locatieName",
+					url: "/locaties/:locatieName",
 					controller: "LocatieDetailCtrl",
 					templateUrl: "view/locatie.html",
 					resolve: {

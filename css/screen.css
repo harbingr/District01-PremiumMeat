@@ -366,17 +366,6 @@ nav ul li#lastfooterlink {
   margin-left: 25px;
 }
 
-p.copyright {
-  margin-top: 50px;
-}
-@media only screen and (max-width: 480px) {
-  p.copyright {
-    margin-top: 10px;
-    width: 200px;
-    float: left;
-  }
-}
-
 main {
   margin-top: -60px;
   margin-bottom: 50px;
@@ -443,6 +432,24 @@ footer .footwrap {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 768px) {
+  footer .footwrap {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer .footwrap {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 footer .bottomwrap {
   width: 80%;
   margin-left: auto;
@@ -483,12 +490,12 @@ footer #footmenu {
 }
 @media only screen and (max-width: 1024px) {
   footer #footmenu {
-    width: 500px;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 768px) {
   footer #footmenu {
-    width: 430px;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -574,6 +581,23 @@ footer div.upbutton .up {
 }
 footer div.upbutton:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+footer p.copyright {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+  footer p.copyright {
+    margin-top: 20px;
+    width: 250px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer p.copyright {
+    margin-top: 10px;
+    width: 200px;
+    float: left;
+  }
 }
 footer #bottom {
   height: 40px;
