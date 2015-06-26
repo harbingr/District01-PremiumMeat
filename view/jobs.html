@@ -18,9 +18,9 @@
 
 <!-- ACCORDION -->
 		<div class="col span_2_of_3">
-			<div>
-				<accordion close-others = "true">
-					<accordion-group ng-repeat="item in jobs" ng-click="job.selected = (job.selected != $index ? $index : undefined)" ng-class="{'jobopen': $index == job.selected, '': $index != job.selected}">
+			<div ng-repeat="item in jobs">
+				<accordion close-others="oneAtATime">
+					<accordion-group ng-click="job.selected = (job.selected != $index ? $index : undefined)" ng-class="{'jobopen': $index == job.selected, '': $index != job.selected}">
 						<accordion-heading >
 							<h2 class="accordionhead">
 								{{item.title}}
