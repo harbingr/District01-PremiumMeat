@@ -4,20 +4,36 @@
 		"selected_items":
 		[
 			[
-				"if",
-				"ife	if … else"
-			],
-			[
-				"fon",
-				"font-size"
-			],
-			[
-				"bord",
-				"border-radius"
+				"os",
+				"OswaldRegular"
 			],
 			[
 				"mar",
 				"margin-top"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"contac",
+				"contactform"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"bord",
+				"border-radius"
 			],
 			[
 				"w",
@@ -29,10 +45,6 @@
 			],
 			[
 				"padd",
-				"padding-top"
-			],
-			[
-				"pad",
 				"padding-top"
 			],
 			[
@@ -70,10 +82,6 @@
 			[
 				"back",
 				"background-color"
-			],
-			[
-				"list",
-				"list-style-image"
 			],
 			[
 				"Osw",
@@ -506,32 +514,56 @@
 			[
 				"art",
 				"artists"
-			],
-			[
-				"arti",
-				"artistId"
-			],
-			[
-				"ar",
-				"artists"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "js/controllers/LocatieDetailCtrl.js",
 			"settings":
 			{
-				"buffer_size": 3045,
+				"buffer_size": 1163,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/controllers/home.js",
+			"file": "js/config.js",
 			"settings":
 			{
-				"buffer_size": 1698,
+				"buffer_size": 7261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/locatie.html",
+			"settings":
+			{
+				"buffer_size": 1351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/locaties.html",
+			"settings":
+			{
+				"buffer_size": 1276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/screen.scss",
+			"settings":
+			{
+				"buffer_size": 24069,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/jobs.html",
+			"settings":
+			{
+				"buffer_size": 1520,
 				"line_ending": "Unix"
 			}
 		}
@@ -568,21 +600,26 @@
 	},
 	"file_history":
 	[
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/contact.html",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/sass/screen.scss",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/home.js",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/franchises.js",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/contact.js",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/home.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/jobs.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locatie.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/jobs.html",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/includes/header.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/locatie.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/config.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/LocatieDetailCtrl.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locaties.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/franchises.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/index.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/home.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/save.php",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/contact.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/contact.js",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/franchise.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/home.html",
+		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/includes/header.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/routing.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/menu.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/menu.html",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locaties.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/includes/footer.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/PremiumMeat.sublime-project",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/carousel.js",
@@ -600,7 +637,6 @@
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/tabselect.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/view/locaties.antwerp.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/franchise.kontich.html",
-		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/jobs.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/js/controllers/collapse.js",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/html/locaties.html",
 		"/Users/robbertsegers/Desktop/District01/Premium_Meat/development/locaties.html",
@@ -691,11 +727,7 @@
 		"/Users/robbertsegers/Desktop/Harbinger/Website/NiceSimpleContactForm/contactthanks.php",
 		"/Users/robbertsegers/Desktop/Harbinger/Website/NiceSimpleContactForm/index.html",
 		"/Users/robbertsegers/Desktop/Harbinger/Website/jquery-parallax-1.1.3/style.css",
-		"/Users/robbertsegers/Desktop/Harbinger/Site/index.html",
-		"/Applications/MAMP/htdocs/school/Herexamens/voting/voting.php",
-		"/Users/robbertsegers/Desktop/Harbinger/Website/jquery-parallax-1.1.3/index.html",
-		"/Users/robbertsegers/Desktop/Harbinger/Website/jquery-parallax-1.1.3/index.php",
-		"/Applications/MAMP/htdocs/school/Herexamens/voting.js"
+		"/Users/robbertsegers/Desktop/Harbinger/Site/index.html"
 	],
 	"find":
 	{
@@ -714,6 +746,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"f5f5",
+			"panel-heading",
+			"getco",
+			"footer",
 			"locatieimgsq",
 			"div.col",
 			"list",
@@ -778,56 +814,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "js/controllers/LocatieDetailCtrl.js",
 					"settings":
 					{
-						"buffer_size": 3045,
+						"buffer_size": 1163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1699,
-								1699
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 713.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "js/controllers/home.js",
-					"settings":
-					{
-						"buffer_size": 1698,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								269,
-								269
+								532,
+								532
 							]
 						],
 						"settings":
@@ -836,7 +839,148 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 22.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/config.js",
+					"settings":
+					{
+						"buffer_size": 7261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3640,
+								3640
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2231.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "view/locatie.html",
+					"settings":
+					{
+						"buffer_size": 1351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1094,
+								1094
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 526.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "view/locaties.html",
+					"settings":
+					{
+						"buffer_size": 1276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								808,
+								808
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 197.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/screen.scss",
+					"settings":
+					{
+						"buffer_size": 24069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16540,
+								16540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 16748.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "view/jobs.html",
+					"settings":
+					{
+						"buffer_size": 1520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 355.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -872,7 +1016,7 @@
 		"cols":
 		[
 			0.0,
-			0.71734775641,
+			0.440082703754,
 			1.0
 		],
 		"rows":

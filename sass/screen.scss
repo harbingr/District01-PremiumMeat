@@ -800,9 +800,11 @@ section.promosection{margin-top: 0px;}
 //JOBS
 	.jobs{@include wrap(80%, 25px, 150px);
 		div.panel-heading{
-			//background-color: $light;
+			background-color: $light;
+			margin-top: 10px;
 		}
 		div.panel, div.panel-default{
+			background-color: $light !important;
 			border: none;
 		}
 		h4.panel-title{
@@ -848,6 +850,8 @@ section.promosection{margin-top: 0px;}
 				display: none;
 			}
 		}
+		p.jobsubhead{margin: 10px 0px;
+			font-family: 'OswaldRegular';}
 		.jobknop{
 			background-color: $dark;
 			color: $light;
@@ -872,6 +876,7 @@ section.promosection{margin-top: 0px;}
 ul.skillist{
 	margin: 25px 0px 0px 15px;
 	li{
+		font-family: 'OswaldLight';
 		padding-left: 30px;
 		padding-bottom: 15px;
 		background: url('../images/arrow.png') no-repeat 15px;

@@ -1114,7 +1114,12 @@ div.col.list.loc:hover img {
   margin-top: 25px;
   margin-bottom: 150px;
 }
+.jobs div.panel-heading {
+  background-color: #f9faf5;
+  margin-top: 10px;
+}
 .jobs div.panel, .jobs div.panel-default {
+  background-color: #f9faf5 !important;
   border: none;
 }
 .jobs h4.panel-title {
@@ -1160,6 +1165,10 @@ div.col.list.loc:hover img {
     display: none;
   }
 }
+.jobs p.jobsubhead {
+  margin: 10px 0px;
+  font-family: 'OswaldRegular';
+}
 .jobs .jobknop {
   background-color: #352f2b;
   color: #f9faf5;
@@ -1188,6 +1197,7 @@ ul.skillist {
   margin: 25px 0px 0px 15px;
 }
 ul.skillist li {
+  font-family: 'OswaldLight';
   padding-left: 30px;
   padding-bottom: 15px;
   background: url("../images/arrow.png") no-repeat 15px;
