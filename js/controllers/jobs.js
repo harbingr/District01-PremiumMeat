@@ -2,8 +2,6 @@
 var servicepath = "http://franchise.district01.be/api/";
 angular.module('PremiumMeat').controller('JobsCtrl', function ($scope, $http) {
 
-	$scope.oneAtATime = true;
-
 	$scope.job = { selected: undefined };
 
 	$scope.jobs = [];
@@ -11,20 +9,9 @@ angular.module('PremiumMeat').controller('JobsCtrl', function ($scope, $http) {
 		$scope.jobs = res.data;
 	});
 
-	$scope.oneAtATime = true;
+var skills = ["Strong interpersonal skills", "Problem solving & analytical thinking", "Great teamplayer", "Willing to learn"];
 
-  $scope.groups = [
-    {
-      title: 'Dynamic Group Header - 1',
-      content: 'Dynamic Group Body - 1'
-    },
-    {
-      title: 'Dynamic Group Header - 2',
-      content: 'Dynamic Group Body - 2'
-    }
-  ];
-
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
+  $scope.jobskills = skills;
 
   $scope.addItem = function() {
     var newItemNo = $scope.items.length + 1;

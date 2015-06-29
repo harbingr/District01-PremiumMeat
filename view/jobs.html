@@ -30,6 +30,9 @@
 							</h2>
 						</accordion-heading>
 						<span class="jobdescr">{{item.description}}</span>
+						<ul class="skillist">
+							<li ng-repeat="skill in jobskills">{{skill}}</li>
+						</ul>
 						<button class="jobknop" ng-model="jobknop" ui-sref="contact({onderwerp: 'sollicitatie'})">
 							{{ 'SOLLICITEER' | translate }} >
 						</button>

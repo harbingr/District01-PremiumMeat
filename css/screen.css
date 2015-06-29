@@ -1167,7 +1167,7 @@ div.col.list.loc:hover img {
   width: 250px;
   border-radius: 0px;
   float: right;
-  margin-top: 40px;
+  margin-top: 20px;
   outline: none;
   border: none;
   letter-spacing: 1px;
@@ -1182,6 +1182,19 @@ div.col.list.loc:hover img {
 
 .JobsImg {
   width: 100%;
+}
+
+ul.skillist {
+  margin: 25px 0px 0px 15px;
+}
+ul.skillist li {
+  padding-left: 30px;
+  padding-bottom: 15px;
+  background: url("../images/arrow.png") no-repeat 15px;
+  background-position: 0px 0px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
 }
 
 .FranchiseSection {

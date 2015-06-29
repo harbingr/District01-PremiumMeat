@@ -855,7 +855,7 @@ section.promosection{margin-top: 0px;}
 			width: 250px;
 			border-radius: 0px;
 			float: right;
-			margin-top: 40px;
+			margin-top: 20px;
 			outline: none;
 			border: none;
 			letter-spacing: 1px;
@@ -869,6 +869,18 @@ section.promosection{margin-top: 0px;}
 	margin: 0px;
 }
 .JobsImg{width: 100%;}
+ul.skillist{
+	margin: 25px 0px 0px 15px;
+	li{
+		padding-left: 30px;
+		padding-bottom: 15px;
+		background: url('../images/arrow.png') no-repeat 15px;
+		background-position: 0px 0px;
+		background-size: 20px;
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+	}
+}
 
 //FRANCHISE
 .FranchiseSection{margin-top: 20px;

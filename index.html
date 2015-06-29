@@ -4,7 +4,20 @@
 	<meta charset="UTF-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>District01 - Premium Meat</title>
-	<!-- {{currentPage}} -->
+
+</head>
+
+<body layout="column" breakpoints id="scroll" ng-controller="routeCtrl">
+
+	<div ng-include=" 'includes/header.html ' " ng-show="!state.includes('language')"></div>
+
+
+	<main ui-view></main>
+
+	<div ng-include=" 'includes/footer.html' " ng-show="!state.includes('language')"></div>
+
+</body>
+
 
 <!-- EXTERNAL DEPENDENCIES-->
 <!-- CSS -->
@@ -39,7 +52,6 @@
 	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
 
-
 	<!-- CUSTOM -->
 	<link rel="stylesheet" href="css/screen.css">
 
@@ -62,7 +74,6 @@
 	<script src="js/controllers/franchises.js"></script>
 	<script src="js/controllers/FranchisesDetailCtrl.js"></script>
 	<script src="js/controllers/LocatieDetailCtrl.js"></script>
-	<script src="js/controllers/franchisemobile.js"></script>
 	<script src="js/controllers/contact.js"></script>
 	<script src="js/controllers/routeCtrl.js"></script>
 
@@ -73,29 +84,5 @@
 	<script src='bower_components/lodash/lodash.js'></script>
 	<script src='bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
 
-
-</head>
-
-<body layout="column" breakpoints id="scroll" ng-controller="routeCtrl">
-	<div ng-include=" 'includes/header.html ' " ng-show="!state.includes('language')">
-
-	</div>
-
-
-	<main ui-view>
-
-
-	</main>
-
-	<div ng-include=" 'includes/footer.html' " ng-show="!state.includes('language')">
-
-
-	</div>
-
-</body>
-
-<script>
-
-</script>
 
 </html>
