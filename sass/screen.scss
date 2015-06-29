@@ -58,6 +58,7 @@ header{
 
 section{margin-top: 30px;}
 
+
 h1{
 	font-family: 'OswaldBold';
 	text-transform: uppercase;
@@ -257,6 +258,7 @@ header{
 
 main{margin-top: -60px; margin-bottom: 50px; z-index: 0;}
 section{overflow: hidden;}
+section.home{margin-top: 50px;}
 
 //HEADER LINES
 .sectionheader {
@@ -730,21 +732,25 @@ section.promosection{margin-top: 0px;}
 		color: $green;
 		display: block;
 		margin-top: 15px;
-		text-decoration: none;
-		&:hover{
-			//text-decoration: underline;
-		}
 	}
 	&:hover{opacity: 1;}
 
 //LOCATIE
 	.cleanslider{
 	margin-top: 0px;
-	@media only screen and (max-width: 1024px) {
-		position: relative;
-		bottom: 0px;
-		display: none;
-	}
+		@media only screen and (max-width: 1024px) {
+			position: relative;
+			bottom: 0px;
+			display: none;
+		}
+		div#mainslidewrap{
+			height: 400px;
+			overflow: hidden;
+			img{
+				object-fit: cover;
+				height: 100%;
+			}
+		}
 		img{
 			width: 100%;
 		}
@@ -757,9 +763,13 @@ section.promosection{margin-top: 0px;}
 			display: block;
 		}
 	}
-	h4.locatietitle{margin-top: 0px; margin-bottom: 25px;}
+	h4.locatietitle{
+		font-size: 18px;
+		padding-top: 0px;
+		margin-top: 0px; margin-bottom: 10px;}
 	div.locatiecontent{
 		margin-top: 0px;
+		p{margin-bottom: 20px;}
 	}
 }
 
@@ -772,7 +782,7 @@ section.promosection{margin-top: 0px;}
 		}
 	}
 }
-.angular-google-map-container { height: 400px; margin-top: 20px;}
+.angular-google-map-container { height: 345px; margin-top: 20px;}
 
 #map{margin-top: 50px; height: 355px;}
 #locatieimgsq{
@@ -780,7 +790,7 @@ section.promosection{margin-top: 0px;}
 		li{
 			img{
 				display: inline-block;
-				margin: 15px 0px 0px 0px;
+				margin: 5px 0px 0px 0px;
 			}
 		}
 	}

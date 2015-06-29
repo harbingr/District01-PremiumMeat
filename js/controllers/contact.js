@@ -18,19 +18,15 @@ angular.module("PremiumMeat")
 	$stateParams,
 	$window){
 
+		//MAP
 		$scope.mapd01 = { center: { latitude: 51.142057, longitude: 4.442918}, zoom: 10 };
+		$scope.mapd01.marker = {id: 0, coords: {latitude: 51.142057,longitude: 4.442918}};
 
-		$scope.mapd01.marker = {
-		      id: 0,
-		      coords: {
-		        latitude: 51.142057,
-		        longitude: 4.442918
-		      }
-		};
 
-		$scope.contactform = {};
-		$scope.contactform.onderwerp = $stateParams.onderwerp;
+	$scope.contactform = {};
+	$scope.contactform.onderwerp = $stateParams.onderwerp;
 
+	//CHECK FORM & INVOKE MAILING
 	$scope.submitForm = function(isValid) {
 		$scope.hideForm = false;
 		if (isValid) {
@@ -41,6 +37,7 @@ angular.module("PremiumMeat")
 		httpPost();
 	};
 
+	// SEND MAIL
 	var httpPost = function() {
 
 		$scope.contact = {};
@@ -52,17 +49,12 @@ angular.module("PremiumMeat")
 
 		$window.location = "mailto:robbert@harbingermultimedia.be?subject=" + $scope.contact.onderwerp + " van " + $scope.email + "&body="  + "Naam: " + $scope.name  + "      Bericht: " + $scope.bericht, '_blank';
 
-		console.log("http post" + $scope.contact);
-		$http.post('save.php', JSON.stringify($scope.contact))
-			.error(function(status){console.log(status)}
-		);
-
 		var htmlBody = '<div>Naam: ' + $scope.name + '</div>' +
                  '<div>Bericht: ' + $scope.bericht + '</div>' +
                  '<div>Datum: ' + (new Date()).toString() + '</div>';
 
 		$http({
-			url: 'https://api.postmarkapp.com/email',
+			url: 'https://mail.cronos.be',
 			method: 'POST',
 			data: {
 				'From': $scope.email ,
@@ -84,5 +76,11 @@ angular.module("PremiumMeat")
 		});
 
 	};
+
+	// SEND TO PHP TO SAVE TO FILE
+	console.log("http post" + $scope.contact);
+		$http.post('save.php', JSON.stringify($scope.contact))
+			.error(function(status){console.log(status)}
+		);
 
 });

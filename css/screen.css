@@ -376,6 +376,10 @@ section {
   overflow: hidden;
 }
 
+section.home {
+  margin-top: 50px;
+}
+
 .sectionheader {
   margin-top: 35px;
   position: relative;
@@ -1021,7 +1025,6 @@ div.col.list.loc:hover img {
   color: #5a8738;
   display: block;
   margin-top: 15px;
-  text-decoration: none;
 }
 .LocatiesSection:hover {
   opacity: 1;
@@ -1035,6 +1038,14 @@ div.col.list.loc:hover img {
     bottom: 0px;
     display: none;
   }
+}
+.LocatiesSection .cleanslider div#mainslidewrap {
+  height: 400px;
+  overflow: hidden;
+}
+.LocatiesSection .cleanslider div#mainslidewrap img {
+  object-fit: cover;
+  height: 100%;
 }
 .LocatiesSection .cleanslider img {
   width: 100%;
@@ -1054,11 +1065,16 @@ div.col.list.loc:hover img {
   }
 }
 .LocatiesSection h4.locatietitle {
+  font-size: 18px;
+  padding-top: 0px;
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .LocatiesSection div.locatiecontent {
   margin-top: 0px;
+}
+.LocatiesSection div.locatiecontent p {
+  margin-bottom: 20px;
 }
 
 .locatie {
@@ -1077,7 +1093,7 @@ div.col.list.loc:hover img {
 }
 
 .angular-google-map-container {
-  height: 400px;
+  height: 345px;
   margin-top: 20px;
 }
 
@@ -1088,7 +1104,7 @@ div.col.list.loc:hover img {
 
 #locatieimgsq ul li img {
   display: inline-block;
-  margin: 15px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
 }
 
 .jobs {

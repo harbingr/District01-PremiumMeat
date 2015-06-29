@@ -13,7 +13,16 @@
 	<section class="LocatiesSection" ng-controller="FranchisesCtrl">
 
 		<div class="col span_1_of_4 list loc" ng-repeat="item in franchises" >
-			<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}" class="LocatiesImg">
+			<a ui-sref="locatiedetail({
+					locatieID: item.id,
+					locatieName: item.name,
+					locatieDescr: item.description,
+					locatieLat: item.location[0].lat,
+					locatieLong: item.location[0].long
+				})"
+				class="detail">
+				<img src="{{item.images[0].list}}" alt="{{item.images[0].list}}" class="LocatiesImg">
+				</a>
 			<div class="LocatiesInfo">
 				<h4>{{item.name}}</h4>
 				<p class="adres">Koning Astridplein 23 - 2060 Antwerpen</p>
