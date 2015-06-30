@@ -250,8 +250,8 @@ header{
 					@media only screen and (max-width: 1024px) {
 						display: none;}
 				}
-			li#lastfooterlink{
-				margin-left: 25px;
+			li.adjustfooterlink{
+				margin-left: -10px;
 			}
 		}
 	}

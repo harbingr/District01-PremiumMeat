@@ -362,8 +362,8 @@ nav ul .before
     display: none;
   }
 }
-nav ul li#lastfooterlink {
-  margin-left: 25px;
+nav ul li.adjustfooterlink {
+  margin-left: -10px;
 }
 
 main {
