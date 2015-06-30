@@ -86,7 +86,7 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
   height: 120px;
-  background-color: #f9faf5;
+  background-color: #fafcfa;
 }
 @media only screen and (max-width: 1024px) {
   header {
@@ -291,7 +291,7 @@ nav ul li {
     color: #352f2b;
   }
   nav ul li:nth-child(even) {
-    background-color: #f9faf5;
+    background-color: #fafcfa;
   }
 }
 nav ul li a:link {
@@ -426,7 +426,7 @@ footer {
   margin-top: 50px;
   font-size: 12px;
   background-color: #352f2b;
-  color: #f9faf5;
+  color: #fafcfa;
   margin-top: 50px;
 }
 footer .footwrap {
@@ -531,7 +531,7 @@ footer #footmenu nav ul li {
 }
 footer #footmenu nav ul li a {
   text-decoration: none;
-  color: #f9faf5;
+  color: #fafcfa;
   margin: 20%;
 }
 @media only screen and (max-width: 768px) {
@@ -605,7 +605,7 @@ footer p.copyright {
 }
 footer #bottom {
   height: 40px;
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   bottom: 0px;
   clear: both;
   width: 100%;
@@ -758,7 +758,7 @@ section.promosection {
 }
 
 .promo {
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   color: #352f2b;
   height: 140px;
   position: relative;
@@ -770,17 +770,17 @@ section.promosection {
 }
 .promo.active {
   background-color: #5a8738;
-  color: #f9faf5;
+  color: #fafcfa;
 }
 .promo.active p {
-  color: #f9faf5;
+  color: #fafcfa;
 }
 .promo:hover {
   background-color: #5a8738;
-  color: #f9faf5;
+  color: #fafcfa;
 }
 .promo:hover p {
-  color: #f9faf5;
+  color: #fafcfa;
 }
 .promo h2 {
   line-height: 140%;
@@ -847,7 +847,7 @@ section.promosection {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 25px;
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   border-top: 1px solid rgba(53, 47, 43, 0.1);
   border-bottom: 1px solid rgba(53, 47, 43, 0.1);
 }
@@ -858,7 +858,7 @@ section.promosection {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 25px;
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   overflow: hidden;
   margin-bottom: 25px;
 }
@@ -964,7 +964,7 @@ div.col.list.loc:hover img {
 
   .ingredienten {
     opacity: 1;
-    background-color: #f9faf5;
+    background-color: #fafcfa;
     position: relative;
     top: 0px;
   }
@@ -1115,11 +1115,11 @@ div.col.list.loc:hover img {
   margin-bottom: 150px;
 }
 .jobs div.panel-heading {
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   margin-top: 10px;
 }
 .jobs div.panel, .jobs div.panel-default {
-  background-color: #f9faf5 !important;
+  background-color: #fafcfa !important;
   border: none;
 }
 .jobs h4.panel-title {
@@ -1131,7 +1131,7 @@ div.col.list.loc:hover img {
 .jobs div.panel-heading:hover, .jobs h4.panel-title:hover {
   text-decoration: none;
   background-color: #352f2b;
-  color: #f9faf5;
+  color: #fafcfa;
 }
 .jobs div.panel-heading a, .jobs h4.panel-title a {
   text-decoration: none;
@@ -1145,7 +1145,7 @@ div.col.list.loc:hover img {
 }
 .jobs .jobopen div.panel-heading, .jobs .jobopen h4.panel-title {
   background-color: #352f2b;
-  color: #f9faf5;
+  color: #fafcfa;
 }
 .jobs span.jobdescr {
   line-height: 200%;
@@ -1171,7 +1171,7 @@ div.col.list.loc:hover img {
 }
 .jobs .jobknop {
   background-color: #352f2b;
-  color: #f9faf5;
+  color: #fafcfa;
   height: 35px;
   width: 250px;
   border-radius: 0px;
@@ -1281,7 +1281,7 @@ ul.skillist li {
 }
 .FranchiseSection .franchiseselect .active {
   background-color: #352f2b;
-  color: #f9faf5;
+  color: #fafcfa;
 }
 @media only screen and (max-width: 960px) {
   .FranchiseSection .franchiseselect {
@@ -1318,7 +1318,7 @@ ul.skillist li {
 }
 .FranchiseSection .franchiseselect a:hover {
   background-color: #352f2b !important;
-  color: #f9faf5;
+  color: #fafcfa;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
@@ -1448,13 +1448,13 @@ ul.skillist li {
 }
 
 .light {
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   color: #352f2b;
 }
 
 .dark {
   background-color: #352f2b;
-  color: #f9faf5;
+  color: #fafcfa;
   margin: 0px !important;
 }
 
@@ -1463,7 +1463,7 @@ ul.skillist li {
   font-size: 20px;
 }
 #franchisecontact a {
-  color: #f9faf5;
+  color: #fafcfa;
 }
 
 .franchisecontent[ui-view].ng-enter {
@@ -1525,7 +1525,7 @@ ul.skillist li {
   border-radius: 0px;
 }
 .contact .formsubmit :hover {
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   color: #352f2b;
 }
 
@@ -1557,7 +1557,7 @@ ul.skillist li {
 div#langhead {
   width: 100%;
   height: 120px;
-  background-color: #f9faf5;
+  background-color: #fafcfa;
   margin-top: 1%;
   margin-bottom: 5%;
 }
