@@ -1,10 +1,12 @@
 var servicepath = "https://franchise.district01.be/api/";
 var PremiumMeat = angular.module('PremiumMeat')
 
-	.controller('HomeCtrl', function ($scope, $http, $location, $cookieStore) {
+	.controller('HomeCtrl', function ($scope, $http, $location, $cookies) {
 
-		$scope.language = "nl";
-		$scope.langcookie = $cookieStore.get('languageCookie');
+		var language = $cookies.lang;
+
+		//eng api not available, to fr
+		if (language === "en") {language="fr";};
 
 		$scope.changeActiveSlide = function(i) {
 			angular.forEach($scope.slides, function(slide) {
@@ -17,12 +19,12 @@ var PremiumMeat = angular.module('PremiumMeat')
 
 		$scope.myInterval = 8000;
 		var slides = $scope.slides = [];
-		$http.get(servicepath + 'promos/' + $scope.language + '.json').then(function(res){
+		$http.get(servicepath + 'promos/' + language + '.json').then(function(res){
 			$scope.slides = res.data;
 		});
 
 		var posts = $scope.posts = [];
-		$http.get(servicepath + 'articles/' + $scope.language + '.json?callback=JSON_CALLBACK').
+		$http.get(servicepath + 'articles/' + language + '.json?callback=JSON_CALLBACK').
 		  success(function(data, status, headers, config) {
 			$scope.posts = data;
 			console.log(status);
@@ -30,17 +32,6 @@ var PremiumMeat = angular.module('PremiumMeat')
 		  error(function(data, status, headers, config) {
 			console.log(status);
 		  });
-
-		$scope.checkCookie = function ($cookies){
-		console.log("check koek");
-			var cookie = $cookieStore.get('languageCookie');
-			console.log(cookie);
-		}
-
-		$scope.deleteCookie = function ($cookies){
-			console.log("delete koek");
-				$cookieStore.remove('languageCookie');
-			}
 		});
 
 

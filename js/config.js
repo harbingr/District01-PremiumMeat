@@ -9,14 +9,21 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	//"angular-google-analytics"
 	])
 
-.run(function($rootScope, $window, $state, $cookieStore, $translate, $location){
+
+/* !!!
+http://yeoman.io/codelab/local-storage.html
+*/
+
+.run(function($rootScope, $window, $state, $cookieStore, $translate, $location, $cookies){
 
 		var store = $translate.storage();
-			if(angular.equals(store, {})){
+			if(!$cookies.lang){
 				$location.path('/language');
 			}
 			else {
-				$location.path('/home');
+				$translate.use($cookies.lang);
+				$state.go("home");
+				//$location.path('/home');
 			}
 
 		$rootScope.$state = $state;
@@ -98,41 +105,11 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	$stateProvider
 			.state('home', {
 				url: "/",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('translateCookieStorage')){
-			                        	  	return {
-			                        	  		toState: 'home'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
 				controller: "HomeCtrl",
 				templateUrl: "view/home.html"
 			})
 			.state('menu', {
 				url: "/menu",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'menu'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
 				controller: "MenuCtrl",
 				templateUrl: "view/menu.html"
 			})
@@ -190,10 +167,6 @@ var PremiumMeat = angular.module('PremiumMeat', [
 
 			.state('jobs', {
 				url: "/jobs",
-				data: {
-					rule: function($cookieStore) {
-			                }
-				},
 				controller: "JobsCtrl",
 				templateUrl: "view/jobs.html"
 			})
@@ -203,21 +176,6 @@ var PremiumMeat = angular.module('PremiumMeat', [
 					onderwerp: "vraag",
 				},
 				url: "/contact?onderwerp",
-				data: {
-					rule: function($cookieStore) {
-			                        /*if ($cookieStore.get('languageCookie')) {
-			                        	  	return {
-			                        	  		toState: 'contact'
-			                        	  	}
-						}
-			                        	// language button set localstorage
-			                        	// if localstorage set
-			                         else return {
-			                                toState: 'language',
-			                                toParams: {}
-			                        };*/
-			                }
-				},
 				controller: "contactController",
 				templateUrl: "view/contact.html"
 			})
