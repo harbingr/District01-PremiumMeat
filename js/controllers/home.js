@@ -4,7 +4,6 @@ var PremiumMeat = angular.module('PremiumMeat')
 	.controller('HomeCtrl', function ($scope, $http, $location, $cookies) {
 
 		var language = $cookies.lang;
-
 		//eng api not available, to fr
 		if (language === "en") {language="fr";};
 
@@ -27,13 +26,11 @@ var PremiumMeat = angular.module('PremiumMeat')
 		$http.get(servicepath + 'articles/' + language + '.json?callback=JSON_CALLBACK').
 		  success(function(data, status, headers, config) {
 			$scope.posts = data;
-			console.log(status);
 		  }).
 		  error(function(data, status, headers, config) {
 			console.log(status);
 		  });
 		});
-
 
 	PremiumMeat.directive('errSrc', function() {
 	  return {

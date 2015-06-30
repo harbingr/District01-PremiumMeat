@@ -9,7 +9,6 @@ var PremiumMeat = angular.module('PremiumMeat', [
 	//"angular-google-analytics"
 	])
 
-
 /* !!!
 http://yeoman.io/codelab/local-storage.html
 */
@@ -23,7 +22,6 @@ http://yeoman.io/codelab/local-storage.html
 			else {
 				$translate.use($cookies.lang);
 				$state.go("home");
-				//$location.path('/home');
 			}
 
 		$rootScope.$state = $state;
@@ -172,9 +170,7 @@ http://yeoman.io/codelab/local-storage.html
 			})
 
 			.state('contact', {
-				params:{
-					onderwerp: "vraag",
-				},
+				params:{onderwerp: "vraag"},
 				url: "/contact?onderwerp",
 				controller: "contactController",
 				templateUrl: "view/contact.html"
