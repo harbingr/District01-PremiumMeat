@@ -317,15 +317,18 @@ nav ul li a {
 }
 nav ul li a:hover {
   text-decoration: none;
-  color: #5a8738;
+  color: #5a8738 !important;
 }
 nav ul li a:visited {
   color: #352f2b;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 nav ul li a:active {
   color: #5a8738;
-  text-decoration: none !important;
+  text-decoration: none;
+}
+nav ul li a:focus {
+  text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
   nav ul li a {
