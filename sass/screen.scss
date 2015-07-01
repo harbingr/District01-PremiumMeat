@@ -175,9 +175,18 @@ header{
 
 // MENU LIST ITEMS
 	nav{
+		a#pull{display: none;}
+		width: 100%;
+		position: relative;
+		@media only screen and (max-width: 480px) {
+				z-index: 1000;
+			}
 		ul{padding-top: 35px;
 			@media only screen and (max-width: 1024px) {
 				padding-top: 30px;
+			}
+			@media only screen and (max-width: 480px) {
+				z-index: 1000;
 			}
 			li{
 				margin: 0px;
@@ -185,33 +194,27 @@ header{
 				float: left;
 				z-index: 1000;
 				@media only screen and (max-width: 480px) {
-					line-height: 100px;
-					margin: 0px !important;
-					z-index: 10;
-					width: 100%;
-					height: 100px;
-					text-align: center;
-					background-color: white;
-					color: $dark;
-						&:nth-child(even) {
-							background-color: $light;
-						}
+				line-height: 100px;
+				margin: 0px !important;
+				z-index: 1000;
+				width: 100%;
+				height: 100px;
+				text-align: center;
+				background-color: white;
+				color: $dark;
+					&:nth-child(even) {
+						background-color: $light;
+					}
 				}
 				a{
-					&:link{text-decoration: none;}
-					&:focus{
-						text-decoration: none;
-						color: $dark;
-					}
-					&:hover{
-						color: $green;
-					}
-					&:visited{
+					z-index: 1000;
+					display: inline;
+					&:hover{text-decoration: none; color: $green;}
+					&:visited{color: $dark;
 						text-decoration: none !important;
+
 					}
-					&:active{
-						text-decoration: none !important;
-					}
+					&:active{color: $green; text-decoration: none !important; }
 					@media only screen and (max-width: 480px) {
 						width: 100%;
 						height: 100%;
